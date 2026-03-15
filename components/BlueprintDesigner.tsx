@@ -12,6 +12,8 @@ import DesignerRoom from './DesignerRoom';
 import html2canvas from 'html2canvas';
 import { exportSceneToGLB, uploadToAppScript } from '../services/exporter';
 import { toast } from 'sonner';
+import DimensionSetup from './RoomDesigner/DimensionSetup';
+import OpeningsSetup from './RoomDesigner/OpeningsSetup';
 
 const BlueprintDesigner: React.FC = () => {
   // --- REFS ---
@@ -19,7 +21,7 @@ const BlueprintDesigner: React.FC = () => {
   const canvasContainerRef = useRef<HTMLDivElement>(null);
 
   // --- STEP STATE ---
-  const [step, setStep] = useState<'selection' | 'shape-selection' | 'ai-flow' | 'ai-validate' | 'designing'>('selection');
+  const [step, setStep] = useState<'selection' | 'shape-selection' | 'dimension-setup' | 'openings-setup' | 'ai-flow' | 'ai-validate' | 'designing'>('selection');
 
   // --- ROOM DATA STATE ---
   const [roomData, setRoomData] = useState<RoomData>({
@@ -47,7 +49,7 @@ const BlueprintDesigner: React.FC = () => {
   const [librarySubcategory, setLibrarySubcategory] = useState<string>('All');
 
   const categories = useMemo(() => ['All', ...new Set(PRODUCTS.map(p => p.category))], []);
-  
+
   const subCategories = useMemo(() => {
     if (libraryCategory === 'All') return [];
     const subs = PRODUCTS
@@ -94,6 +96,13 @@ const BlueprintDesigner: React.FC = () => {
     const newOpenings = [...roomData.openings];
     newOpenings[index] = { ...newOpenings[index], ...updates };
     updateRoom({ openings: newOpenings });
+  };
+
+  const handleWallClick = (index: number) => {
+    // If we're in the library or appearance tab, maybe switch to structure
+    if (activeSidebarTab !== 'structure') {
+      setActiveSidebarTab('structure');
+    }
   };
 
   const addItemToPlacement = (product: Product) => {
@@ -145,13 +154,7 @@ const BlueprintDesigner: React.FC = () => {
       if (result.status === 'success') {
         toast.success("Room stitched successfully!");
         console.log("AI result received:", result);
-        updateRoom({
-          dimensions: {
-            length: result.results?.length || roomData.dimensions.length || 6,
-            width: result.results?.breadth || roomData.dimensions.width || 6
-          },
-          panoramaUrl: result.panorama_url
-        });
+
         console.log("Transitioning to 'ai-validate' step...");
         setStep('ai-validate');
       } else {
@@ -225,7 +228,7 @@ const BlueprintDesigner: React.FC = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="min-h-screen pt-24 bg-[#FBFBF9] flex flex-col items-center justify-center p-6 text-black overflow-hidden relative"
+        className="h-screen w-full pt-20 bg-[#FBFBF9] flex flex-col items-center justify-center p-4 text-black overflow-hidden relative"
       >
         <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-0 border border-black/5 rounded-[40px] overflow-hidden bg-white shadow-[0_40px_100px_-20px_rgba(0,0,0,0.05)]">
           {/* Manual Designer Side */}
@@ -322,7 +325,7 @@ const BlueprintDesigner: React.FC = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="min-h-screen pt-24 bg-[#FBFBF9] flex flex-col items-center justify-center p-6 text-black overflow-hidden relative"
+        className="h-screen w-full pt-20 bg-[#FBFBF9] flex flex-col items-center justify-center p-4 text-black overflow-hidden relative"
       >
         <motion.button
           initial={{ x: -20, opacity: 0 }}
@@ -349,7 +352,7 @@ const BlueprintDesigner: React.FC = () => {
                 whileHover={{ y: -10 }}
                 onClick={() => {
                   updateRoom({ shape: shape.id });
-                  setStep('designing');
+                  setStep('dimension-setup');
                 }}
                 className="group flex flex-col items-center gap-8"
               >
@@ -371,7 +374,7 @@ const BlueprintDesigner: React.FC = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="min-h-screen pt-24 bg-[#FBFBF9] flex flex-col items-center justify-center p-6 text-black overflow-hidden relative"
+        className="h-screen w-full pt-20 bg-[#FBFBF9] flex flex-col items-center justify-center p-4 text-black overflow-hidden relative"
       >
         <motion.button
           initial={{ x: -20, opacity: 0 }}
@@ -512,9 +515,36 @@ const BlueprintDesigner: React.FC = () => {
     );
   }
 
+  if (step === 'dimension-setup') {
+    return (
+      <div className="h-screen w-full pt-20 bg-[#FBFBF9] flex items-center justify-center p-4 overflow-hidden">
+        <DimensionSetup
+          data={roomData}
+          onUpdate={updateRoom}
+          onNext={() => setStep('openings-setup')}
+          onBack={() => setStep('shape-selection')}
+        />
+      </div>
+    );
+  }
+
+  if (step === 'openings-setup') {
+    return (
+      <div className="h-screen w-full pt-20 bg-[#FBFBF9] flex items-center justify-center p-4 overflow-hidden">
+        <OpeningsSetup
+          data={roomData}
+          onUpdate={updateRoom}
+          onNext={() => setStep('designing')}
+          onBack={() => setStep('dimension-setup')}
+        />
+      </div>
+    );
+  }
+
+
   // --- DESIGNER VIEW ---
   return (
-    <div className="flex h-screen pt-24 bg-[#F5F5F3] overflow-hidden relative">
+    <div className="flex h-screen w-full pt-20 bg-[#F5F5F3] overflow-hidden relative">
       {/* Product Info Popup */}
       <AnimatePresence>
         {hoveredProduct && (
@@ -570,7 +600,7 @@ const BlueprintDesigner: React.FC = () => {
                 >
                   <ArrowLeft size={20} />
                 </button>
-                <h2 className="text-3xl font-serif text-black">Architect Tool</h2>
+
               </div>
               <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-black/30">Precise Room Design</p>
             </div>
@@ -583,12 +613,11 @@ const BlueprintDesigner: React.FC = () => {
           </div>
 
           <div className="flex gap-2 p-1 bg-black/5 rounded-2xl">
-            {(['structure', 'appearance', 'library'] as const).map((tab) => (
+            {(['appearance', 'library'] as const).map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveSidebarTab(tab)}
-                className={`flex-1 py-2.5 rounded-xl text-[9px] font-black uppercase tracking-widest transition-all ${activeSidebarTab === tab ? 'bg-black text-white shadow-lg' : 'text-black/40 hover:text-black'
-                  }`}
+                className={`flex-1 py-2.5 rounded-xl text-[9px] font-black uppercase tracking-widest transition-all ${activeSidebarTab === tab ? 'bg-black text-white shadow-lg' : 'text-black/40 hover:text-black'}`}
               >
                 {tab}
               </button>
@@ -597,57 +626,7 @@ const BlueprintDesigner: React.FC = () => {
         </div>
 
         <div className="flex-1 overflow-y-auto custom-scrollbar p-8 space-y-10 pb-32">
-          {activeSidebarTab === 'structure' && (
-            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="space-y-10">
-              <div className="space-y-6">
-                <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-black/30">Room Dimensions</h3>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-white border border-black/5 p-5 rounded-3xl space-y-2">
-                    <p className="text-[8px] font-black text-black/30 uppercase tracking-widest">Length (m)</p>
-                    <input
-                      type="number"
-                      value={roomData.dimensions.length}
-                      onChange={(e) => updateRoom({ dimensions: { ...roomData.dimensions, length: parseFloat(e.target.value) || 0 } })}
-                      className="text-2xl font-bold tracking-tighter w-full bg-transparent focus:outline-none"
-                    />
-                  </div>
-                  <div className="bg-white border border-black/5 p-5 rounded-3xl space-y-2">
-                    <p className="text-[8px] font-black text-black/30 uppercase tracking-widest">Width (m)</p>
-                    <input
-                      type="number"
-                      value={roomData.dimensions.width}
-                      onChange={(e) => updateRoom({ dimensions: { ...roomData.dimensions, width: parseFloat(e.target.value) || 0 } })}
-                      className="text-2xl font-bold tracking-tighter w-full bg-transparent focus:outline-none"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div className="space-y-6">
-                <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-black/30">Portals & Apertures</h3>
-                <div className="grid grid-cols-2 gap-3 mb-4">
-                  <button onClick={() => addOpening('DOOR')} className="p-4 border border-black/5 rounded-2xl text-[9px] font-black uppercase tracking-widest hover:border-black transition-all">Add Door</button>
-                  <button onClick={() => addOpening('WINDOW')} className="p-4 border border-black/5 rounded-2xl text-[9px] font-black uppercase tracking-widest hover:border-black transition-all">Add Window</button>
-                </div>
-                <div className="space-y-3">
-                  {roomData.openings.map((op, idx) => (
-                    <div key={idx} className="p-4 bg-white border border-black/5 rounded-2xl space-y-3">
-                      <div className="flex justify-between items-center">
-                        <span className="text-[10px] font-black uppercase tracking-widest">{op.type} Wall {op.wallIndex + 1}</span>
-                        <button onClick={() => removeOpening(idx)} className="text-red-400 p-1"><Trash2 size={14} /></button>
-                      </div>
-                      <input
-                        type="range" min="0" max="1" step="0.01" value={op.offset}
-                        onChange={(e) => updateOpening(idx, { offset: parseFloat(e.target.value) })}
-                        className="w-full accent-black"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </motion.div>
-          )}
-
+          <div className="space-y-6">
           {activeSidebarTab === 'appearance' && (
             <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="space-y-10">
               <section className="space-y-6">
@@ -691,9 +670,7 @@ const BlueprintDesigner: React.FC = () => {
                     <button
                       key={cat}
                       onClick={() => setLibraryCategory(cat)}
-                      className={`whitespace-nowrap px-4 py-2 rounded-full text-[8px] font-black uppercase tracking-widest transition-all border ${
-                        libraryCategory === cat ? 'bg-black border-black text-white shadow-md' : 'bg-white border-black/5 text-black/30 hover:text-black hover:border-black/20'
-                      }`}
+                      className={`whitespace-nowrap px-4 py-2 rounded-full text-[8px] font-black uppercase tracking-widest transition-all border ${libraryCategory === cat ? 'bg-black border-black text-white shadow-md' : 'bg-white border-black/5 text-black/30 hover:text-black hover:border-black/20'}`}
                     >
                       {cat}
                     </button>
@@ -708,9 +685,7 @@ const BlueprintDesigner: React.FC = () => {
                         <button
                           key={sub}
                           onClick={() => setLibrarySubcategory(sub)}
-                          className={`whitespace-nowrap px-4 py-2 rounded-full text-[8px] font-black uppercase tracking-widest transition-all border ${
-                            librarySubcategory.toLowerCase() === sub.toLowerCase() ? 'bg-black text-white shadow-sm' : 'bg-white/50 border-black/5 text-black/40 hover:text-black hover:border-black/20'
-                          }`}
+                          className={`whitespace-nowrap px-4 py-2 rounded-full text-[8px] font-black uppercase tracking-widest transition-all border ${librarySubcategory.toLowerCase() === sub.toLowerCase() ? 'bg-black text-white shadow-sm' : 'bg-white/50 border-black/5 text-black/40 hover:text-black hover:border-black/20'}`}
                         >
                           {sub}
                         </button>
@@ -743,8 +718,9 @@ const BlueprintDesigner: React.FC = () => {
             </motion.div>
           )}
         </div>
+      </div>
 
-        <div className="p-8 border-t border-black/5 bg-white space-y-6">
+      <div className="p-8 border-t border-black/5 bg-white space-y-6">
           <div className="flex justify-between items-center">
             <span className="text-[10px] font-black uppercase tracking-widest text-black/30">Total Value</span>
             <span className="text-lg font-bold tracking-tighter">${items.reduce((acc, it) => acc + (PRODUCTS.find(p => p.name === it.type)?.price || 0), 0)}</span>
@@ -845,8 +821,7 @@ const BlueprintDesigner: React.FC = () => {
               <button
                 key={v.id}
                 onClick={() => setViewMode(v.id)}
-                className={`px-6 py-3 rounded-full text-[9px] font-black uppercase tracking-widest transition-all whitespace-nowrap ${viewMode === v.id ? 'bg-black text-white shadow-lg' : 'text-black/30 hover:text-black'
-                  }`}
+                className={`px-6 py-3 rounded-full text-[9px] font-black uppercase tracking-widest transition-all whitespace-nowrap ${viewMode === v.id ? 'bg-black text-white shadow-lg' : 'text-black/30 hover:text-black'}`}
               >
                 {v.label}
               </button>
@@ -872,6 +847,7 @@ const BlueprintDesigner: React.FC = () => {
             placingProduct={placingProduct}
             onPlaceItem={handlePlaceItem}
             onCancelPlacement={() => setPlacingProduct(null)}
+            onWallClick={handleWallClick}
           />
 
           {placingProduct && (
@@ -966,7 +942,7 @@ const BlueprintDesigner: React.FC = () => {
         )}
       </AnimatePresence>
 
-    </div >
+    </div>
   );
 };
 
