@@ -7,6 +7,7 @@ import { RoomData, RoomOpening, BlueprintItem, Product } from "../types";
 import { PRODUCTS } from "../data/mockData";
 import { getShapePoints } from "./RoomDesigner/RoomMath";
 import FurniturePrimitive from "./RoomDesigner/FurniturePrimitive";
+import Floor from "./RoomDesigner/Floor";
 
 // --- 1.2 Ghost Model Component ---
 const GhostModel: React.FC<{ product: Product, position: [number, number, number] }> = ({ product, position }) => {
@@ -68,8 +69,7 @@ const GhostModel: React.FC<{ product: Product, position: [number, number, number
     );
 };
 
-// --- 2. Textured Wall Component ---
-function TexturedWall({ url, width, height, position, rotation, offsetIndex, visible = true }: any) {
+function TexturedWall({ url, width, height, position, rotation, offsetIndex, visible = true, onPointerDown }: any) {
     const texture = useTexture(url);
 
     const wallTexture = useMemo(() => {
@@ -85,7 +85,7 @@ function TexturedWall({ url, width, height, position, rotation, offsetIndex, vis
     }, [texture, offsetIndex]);
 
     return (
-        <mesh position={position} rotation={rotation} visible={visible}>
+        <mesh position={position} rotation={rotation} visible={visible} onPointerDown={onPointerDown}>
             <planeGeometry args={[width, height]} />
             <meshBasicMaterial
                 map={wallTexture}
@@ -151,7 +151,8 @@ function SceneContent({
     viewMode = '3D',
     placingProduct,
     onPlaceItem,
-    onCancelPlacement
+    onCancelPlacement,
+    onWallClick
 }: {
     roomData: RoomData,
     items: BlueprintItem[],
@@ -162,6 +163,7 @@ function SceneContent({
     placingProduct: Product | null;
     onPlaceItem: (pos: [number, number, number]) => void;
     onCancelPlacement?: () => void;
+    onWallClick?: (index: number) => void;
 }) {
     const { camera, scene, raycaster, mouse } = useThree();
     const controlsRef = useRef<any>(null);
@@ -243,15 +245,7 @@ function SceneContent({
         setHasInteracted(false);
     }, [viewMode, wallData]);
 
-    const floorShape = useMemo(() => {
-        const pts = pointsData.map(p => p.pos);
-        if (!pts.length) return null;
-        const shapeObj = new THREE.Shape();
-        shapeObj.moveTo(pts[0].x, pts[0].y);
-        for (let i = 1; i < pts.length; i++) shapeObj.lineTo(pts[i].x, pts[i].y);
-        shapeObj.closePath();
-        return shapeObj;
-    }, [pointsData]);
+
 
     const handleFloorClick = (e: any) => {
         e.stopPropagation();
@@ -293,18 +287,16 @@ function SceneContent({
             <ContactShadows resolution={1024} scale={20} blur={2} opacity={0.25} far={10} color="#000000" />
 
             <group name="DesignContent">
-                {floorShape && (
+                {pointsData.length > 0 && (
                     <group>
                         {/* The floor itself */}
-                        <mesh rotation={[Math.PI / 2, 0, 0]} position={[0, -0.001, 0]} onPointerDown={handleFloorClick} receiveShadow>
-                            <shapeGeometry args={[floorShape]} />
-                            <meshStandardMaterial color={wallColor} side={THREE.DoubleSide} />
-                        </mesh>
-                        {/* A solid bottom plate to hide underside leaks */}
-                        <mesh rotation={[Math.PI / 2, 0, 0]} position={[0, -0.02, 0]}>
-                            <shapeGeometry args={[floorShape]} />
-                            <meshBasicMaterial color="#d1d1d1" side={THREE.FrontSide} />
-                        </mesh>
+                        <Floor 
+                            points={pointsData.map(p => p.pos)} 
+                            textureType={floorTexture as any} 
+                            onPlacement={handleFloorClick} 
+                            color="#f8fafc" 
+                        />
+                        {/* Optional subtle border/leak protection can be added here if needed */}
                     </group>
                 )}
 
@@ -333,6 +325,12 @@ function SceneContent({
                                     rotation={wDef.rot}
                                     offsetIndex={i}
                                     visible={!isHidden}
+                                    onPointerDown={(e: any) => {
+                                        if (onWallClick) {
+                                            e.stopPropagation();
+                                            onWallClick(i);
+                                        }
+                                    }}
                                 />
                             );
                         })}
@@ -349,7 +347,17 @@ function SceneContent({
                         return (
                             <group key={i} position={[wall.staticCenter.x, 0, wall.staticCenter.y]} rotation={[0, -wall.angle, 0]}>
                                 {!wall.opening ? (
-                                    <mesh position={[0, 1.25, 0]} castShadow receiveShadow>
+                                    <mesh 
+                                        position={[0, 1.25, 0]} 
+                                        castShadow 
+                                        receiveShadow
+                                        onPointerDown={(e) => {
+                                            if (onWallClick) {
+                                                e.stopPropagation();
+                                                onWallClick(i);
+                                            }
+                                        }}
+                                    >
                                         <planeGeometry args={[wall.dist, 2.5]} />
                                         <meshStandardMaterial color={wallColor} side={THREE.DoubleSide} transparent={isHidden} opacity={isHidden ? 0.2 : 1} />
                                     </mesh>
