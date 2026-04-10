@@ -1,6 +1,6 @@
 
 import React, { useRef, useState, useMemo, useEffect, useCallback } from "react";
-import { useGLTF, Html } from "@react-three/drei";
+import { useGLTF, Html, useTexture } from "@react-three/drei";
 import { useThree } from "@react-three/fiber";
 import * as THREE from "three";
 import { BlueprintItem } from "../../types";
@@ -18,18 +18,35 @@ interface FurniturePrimitiveProps {
 }
 
 // Separate component for GLTF loading to handle hooks correctly
-function Model({ path, onLoad }: { path: string, onLoad: (bounds: any) => void }) {
+function Model({ path, onLoad, color, textureUrl }: { path: string, onLoad: (bounds: any) => void, color?: string, textureUrl?: string }) {
     const { scene } = useGLTF(path);
+    const texture = textureUrl ? useTexture(textureUrl) : null;
+
     const clonedScene = useMemo(() => {
         const s = scene.clone();
+        
+        if (texture) {
+            texture.flipY = false;
+            texture.colorSpace = THREE.SRGBColorSpace;
+        }
+
         s.traverse((node) => {
             if (node instanceof THREE.Mesh) {
                 node.castShadow = true;
                 node.receiveShadow = true;
+                
+                if (color || texture) {
+                    node.material = node.material.clone();
+                    if (color) (node.material as any).color.set(color);
+                    if (texture) {
+                        (node.material as any).map = texture;
+                        (node.material as any).needsUpdate = true;
+                    }
+                }
             }
         });
         return s;
-    }, [scene]);
+    }, [scene, color, texture]);
 
     // Calculate model size to ground it and report back
     const bounds = useMemo(() => {
@@ -202,7 +219,7 @@ export default function FurniturePrimitive({
                 >
                     {item.model ? (
                         <React.Suspense fallback={<mesh><boxGeometry args={[0.5, 0.5, 0.5]} /><meshStandardMaterial color="gray" transparent opacity={0.5} /></mesh>}>
-                            <Model path={item.model} onLoad={handleModelLoad} />
+                            <Model path={item.model} onLoad={handleModelLoad} color={item.color} textureUrl={item.texture} />
                         </React.Suspense>
                     ) : (
                         <mesh position={[0, 0.5, 0]}>
@@ -217,7 +234,7 @@ export default function FurniturePrimitive({
                         rotation={[-Math.PI / 2, 0, 0]} 
                         position={[modelBounds.centerX, 0.01, modelBounds.centerZ]}
                     >
-                        <planeGeometry args={[modelBounds.width, modelBounds.depth]} />
+                        <planeGeometry args={[Math.ceil(modelBounds.width / 0.5) * 0.5, Math.ceil(modelBounds.depth / 0.5) * 0.5]} />
                         <meshBasicMaterial color="#00ff00" transparent opacity={0.3} />
                     </mesh>
                 )}

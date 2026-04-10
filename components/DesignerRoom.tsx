@@ -20,8 +20,16 @@ const GhostModel: React.FC<{ product: Product, position: [number, number, number
     }
 
     const { scene } = useGLTF(product.model);
+    const texture = product.texture ? useTexture(product.texture) : null;
+
     const { ghostScene, bounds } = useMemo(() => {
         const s = scene.clone();
+        
+        if (texture) {
+            texture.flipY = false;
+            texture.colorSpace = THREE.SRGBColorSpace;
+        }
+
         const box = new THREE.Box3().setFromObject(s);
         const size = new THREE.Vector3();
         box.getSize(size);
@@ -34,12 +42,14 @@ const GhostModel: React.FC<{ product: Product, position: [number, number, number
                     if (Array.isArray(node.material)) {
                         node.material = node.material.map(m => {
                             const newM = m.clone();
+                            if (texture) (newM as any).map = texture;
                             (newM as any).transparent = true;
                             (newM as any).opacity = 0.5;
                             return newM;
                         });
                     } else {
                         node.material = node.material.clone();
+                        if (texture) (node.material as any).map = texture;
                         (node.material as any).transparent = true;
                         (node.material as any).opacity = 0.5;
                     }
@@ -55,7 +65,7 @@ const GhostModel: React.FC<{ product: Product, position: [number, number, number
                 centerZ: (box.max.z + box.min.z)/2 
             } 
         };
-    }, [scene]);
+    }, [scene, texture]);
 
     return (
         <group position={position}>

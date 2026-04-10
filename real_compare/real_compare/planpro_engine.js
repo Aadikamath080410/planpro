@@ -8,6 +8,39 @@ const path = require("path");
 const readline = require("readline");
 const Fuse = require("fuse.js");
 
+/* ================= FUZZY SEARCH HELPERS ================= */
+
+function getBigrams(str) {
+  let str1 = str;
+  if (str.length === 1) str1 = str + ' ';
+  const bigrams = new Set();
+  const length = str1.length;
+  for (let i = 0; i < length - 1; i++) {
+    const bigram = str1.slice(i, i + 2);
+    bigrams.add(bigram);
+  }
+  return bigrams;
+}
+
+function intersect(set1, set2) {
+  const intersection = new Set();
+  set1.forEach(value => {
+    if (set2.has(value)) intersection.add(value);
+  });
+  return intersection;
+}
+
+function diceCoefficient(str1, str2) {
+  const s1 = (str1 || "").toLowerCase().trim();
+  const s2 = (str2 || "").toLowerCase().trim();
+  if (s1 === s2) return 1;
+  if (s1.length < 2 || s2.length < 2) return 0;
+  const b1 = getBigrams(s1);
+  const b2 = getBigrams(s2);
+  const intersection = intersect(b1, b2);
+  return (2 * intersection.size) / (b1.size + b2.size);
+}
+
 /* ================= BASIC HELPERS ================= */
 
 function exists(v) {
@@ -176,20 +209,18 @@ function resolveSubtypeIntent(subtype) {
 
 function hardFilter(plan, cand, site) {
   try {
+    if (!cand || cand.length < 7) return false;
     const pType = plan[6]?.toLowerCase();
     const cType = normalizeType(cand[6], site);
 
     if (!exists(pType) || !exists(cType)) return false;
+    
+    // Main type must match exactly (e.g. Table vs Table)
     if (pType !== cType) return false;
 
-    const pIntent = resolveSubtypeIntent(plan[7]);
-    const cIntent = resolveSubtypeIntent(cand[7]);
-
-    if (!pIntent || !cIntent) return false;
-    if (pIntent !== cIntent) return false;
-
+    // Subtype intent is used for scoring, not hard filtering
     return true;
-  } catch {
+  } catch (err) {
     return false;
   }
 }
@@ -217,15 +248,31 @@ function dimensionSimilarity(a, b) {
 /* ================= SIMILARITY ================= */
 
 function similarityScore(plan, cand) {
+  // 1. Dimension Score (0 to 1)
   const dimScore = dimensionSimilarity(
     parseDimensions(plan[2]),
     parseDimensions(cand[2])
   );
 
-  const priceScore =
-    Math.min(plan[3], cand[3]) / Math.max(plan[3], cand[3]);
+  // 2. Price Score (0 to 1)
+  const priceScore = exists(plan[3]) && exists(cand[3]) && plan[3] > 0 && cand[3] > 0
+    ? Math.min(plan[3], cand[3]) / Math.max(plan[3], cand[3])
+    : 0.5;
 
-  return 0.5 + dimScore * 0.35 + priceScore * 0.15;
+  // 3. Name Similarity (0 to 1)
+  const nameScore = diceCoefficient(
+    normalizeText(plan[1] || ""),
+    normalizeText(cand[1] || "")
+  );
+
+  // 4. Subtype Intent (Bonus Score)
+  const pIntent = resolveSubtypeIntent(plan[7]);
+  const cIntent = resolveSubtypeIntent(cand[7]);
+  const intentBonus = (pIntent && cIntent && pIntent === cIntent) ? 1.0 : 0.0;
+
+  // Weighted Total Score
+  // Weights: Name(0.4), Dimension(0.3), Intent(0.2), Price(0.1)
+  return (nameScore * 0.4) + (dimScore * 0.3) + (intentBonus * 0.2) + (priceScore * 0.1);
 }
 
 /* ================= SITE INFERENCE ================= */
@@ -243,15 +290,17 @@ function inferSite(id) {
 
 function adaptRealProduct(p) {
   return [
-    p.ID || p.id || null,
-    null,
-    p.Dimension || p.dimension || p.dimensions || null,
-    Number(p.Price ?? p.price ?? 0),
-    null,
-    null,
-    p.Type || p.type || null,
-    p.SubType || p.subtype || null,
-    null
+    p.ID || p.id || null, // 0
+    p.Name || p.name || null, // 1
+    p.Dimension || p.dimension || p.dimensions || null, // 2
+    Number(p.Price ?? p.price ?? 0), // 3
+    null, // 4
+    null, // 5
+    p.Type || p.type || null, // 6
+    p.SubType || p.subtype || null, // 7
+    p.Brand || p.brand || null, // 8
+    p.ImageURL || p.imageUrl || p.imageurl || p.Image || null, // 9
+    p.ProductURL || p.productUrl || p.producturl || null // 10
   ];
 }
 
@@ -265,7 +314,9 @@ function adaptPlanProProduct(p) {
     null,
     p.Type,
     p.SubType,
-    p.Brand || null
+    p.Brand || null,
+    p.ImageURL || null,
+    p.ProductURL || null
   ];
 }
 
@@ -285,10 +336,15 @@ function compare(planProduct, datasets) {
       if (!hardFilter(planProduct, cand, site)) return;
 
       const sim = similarityScore(planProduct, cand);
-      if (sim <= 0.6) return;
+      if (sim < 0.4) return;
 
       results[site].push({
         id: cand[0],
+        name: cand[1],
+        imageUrl: cand[9],
+        productUrl: cand[10],
+        dimension: cand[2],
+        brand: cand[8],
         site,
         price: cand[3],
         similarity: Number(sim.toFixed(3))

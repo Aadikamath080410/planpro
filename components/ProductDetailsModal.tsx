@@ -123,7 +123,7 @@ const ProductDetailsModal: React.FC<ProductDetailsModalProps> = ({
                 {/* 3D View Over-Layer */}
                 {is3DActive && product.model && (
                   <div className="absolute inset-0 z-40 bg-white">
-                    <Scene3D modelUrl={product.model} />
+                    <Scene3D modelUrl={product.model} textureUrl={product.texture} />
                   </div>
                 )}
 

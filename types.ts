@@ -13,6 +13,7 @@ export interface Product {
   rating: number;
   reviews?: { user: string; rating: number; comment: string }[];
   model?: string;
+  texture?: string;
 }
 
 export interface ComparisonResult {
@@ -25,11 +26,15 @@ export interface ComparisonResult {
 
 export interface BlueprintItem {
   id: string;
+  name?: string;
   type: string;
   x: number;
   y: number;
   rotation: number;
+  price?: number;
   model?: string;
+  texture?: string;
+  color?: string;
   position?: [number, number, number];
   dimensions?: {
     width: number;

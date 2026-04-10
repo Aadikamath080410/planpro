@@ -25,8 +25,10 @@ import WishlistView from './components/WishlistView';
 import CheckoutPage from './components/CheckoutPage';
 import UserProfile from './components/UserProfile';
 import WishlistComparisonModal from './components/WishlistComparisonModal';
+import ARPage from './ARModule/ARPage';
 
-type View = 'home' | 'products' | 'blueprint' | 'login' | 'cart' | 'wishlist' | 'ar-preview' | 'comparison' | 'checkout' | 'profile';
+
+type View = 'home' | 'products' | 'blueprint' | 'login' | 'cart' | 'wishlist' | 'ar-preview' | 'comparison' | 'checkout' | 'profile' | 'ar';
 
 const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<View>('home');
@@ -37,7 +39,7 @@ const App: React.FC = () => {
 
   const [isAIBuilderOpen, setIsAIBuilderOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [initialARViewMode, setInitialARViewMode] = useState<'qr' | 'live'>('qr');
+  const [initialARViewMode, setInitialARViewMode] = useState<'inspect' | 'live'>('inspect');
   const [isWishlistCompareOpen, setIsWishlistCompareOpen] = useState(false);
 
   // Filter States
@@ -135,6 +137,15 @@ const App: React.FC = () => {
       console.error('Failed to fetch user data:', err);
     }
   };
+
+  // Deep Link Listener for AR
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+    if (id) {
+      setActiveTab('ar');
+    }
+  }, []);
 
   const getOrCreateWishlist = async () => {
     if (!user) throw new Error('User not authenticated');
@@ -339,6 +350,7 @@ const App: React.FC = () => {
   const triggerAR = (product: Product) => {
     setSelectedProduct(product);
     setShowDetails(false);
+    setInitialARViewMode('inspect');
     setActiveTab('ar-preview');
   };
 
@@ -646,6 +658,15 @@ const App: React.FC = () => {
     </footer>
   );
 
+  if (activeTab === 'ar') {
+    return (
+      <div className="min-h-screen bg-black overflow-hidden">
+        <ARPage />
+        <Toaster position="top-center" />
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-[#FBFBF9]">
       <Toaster position="top-center" />
@@ -690,6 +711,8 @@ const App: React.FC = () => {
             </section>
           </div>
         )}
+
+
 
         {activeTab === 'products' && (
           <div className="pt-24 min-h-screen animate-in slide-in-from-bottom-8 duration-700">
@@ -975,10 +998,12 @@ const App: React.FC = () => {
       {activeTab === 'ar-preview' && selectedProduct && (
         <ARPreviewModal
           product={selectedProduct}
-          onClose={() => { setActiveTab('products'); setInitialARViewMode('qr'); }}
+          onClose={() => { setActiveTab('products'); setInitialARViewMode('inspect'); }}
           initialViewMode={initialARViewMode}
         />
       )}
+
+      <Toaster position="top-center" />
     </div>
   );
 };

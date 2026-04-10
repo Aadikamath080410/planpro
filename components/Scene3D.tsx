@@ -1,21 +1,46 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useLayoutEffect } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { useGLTF, Stage, OrbitControls, Environment, ContactShadows } from '@react-three/drei';
+import { useGLTF, Stage, OrbitControls, Environment, ContactShadows, useTexture } from '@react-three/drei';
+import * as THREE from 'three';
 
 interface ModelProps {
     url: string;
+    textureUrl?: string; // New: optional texture URL
 }
 
-const Model: React.FC<ModelProps> = ({ url }) => {
+const Model: React.FC<ModelProps> = ({ url, textureUrl }) => {
     const { scene } = useGLTF(url);
+    const texture = textureUrl ? useTexture(textureUrl) : null;
+
+    useLayoutEffect(() => {
+        if (texture) {
+            // Standard GLTF texture settings
+            texture.flipY = false;
+            texture.colorSpace = THREE.SRGBColorSpace;
+            
+            scene.traverse((node) => {
+                if ((node as THREE.Mesh).isMesh) {
+                    const mesh = node as THREE.Mesh;
+                    // Apply to the main material
+                    if (mesh.material) {
+                        const material = mesh.material as THREE.MeshStandardMaterial;
+                        material.map = texture;
+                        material.needsUpdate = true;
+                    }
+                }
+            });
+        }
+    }, [scene, texture]);
+
     return <primitive object={scene} />;
 };
 
 interface Scene3DProps {
     modelUrl: string;
+    textureUrl?: string; // Add textureUrl to props
 }
 
-const Scene3D: React.FC<Scene3DProps> = ({ modelUrl }) => {
+const Scene3D: React.FC<Scene3DProps> = ({ modelUrl, textureUrl }) => {
     if (!modelUrl) return null;
 
     return (
@@ -23,7 +48,7 @@ const Scene3D: React.FC<Scene3DProps> = ({ modelUrl }) => {
             <Canvas shadows camera={{ position: [0, 0, 4], fov: 45 }}>
                 <Suspense fallback={null}>
                     <Stage environment="city" intensity={0.5} shadows={false} adjustCamera={2}>
-                        <Model url={modelUrl} />
+                        <Model url={modelUrl} textureUrl={textureUrl} />
                     </Stage>
                     <OrbitControls
                         makeDefault

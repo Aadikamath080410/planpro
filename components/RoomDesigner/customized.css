@@ -1,0 +1,694 @@
+/* ==============================================
+   customized.css — Room Designer Styles
+   
+   STRUCTURE:
+   1. DESKTOP (base styles — fixed, clean values)
+   2. TABLET  (@media max-width: 1024px)
+   3. MOBILE  (@media max-width: 768px)
+   ============================================== */
+
+
+/* ============================================
+   1. DESKTOP BASE STYLES
+   ============================================ */
+
+.setup-container {
+    padding: 0.5rem 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: 'Outfit', serif;
+    height: calc(100vh - 72px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.setup-card {
+    background: white;
+    border-radius: 28px;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,0.05), 0 1px 3px 0 rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.05);
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+}
+
+.setup-header {
+    flex-shrink: 0;
+}
+
+.setup-card h2 {
+    font-family: 'Outfit', serif;
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+    color: #1a1a1a;
+}
+
+/* --- Dimension Layout --- */
+
+.setup-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 2rem;
+    flex: 1;
+    overflow: hidden;
+    min-height: 0;
+}
+
+.inputs-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    overflow-y: auto;
+    padding-right: 1rem;
+    max-height: 100%;
+}
+
+.inputs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem 1.25rem;
+}
+
+/* --- Unit Toggle --- */
+
+.unit-toggle {
+    display: flex;
+    gap: 0.5rem;
+    background: #f5f5f3;
+    padding: 0.25rem;
+    border-radius: 1rem;
+    width: fit-content;
+    margin-bottom: 0.75rem;
+}
+
+.unit-toggle button {
+    padding: 0.4rem 0.875rem;
+    border-radius: 0.75rem;
+    font-size: 0.7rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: all 0.2s;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: #666;
+    font-family: 'Outfit', serif;
+}
+
+.unit-toggle button:hover {
+    background: rgba(0,0,0,0.06);
+    color: #222;
+    transform: translateY(-1px);
+}
+
+.unit-toggle button.active {
+    background: black;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.unit-toggle button.active:hover {
+    background: #333;
+    transform: translateY(-1px);
+}
+
+/* --- Inputs --- */
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.input-group label {
+    font-size: 0.68rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: rgba(0,0,0,0.3);
+    font-family: 'Outfit', serif;
+}
+
+.input-with-unit {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.unit-wrapper {
+    position: relative;
+    flex: 1;
+}
+
+.unit-wrapper input {
+    width: 100%;
+    padding: 0.6rem 2rem 0.6rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 0.75rem;
+    background: #fbfbf9;
+    transition: all 0.25s;
+    box-sizing: border-box;
+    font-family: 'Outfit', serif;
+}
+
+.unit-wrapper input:focus {
+    outline: none;
+    border-color: black;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.04);
+}
+
+.unit-label {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.68rem;
+    font-weight: 900;
+    color: rgba(0,0,0,0.2);
+    pointer-events: none;
+    font-family: 'Outfit', serif;
+}
+
+.imperial-inputs {
+    display: flex;
+    gap: 0.75rem;
+    flex: 1;
+}
+
+/* --- Action Buttons --- */
+
+.setup-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    flex-shrink: 0;
+}
+
+.btn-primary {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 100px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    font-size: 0.875rem;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    cursor: pointer;
+    border: none;
+    font-family: 'Outfit', serif;
+}
+
+.btn-primary:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.btn-primary:active {
+    transform: scale(0.98) translateY(0);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #444;
+    padding: 0.7rem 1.5rem;
+    border-radius: 100px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    font-size: 0.875rem;
+    border: 1px solid rgba(0,0,0,0.2);
+    transition: all 0.2s;
+    cursor: pointer;
+    font-family: 'Outfit', serif;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(0,0,0,0.06);
+    border-color: rgba(0,0,0,0.35);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.btn-secondary:active {
+    transform: scale(0.98);
+}
+
+/* --- Preview Panel --- */
+
+.preview-section-container {
+    position: relative;
+    background: #fbfbf9;
+    border-radius: 32px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0,0,0,0.03);
+}
+
+.carpet-area-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.875rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 10;
+}
+
+.carpet-area-badge .label {
+    font-family: 'Outfit', serif;
+    font-size: 0.6rem;
+    font-weight: 950;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: rgba(0,0,0,0.3);
+}
+
+.carpet-area-badge .value {
+    font-family: 'Outfit', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: black;
+}
+
+.shape-svg {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* ============================================
+   OPENINGS SETUP — DESKTOP
+   ============================================ */
+
+.openings-interface {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 2rem;
+    flex: 1;
+    overflow: hidden;
+    min-height: 0;
+}
+
+.opening-tools {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    overflow: hidden;
+    min-height: 0;
+}
+
+/* Scrollable openings list */
+.openings-scroll-list {
+    flex: 1;
+    overflow-y: auto;
+    min-height: 0;
+    padding-right: 0.25rem;
+}
+
+.openings-scroll-list::-webkit-scrollbar { width: 4px; }
+.openings-scroll-list::-webkit-scrollbar-track { background: transparent; }
+.openings-scroll-list::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.1);
+    border-radius: 20px;
+}
+
+.tool-selector {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    flex-shrink: 0;
+}
+
+.tool-btn {
+    padding: 0.7rem 1rem;
+    border-radius: 12px;
+    background: white;
+    border: 1px solid rgba(0,0,0,0.1);
+    font-weight: 700;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #444;
+    cursor: pointer;
+    font-family: 'Outfit', serif;
+}
+
+.tool-btn:hover {
+    background: #f0f0ee;
+    border-color: rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.tool-btn:active {
+    transform: translateY(0) scale(0.97);
+    box-shadow: none;
+}
+
+.active-door,
+.active-win {
+    border-color: transparent;
+    background-color: #1a1a1a;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.active-door:hover,
+.active-win:hover {
+    background-color: #333;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+}
+
+.placed-list h3 {
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: rgba(0,0,0,0.35);
+    margin: 0 0 0.5rem;
+    font-family: 'Outfit', serif;
+}
+
+.offset-control {
+    background: white;
+    padding: 0.75rem 1rem;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.offset-control:hover {
+    border-color: rgba(0,0,0,0.12);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+.offset-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: 'Outfit', serif;
+}
+
+.offset-remove-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ef4444;
+    padding: 0.2rem 0.4rem;
+    line-height: 1;
+    border-radius: 6px;
+    transition: all 0.15s;
+}
+
+.offset-remove-btn:hover {
+    background: #fef2f2;
+    transform: scale(1.15);
+}
+
+.offset-slider {
+    width: 100%;
+    accent-color: black;
+}
+
+.hint-text {
+    font-size: 0.72rem;
+    color: rgba(0,0,0,0.3);
+    font-style: italic;
+    margin: 0.25rem 0;
+    font-family: 'Outfit', serif;
+}
+
+/* 3D Canvas container */
+.map-container {
+    background: #111;
+    border-radius: 20px;
+    height: 100%;
+    min-height: 300px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* ============================================
+   SCROLLBARS & UTILITIES
+   ============================================ */
+
+.custom-scrollbar::-webkit-scrollbar { width: 4px; }
+.custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.05);
+    border-radius: 20px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,0,0,0.1);
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Visibility helpers — desktop default */
+.mobile-only-list { display: none; }
+
+
+/* ==============================================
+   2. TABLET  (≤ 1024px)
+   ============================================== */
+
+@media (max-width: 1024px) {
+    .setup-card {
+        width: 95%;
+        max-height: 90vh;
+    }
+
+    .setup-layout {
+        grid-template-columns: 1fr;
+        overflow-y: auto;
+    }
+
+    .preview-section-container {
+        min-height: 250px;
+    }
+
+    .openings-interface {
+        grid-template-columns: 1fr;
+        overflow-y: auto;
+    }
+}
+
+
+/* ==============================================
+   3. MOBILE  (≤ 768px)
+   ============================================== */
+
+@media (max-width: 768px) {
+
+    /* Container */
+    .setup-container {
+        height: auto;
+        min-height: calc(100dvh - 72px);
+        padding: 0.5rem;
+        align-items: flex-start;
+    }
+
+    /* Card */
+    .setup-card {
+        width: 100%;
+        max-height: none;
+        border-radius: 16px;
+        padding: 0.9rem 1rem;
+        overflow: visible;
+        gap: 0.5rem;
+    }
+
+    .setup-card h2 {
+        font-size: 1.1rem;
+        margin-bottom: 0.25rem;
+    }
+
+    /* Inputs */
+    .inputs-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.4rem 0.6rem;
+    }
+
+    .inputs-section {
+        padding-right: 0;
+        overflow-y: visible;
+        gap: 0.35rem;
+    }
+
+    .input-group label {
+        font-size: 0.6rem;
+        letter-spacing: 0.1em;
+    }
+
+    .unit-wrapper input {
+        padding: 0.4rem 1.5rem 0.4rem 0.5rem;
+        font-size: 0.85rem;
+        border-radius: 0.5rem;
+    }
+
+    .unit-label {
+        font-size: 0.6rem;
+        right: 0.5rem;
+    }
+
+    .unit-toggle {
+        margin-bottom: 0.4rem;
+        transform: scale(0.9);
+        transform-origin: left;
+    }
+
+    /* Actions */
+    .setup-actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+        padding-top: 0.5rem;
+    }
+
+    .setup-actions .btn-primary,
+    .setup-actions .btn-secondary {
+        flex: 1;
+        text-align: center;
+        padding: 0.55rem 0.75rem;
+        font-size: 0.78rem;
+    }
+
+    /* Preview section */
+    .preview-section-container {
+        min-height: 160px;
+        padding: 0.3rem;
+        margin-top: 0.25rem;
+    }
+
+    .shape-svg {
+        max-width: 140px;
+    }
+
+    .carpet-area-badge {
+        padding: 0.25rem 0.4rem;
+        top: 0.4rem;
+        right: 0.4rem;
+    }
+
+    .carpet-area-badge .label { font-size: 0.5rem; }
+    .carpet-area-badge .value { font-size: 0.85rem; }
+
+    /* Openings — stack: Add buttons → canvas → list */
+    .openings-interface {
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        overflow: visible;
+    }
+
+    .opening-tools          { order: 1; }
+    .openings-preview       { order: 2; }
+    .mobile-only-list       { order: 3; display: block; }
+    .desktop-only-list      { display: none !important; }
+
+    .tool-selector {
+        gap: 0.5rem;
+        margin-bottom: 0;
+    }
+
+    .tool-btn {
+        padding: 0.5rem 0.6rem;
+        font-size: 0.75rem;
+        border-radius: 8px;
+    }
+
+    /* Compact inline offset rows on mobile */
+    .offset-control {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.35rem 0.5rem;
+        margin-bottom: 0.25rem;
+        border-radius: 8px;
+    }
+
+    .offset-label { display: contents; }
+
+    .offset-label span {
+        order: 1;
+        font-size: 0.6rem;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .offset-slider {
+        order: 2;
+        flex: 1;
+        width: auto;
+        margin: 0;
+    }
+
+    .offset-remove-btn { order: 3; flex-shrink: 0; }
+
+    .mobile-only-list .openings-scroll-list {
+        max-height: 200px;
+    }
+
+    .map-container {
+        height: 260px;
+        border-radius: 12px;
+    }
+
+    /* Hide desktop list, show mobile list */
+    .desktop-only-list      { display: none !important; }
+    .mobile-only-list       { display: block; }
+}
+
+/* --- Smooth Shelf Utilities --- */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.snap-scroll-x {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.snap-item {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+}

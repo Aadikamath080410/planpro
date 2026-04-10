@@ -1,9 +1,11 @@
 
 import React, { useState, useEffect } from 'react';
-import { X, Scale, ExternalLink, ShieldCheck, TrendingDown, Loader2 } from 'lucide-react';
+import { X, Scale, ExternalLink, Loader2 } from 'lucide-react';
 import { Product } from '../types';
 import { geminiService } from '../services/geminiService';
 import { comparisonService } from '../services/comparisonService';
+import * as PricingCard from './ui/pricing-card';
+import { Button } from './ui/button';
 
 interface ComparisonModalProps {
   product: Product;
@@ -49,94 +51,137 @@ const ComparisonModal: React.FC<ComparisonModalProps> = ({ product, onClose }) =
   }, [product]);
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center p-6">
-      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={onClose} />
-      <div className="relative bg-[#FBFBF9] w-full max-w-2xl rounded-[40px] overflow-hidden shadow-2xl animate-in zoom-in duration-300">
-        <button onClick={onClose} className="absolute top-6 right-6 p-2 rounded-full hover:bg-black/5 transition-colors z-10">
-          <X size={24} />
+    <div className="fixed inset-0 z-[100] flex items-center justify-center p-6 sm:p-10 lg:p-14">
+      <div className="absolute inset-0 bg-black/40 backdrop-blur-md transition-all duration-500" onClick={onClose} />
+      <div className="relative bg-[#FAFAF8] w-full max-w-6xl h-full max-h-[85vh] rounded-[40px] overflow-hidden shadow-[0_32px_128px_-16px_rgba(0,0,0,0.15)] flex flex-col animate-in zoom-in-95 duration-500 ease-out border border-white/50 ring-1 ring-black/5">
+        <button onClick={onClose} className="absolute top-8 right-8 p-3 rounded-full bg-white/80 hover:bg-black hover:text-white backdrop-blur-xl transition-all duration-300 z-50 shadow-sm border border-black/5 group">
+          <X size={20} className="group-hover:rotate-90 transition-transform duration-300" />
         </button>
 
-        <div className="max-h-[80vh] overflow-y-auto custom-scrollbar">
+        <div className="flex-1 overflow-y-auto custom-scrollbar flex flex-col">
           {/* Header */}
-          <div className="p-10 pb-6 bg-white">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-[10px] font-bold uppercase tracking-wider mb-4">
-              <Scale size={14} /> Market Comparison
+          <div className="p-12 lg:p-16 pb-8 bg-white/60 backdrop-blur-2xl border-b border-black/[0.03]">
+            <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-blue-50 text-blue-600 text-[11px] font-bold uppercase tracking-widest mb-6 shadow-sm border border-blue-100/50">
+              <Scale size={15} /> Intelligence Comparison
             </div>
-            <h3 className="text-3xl font-serif">Price & Quality Benchmark</h3>
-            <p className="text-black/40 text-sm mt-2">Real-time analysis comparing PlanPro's {product.name} with luxury alternatives.</p>
+            <h3 className="text-4xl lg:text-5xl font-serif text-black/90 leading-tight">Price & Quality Benchmark</h3>
+            <p className="text-black/40 text-lg mt-4 max-w-2xl font-light">
+              Sophisticated market analysis comparing your <span className="text-black font-medium">{product.name}</span> selection with premium global alternatives.
+            </p>
           </div>
 
-          <div className="p-10 space-y-8">
+          <div className="p-12 lg:p-16 pt-10">
             {loading ? (
-              <div className="py-20 flex flex-col items-center justify-center gap-4">
-                <Loader2 className="animate-spin text-black/20" size={40} />
-                <p className="text-sm font-medium text-black/40">Gathering market data...</p>
+              <div className="py-40 flex flex-col items-center justify-center gap-6">
+                <div className="flex items-center gap-2">
+                   <div className="w-2 h-2 rounded-full bg-blue-500 animate-bounce [animation-delay:-0.3s]"></div>
+                   <div className="w-2 h-2 rounded-full bg-blue-500 animate-bounce [animation-delay:-0.15s]"></div>
+                   <div className="w-2 h-2 rounded-full bg-blue-500 animate-bounce"></div>
+                </div>
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-black/30">Gathering Intelligence...</p>
               </div>
             ) : (
-              <>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="p-6 bg-green-50 border border-green-100 rounded-3xl space-y-2">
-                    <ShieldCheck className="text-green-600" size={24} />
-                    <h4 className="font-bold text-green-900">PlanPro Edge</h4>
-                    <p className="text-sm text-green-700/80">Premium materials (Grade A) and integrated AR tools included at no extra cost.</p>
-                  </div>
-                  <div className="p-6 bg-blue-50 border border-blue-100 rounded-3xl space-y-2">
-                    <TrendingDown className="text-blue-600" size={24} />
-                    <h4 className="font-bold text-blue-900">Value Efficiency</h4>
-                    <p className="text-sm text-blue-700/80">Our direct-to-consumer model saves you 20-30% compared to typical showroom retail.</p>
-                  </div>
-                </div>
-
-                <div className="prose prose-sm max-w-none text-black/70 leading-relaxed whitespace-pre-wrap mb-8">
-                  {data?.text}
-                </div>
-
+              <div className="space-y-16">
                 {localData && localData.results && (
-                  <div className="space-y-4">
-                    <h5 className="text-[10px] font-black uppercase tracking-widest text-black/40">Verified Market Price Points</h5>
-                    <div className="grid grid-cols-1 gap-3">
-                      {Object.entries(localData.results).map(([site, matches]: [string, any]) => (
-                        matches.length > 0 && (
-                          <div key={site} className="p-4 bg-white border border-black/5 rounded-2xl flex items-center justify-between">
-                            <div className="flex items-center gap-4">
-                              <div className="w-10 h-10 rounded-xl bg-slate-50 border border-black/5 flex items-center justify-center font-bold text-[10px] text-black/40">
-                                {site[0]}
-                              </div>
-                              <div>
-                                <h6 className="text-[11px] font-black uppercase text-black/80">{site} Alternative</h6>
-                                <p className="text-[10px] text-black/40">Similarity: {(matches[0].similarity * 100).toFixed(1)}%</p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pb-8">
+                    {Object.entries(localData.results)
+                      .flatMap(([site, matches]: [string, any]) => 
+                        (matches as any[]).slice(0, 1).map((m: any) => ({ ...m, site }))
+                      )
+                      .sort((a: any, b: any) => (b.similarity || 0) - (a.similarity || 0))
+                      .map((m: any, idx: number) => (
+                        <PricingCard.Card 
+                          key={`${m.site}-${idx}`} 
+                          className="flex flex-col animate-in fade-in-0 slide-in-from-bottom-4 duration-700 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-black/[0.03] bg-white rounded-[32px] overflow-hidden hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)] transition-all duration-500 group" 
+                          style={{ animationDelay: `${idx * 150}ms` }}
+                        >
+                          <PricingCard.Header className="p-0 border-0 bg-gray-50 h-[200px] relative overflow-hidden">
+                            <img 
+                              src={m.imageUrl || 'https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&q=80&w=600'} 
+                              alt={m.name} 
+                              className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                            />
+                            <div className="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-md rounded-full border border-black/5 flex items-center gap-1.5 shadow-sm">
+                              <div className={`w-1.5 h-1.5 rounded-full ${
+                                m.site === 'IKEA' ? 'bg-yellow-400' : 
+                                m.site === 'Amazon' ? 'bg-orange-400' : 
+                                m.site === 'Flipkart' ? 'bg-blue-400' : 'bg-blue-600'
+                              }`} />
+                              <span className="text-[10px] font-bold uppercase tracking-wider text-black/70">{m.site}</span>
+                            </div>
+                          </PricingCard.Header>
+
+                          <PricingCard.Body className="p-6 flex flex-col flex-1">
+                            <div className="mb-4">
+                              <h4 className="text-sm font-semibold text-black/90 line-clamp-2 min-h-[40px] leading-snug group-hover:text-blue-600 transition-colors">
+                                {m.name || `${m.site} Alternative`}
+                              </h4>
+                            </div>
+
+                            <div className="mb-6">
+                              <p className="text-[10px] uppercase font-bold tracking-[0.1em] text-black/20 mb-1">Market Price</p>
+                              <div className="flex items-baseline gap-1">
+                                <span className="text-lg font-light text-black/40 font-serif">₹</span>
+                                <span className="text-3xl font-serif text-black">{m.price?.toLocaleString() || 'Contact'}</span>
                               </div>
                             </div>
-                            <div className="text-right">
-                              <p className="text-sm font-bold">₹{matches[0].price}</p>
-                              <div className="text-[9px] font-bold text-green-600 uppercase">Save ₹{product.price - matches[0].price > 0 ? product.price - matches[0].price : 0}</div>
+
+                            <div className="space-y-3 mb-8 flex-1">
+                               <div className="flex justify-between items-center py-2 border-b border-black/[0.03]">
+                                  <span className="text-[11px] text-black/30 font-medium font-serif">Dimensions</span>
+                                  <span className="text-[11px] text-black/70 font-semibold">{m.dimension || 'Standard'}</span>
+                               </div>
+                               <div className="flex justify-between items-center py-2 border-b border-black/[0.03]">
+                                  <span className="text-[11px] text-black/30 font-medium font-serif">Brand Match</span>
+                                  <span className="text-[11px] text-black/70 font-semibold">{m.brand || 'Premium'}</span>
+                               </div>
+                               <div className="flex justify-between items-center py-2 border-b border-black/[0.03]">
+                                  <span className="text-[11px] text-black/30 font-medium font-serif">Confidence</span>
+                                  <div className="flex items-center gap-2">
+                                    <div className="w-16 h-1 bg-black/5 rounded-full overflow-hidden">
+                                      <div 
+                                        className="h-full bg-blue-500 rounded-full transition-all duration-1000" 
+                                        style={{ width: `${(m.similarity * 100).toFixed(0)}%` }}
+                                      />
+                                    </div>
+                                    <span className="text-[11px] text-blue-600 font-bold">{(m.similarity * 100).toFixed(0)}%</span>
+                                  </div>
+                               </div>
                             </div>
-                          </div>
-                        )
+
+                            <Button 
+                              onClick={() => window.open(m.productUrl, '_blank')}
+                              className="w-full h-12 rounded-xl bg-black hover:bg-blue-600 text-white font-bold transition-all duration-300 gap-2 text-xs shadow-lg shadow-black/5"
+                            >
+                              View Deal <ExternalLink size={14} />
+                            </Button>
+                          </PricingCard.Body>
+                        </PricingCard.Card>
                       ))}
-                    </div>
                   </div>
                 )}
-
-                <div className="space-y-4 pt-6 border-t border-black/5">
-                  <h5 className="text-[10px] font-bold uppercase tracking-widest text-black/40">Data Sources & Citations</h5>
-                  <div className="flex flex-wrap gap-2">
-                    {data?.links.map((chunk: any, i: number) => (
-                      chunk.web && (
+                
+                <div className="space-y-6 pt-10 border-t border-black/[0.05]">
+                  <h5 className="text-[11px] font-bold uppercase tracking-[0.2em] text-black/30">Intelligence Data Sources</h5>
+                  <div className="flex flex-wrap gap-3">
+                    {data?.links?.map((chunk: any, i: number) => {
+                      if (!chunk?.web) return null;
+                      return (
                         <a 
-                          key={i} 
+                          key={`link-${i}`} 
                           href={chunk.web.uri} 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white border border-black/5 rounded-full text-xs font-medium hover:bg-black hover:text-white transition-all shadow-sm"
+                          className="group inline-flex items-center gap-2 px-4 py-2 bg-white border border-black/5 rounded-full text-xs font-semibold hover:bg-black hover:text-white transition-all duration-300 shadow-sm"
                         >
-                          {chunk.web.title} <ExternalLink size={12} />
+                          <span className="opacity-70 group-hover:opacity-100 transition-opacity">{chunk.web.title}</span>
+                          <ExternalLink size={12} className="opacity-40 group-hover:opacity-100" />
                         </a>
-                      )
-                    ))}
+                      );
+                    })}
                   </div>
                 </div>
-              </>
+              </div>
             )}
           </div>
         </div>

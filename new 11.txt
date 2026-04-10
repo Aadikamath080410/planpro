@@ -1,0 +1,37 @@
+1. Main Application Logic
+App.tsx: This is the central hub of the application. It manages the global state, including the current view (Home, Products, AR, etc.), the user's shopping cart, and their wishlist. It integrates with Supabase for user authentication and database synchronization. Crucially, it handles Deep Linking; if a user scans a QR code with their phone, this component detects the product ID from the URL and automatically switches the view to the AR mode for that specific item.
+
+QRGenerator.tsx: This component generates the QR codes used for deep linking. It creates a URL containing the product's ID (or a list of IDs from a wishlist) that, when scanned, opens the mobile app directly into the AR preview for those items.
+
+2. Augmented Reality (AR) System
+The AR system is split into several layers to handle different visualization needs:
+
+ARPage.tsx: Acts as a controller for the AR experience. It reads product data and determines whether to show a single product using ARScene or multiple products using MultiARScene.
+
+ARScene.tsx: A lightweight component that uses Google's <model-viewer> to display a single 3D model. It is optimized for quick "view in your room" previews on mobile devices.
+
+MultiARScene.tsx: A more advanced 3D environment built with @react-three/fiber (Three.js). It allows users to place, move, and arrange multiple pieces of furniture simultaneously in an AR session. It includes complex logic for "hit-testing" to detect floors and surfaces so objects stay grounded.
+
+ar.css: Provides the layout and styling for the AR interface, ensuring the 3D viewers occupy the full screen and UI elements are correctly positioned.
+
+ErrorBoundary.tsx: A safety wrapper used specifically for the AR components. If a 3D model fails to load or a browser doesn't support AR features, this component catches the error and displays a user-friendly message instead of crashing the app.
+
+3. Standalone Staging Tool
+index.html: As you noted, this file is independent of the React application. It is a Standalone AR Floor-Locked Stager.
+
+Purpose: It serves as a dedicated, single-page web utility for placing 3D models on a floor.
+
+How it works: It uses a direct implementation of <model-viewer> with a custom JavaScript "Rescan" function. This allows a user to reset the AR tracking if the floor detection becomes inaccurate without reloading the entire page. It includes a simple "Slider UI" at the bottom to switch between different 3D models manually.
+
+
+Summary of Workflow
+Selection: A user finds furniture in the App.tsx collection.
+
+Bridging: They generate a QR code via QRGenerator.tsx to move the experience to a mobile device.
+
+Visualization: The mobile device opens ARPage.tsx, which triggers either a simple preview (ARScene.tsx) or a multi-object design session (MultiARScene.tsx).
+
+Placement: The user uses their camera to lock the furniture to the floor and arrange their room.
+
+
+

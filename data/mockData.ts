@@ -142,11 +142,11 @@ import ss3_model from '../models/sofaset models/ss3.glb';
 import ss4_model from '../models/sofaset models/ss4.glb';
 import ss5_model from '../models/sofaset models/ss5.glb';
 
-import sc1_model from '../models/sofacumbed models/sofacumbed models/sc1.glb';
-import sc2_model from '../models/sofacumbed models/sofacumbed models/sc2.obj';
-import sc3_model from '../models/sofacumbed models/sofacumbed models/sc3.glb';
-import sc4_model from '../models/sofacumbed models/sofacumbed models/sc4.glb';
-import sc5_model from '../models/sofacumbed models/sofacumbed models/sc5.glb';
+import sc1_model from '../models/sofacumbed models/sc1.glb';
+import sc2_model from '../models/sofacumbed models/sc2.glb';
+import sc3_model from '../models/sofacumbed models/sc3.glb';
+import sc4_model from '../models/sofacumbed models/sc4.glb';
+import sc5_model from '../models/sofacumbed models/sc5.glb';
 
 // Storage
 import cp1_model from '../models/cupboard models/cp1.glb';
@@ -217,6 +217,13 @@ import k3_model from '../models/king bed models/k3.glb';
 import k4_model from '../models/king bed models/k4.glb';
 import k5_model from '../models/king bed models/k5.glb';
 
+// textures
+import darkwood from './../models/textures/darkwood.jpg';
+import lightwood from './../models/textures/lightwood.jpg';
+import cp3tex from './../models/textures/cp3tex.png';
+import mahogany from './../models/textures/mahogany.jpg';
+import cp5tex from './../models/textures/cp5tex.png';
+
 
 export const PRODUCTS: Product[] = [
   // TABLES
@@ -248,7 +255,8 @@ export const PRODUCTS: Product[] = [
     material: 'Tempered Glass, Ash Wood',
     rating: 4.7,
     reviews: [{ user: 'Aarav', rating: 4.9, comment: 'Great quality and very comfortable.' }, { user: 'Vivaan', rating: 4.9, comment: 'Exactly what I was looking for.' }, { user: 'Kabir', rating: 4.6, comment: 'Good value for money and sturdy build.' }],
-    model: c2_model
+    model: c2_model,
+    texture: lightwood
   },
   {
     id: 't-coffee-3',
@@ -263,7 +271,8 @@ export const PRODUCTS: Product[] = [
     material: 'Solid Oak',
     rating: 4.8,
     reviews: [{ user: 'Riya', rating: 4.9, comment: 'Looks amazing in my living room.' }, { user: 'Vivaan', rating: 4.2, comment: 'Exactly what I was looking for.' }, { user: 'Kabir', rating: 4.5, comment: 'Good value for money and sturdy build.' }],
-    model: c3_model
+    model: c3_model,
+    texture: lightwood
   },
   {
     id: 't-coffee-4',
@@ -308,7 +317,8 @@ export const PRODUCTS: Product[] = [
     material: 'Solid Walnut',
     rating: 5.0,
     reviews: [{ user: 'Riya', rating: 4.7, comment: 'Looks amazing in my living room.' }, { user: 'Vivaan', rating: 4.1, comment: 'Exactly what I was looking for.' }, { user: 'Aarav', rating: 4.1, comment: 'Great quality and very comfortable.' }],
-    model: d1_model
+    model: d1_model,
+    texture: darkwood
   },
   {
     id: 't-dining-2',
@@ -338,7 +348,8 @@ export const PRODUCTS: Product[] = [
     material: 'Reclaimed Oak',
     rating: 4.7,
     reviews: [{ user: 'Vivaan', rating: 4.8, comment: 'Exactly what I was looking for.' }, { user: 'Riya', rating: 4.6, comment: 'Looks amazing in my living room.' }, { user: 'Ananya', rating: 4.6, comment: 'Modern design and easy to assemble.' }],
-    model: d3_model
+    model: d3_model,
+    texture: lightwood
   },
   {
     id: 't-dining-4',
@@ -383,7 +394,8 @@ export const PRODUCTS: Product[] = [
     material: 'Oak, Steel',
     rating: 4.7,
     reviews: [{ user: 'Aarav', rating: 4.4, comment: 'Great quality and very comfortable.' }, { user: 'Kabir', rating: 4.9, comment: 'Good value for money and sturdy build.' }, { user: 'Riya', rating: 4.3, comment: 'Looks amazing in my living room.' }],
-    model: st1_model
+    model: st1_model,
+    texture: lightwood
   },
   {
     id: 't-study-2',
@@ -398,7 +410,8 @@ export const PRODUCTS: Product[] = [
     material: 'Mahogany Veneer',
     rating: 4.9,
     reviews: [{ user: 'Riya', rating: 4.6, comment: 'Looks amazing in my living room.' }, { user: 'Ananya', rating: 4.1, comment: 'Modern design and easy to assemble.' }, { user: 'Kabir', rating: 4.2, comment: 'Good value for money and sturdy build.' }],
-    model: st2_model
+    model: st2_model,
+    texture: mahogany
   },
   {
     id: 't-study-3',
@@ -687,7 +700,8 @@ export const PRODUCTS: Product[] = [
     material: 'Oak, Cane',
     rating: 4.9,
     reviews: [{ user: 'Vivaan', rating: 4.3, comment: 'Exactly what I was looking for.' }, { user: 'Ananya', rating: 4.8, comment: 'Modern design and easy to assemble.' }, { user: 'Kabir', rating: 4.3, comment: 'Good value for money and sturdy build.' }],
-    model: cp1_model
+    model: cp1_model,
+    texture: lightwood
   },
   {
     id: 'st-cupboard-2',
@@ -702,7 +716,8 @@ export const PRODUCTS: Product[] = [
     material: 'Solid Walnut',
     rating: 4.8,
     reviews: [{ user: 'Ananya', rating: 4.9, comment: 'Modern design and easy to assemble.' }, { user: 'Riya', rating: 4.3, comment: 'Looks amazing in my living room.' }, { user: 'Aarav', rating: 4.8, comment: 'Great quality and very comfortable.' }],
-    model: cp2_model
+    model: cp2_model,
+    texture: darkwood
   },
   {
     id: 'st-cupboard-3',
@@ -717,7 +732,8 @@ export const PRODUCTS: Product[] = [
     material: 'MDF, Melamine',
     rating: 4.6,
     reviews: [{ user: 'Kabir', rating: 5.0, comment: 'Good value for money and sturdy build.' }, { user: 'Aarav', rating: 4.7, comment: 'Great quality and very comfortable.' }, { user: 'Vivaan', rating: 4.9, comment: 'Exactly what I was looking for.' }],
-    model: cp3_model
+    model: cp3_model,
+    texture: cp3tex
   },
   {
     id: 'st-cupboard-4',
@@ -732,7 +748,8 @@ export const PRODUCTS: Product[] = [
     material: 'Mahogany',
     rating: 4.9,
     reviews: [{ user: 'Ananya', rating: 4.3, comment: 'Modern design and easy to assemble.' }, { user: 'Riya', rating: 4.8, comment: 'Looks amazing in my living room.' }, { user: 'Aarav', rating: 4.3, comment: 'Great quality and very comfortable.' }],
-    model: cp4_model
+    model: cp4_model,
+    texture: mahogany
   },
   {
     id: 'st-cupboard-5',
@@ -747,7 +764,8 @@ export const PRODUCTS: Product[] = [
     material: 'Pine, Laminate',
     rating: 4.5,
     reviews: [{ user: 'Aarav', rating: 4.6, comment: 'Great quality and very comfortable.' }, { user: 'Vivaan', rating: 4.7, comment: 'Exactly what I was looking for.' }, { user: 'Kabir', rating: 4.5, comment: 'Good value for money and sturdy build.' }],
-    model: cp5_model
+    model: cp5_model,
+    texture: cp5tex
   },
   {
     id: 'st-shoerack-1',
