@@ -55,3 +55,7 @@ ARModule/*.pem
 # Upload/output artifacts from Python AI server
 RoomGenerator/RoomGenerator/backend/uploads/
 RoomGenerator/RoomGenerator/backend/output/
+
+# Sensitive credentials — never commit
+secrets.txt
+client_secret*.json
