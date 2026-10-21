@@ -1,0 +1,365 @@
+{
+  "price_config": {
+    "mode": "dynamic_percentile",
+    "percentiles": {
+      "very_low_max": 0.33,
+      "mid_max": 0.66
+    },
+
+    "fallback_ranges": {
+      "very_low": [0, 15000],
+      "mid": [15000, 30000],
+      "premium": [30000, 9999999]
+    }
+  },
+  
+  "action": {
+    "recommend": [
+      "recommend","suggest","show","options","choices","idea","ideas",
+      "find","looking","search","need","want","buy","purchase",
+      "get","choose","select","pick","guide","advise",
+      "help","assist","planning","thinking","considering",
+      "explore","browse","view","display","list"
+    ],
+
+    "compare": [
+      "compare","difference","diff","vs","versus",
+      "better","best","superior","inferior",
+      "contrast","comparison","between",
+      "pros","cons","advantages","disadvantages",
+      "which","outperform","rank","ranking",
+      "evaluate","analysis","analyze","review",
+      "score","scoring","performance","quality"
+    ],
+
+    "decide": [
+      "decide","decision","confused","unsure",
+      "final","finalize","choose","pick",
+      "select","settle","determine","clarify",
+      "help","stuck","dilemma","torn",
+      "opinion","suggestion","advice",
+      "guidance","recommendation","verdict",
+      "what should","which one","not sure"
+    ]
+  },
+
+  "product_hierarchy": {
+  "table": {
+    "keywords": [
+      "table","tables","desk table","home table","wooden table",
+      "furniture table","dining surface","flat surface table","room table","modern table",
+      "classic table","house table","interior table","decor table","compact table",
+      "large table","small table","premium table","budget table","utility table"
+    ],
+    "subtypes": {
+      "study": [
+        "study table","study desk","reading table","writing table","homework desk",
+        "student table","study workstation","exam table","office study table","compact study desk",
+        "study furniture","learning desk","personal study table","computer study desk","study corner table",
+        "education table","library desk","minimal study desk","home study table","workspace desk"
+      ],
+      "coffee": [
+        "coffee table","center table","living room table","tea table","front table",
+        "sofa table","decor coffee table","small coffee table","modern coffee table","wood coffee table",
+        "glass coffee table","coffee center piece","lounge table","hall coffee table","compact coffee table",
+        "low height table","coffee stand","central table","drawing room table","decorative table"
+      ],
+      "dining": [
+        "dining table","dinner table","meal table","family dining table","kitchen dining table",
+        "wooden dining table","large dining table","small dining table","modern dining table","glass dining table",
+        "restaurant style table","home dining set","dining surface","luxury dining table","budget dining table",
+        "6 seater table","4 seater table","eating table","formal dining table","compact dining table"
+      ]
+    }
+  },
+
+  "chair": {
+    "keywords": [
+      "chair","chairs","seating chair","home chair","wooden chair",
+      "comfort chair","modern chair","classic chair","indoor chair","room chair",
+      "living chair","decor chair","simple chair","compact chair","large chair",
+      "small chair","premium chair","budget chair","rest chair","utility chair"
+    ],
+    "subtypes": {
+      "casual": [
+        "casual chair","relax chair","home casual chair","daily use chair","simple sitting chair",
+        "comfort sitting chair","basic chair","regular chair","indoor casual chair","lightweight chair",
+        "modern casual chair","fabric casual chair","plastic casual chair","wood casual chair","home seating chair",
+        "general purpose chair","living room chair","utility chair","family chair","simple comfort chair","general chair"
+      ],
+      "gaming": [
+        "gaming chair","gamer chair","pc gaming chair","esports chair","rgb gaming chair",
+        "high back gaming chair","ergonomic gaming chair","gaming seat","pro gaming chair","computer gaming chair",
+        "racing style chair","adjustable gaming chair","gaming throne","premium gaming chair","gaming comfort chair",
+        "reclining gaming chair","gaming chairs","heavy duty gaming chair","mesh gaming chair","chairs for gaming"
+      ],
+      "dining": [
+        "dining chair","dinner chair","meal chair","kitchen chair","family dining chair",
+        "wood dining chair","modern dining chair","restaurant chair","home dining chair","formal dining chair",
+        "compact dining chair","cushioned dining chair","classic dining chair","dining seating","luxury dining chair",
+        "4 seater chair","6 seater chair","table chair","eating chair","dining set chair"
+      ],
+      "rocking": [
+        "rocking chair","swing chair","rocker chair","wood rocking chair","classic rocking chair",
+        "balcony rocking chair","garden rocking chair","indoor rocking chair","outdoor rocking chair","relax rocking chair",
+        "comfort rocker","nursery rocking chair","traditional rocking chair","leisure rocking chair","modern rocking chair",
+        "premium rocking chair","budget rocking chair","heavy rocking chair","light rocking chair","family rocking chair"
+      ],
+      "office": [
+        "office chair","work chair","desk chair","executive chair","manager chair",
+        "conference chair","office seating","corporate chair","task chair","ergonomic office chair",
+        "mesh office chair","adjustable office chair","rolling office chair","swivel chair","home office chair",
+        "workstation chair","professional chair","high back office chair","low back office chair","budget office chair"
+      ]
+    }
+  },
+
+  "storage": {
+    "keywords": [
+      "storage","storage unit","organizer","organiser","home storage",
+      "room storage","wood storage","modern storage","compact storage","large storage",
+      "small storage","utility storage","house storage","decor storage","indoor storage",
+      "furniture storage","premium storage","budget storage","storage furniture","cabinet storage"
+    ],
+    "subtypes": {
+      "shelf": [
+        "shelf","shelves","wall shelf","wood shelf","metal shelf",
+        "book shelf","display shelf","storage shelf","decor shelf","floating shelf",
+        "corner shelf","open shelf","home shelf","room shelf","compact shelf",
+        "large shelf","modern shelf","classic shelf","utility shelf","organizing shelf"
+      ],
+      "cupboard": [
+        "cupboard","wardrobe cupboard","storage cupboard","wood cupboard","metal cupboard",
+        "kitchen cupboard","bedroom cupboard","clothes cupboard","home cupboard","modern cupboard",
+        "classic cupboard","large cupboard","small cupboard","double door cupboard","single door cupboard",
+        "cabinet cupboard","indoor cupboard","utility cupboard","premium cupboard","budget cupboard"
+      ],
+      "shoe rack": [
+        "shoe rack","shoe stand","footwear rack","shoe organizer","shoe organiser",
+        "home shoe rack","wood shoe rack","metal shoe rack","compact shoe rack","large shoe rack",
+        "entryway shoe rack","hall shoe rack","modern shoe rack","classic shoe rack","indoor shoe rack",
+        "open shoe rack","closed shoe rack","multi tier shoe rack","family shoe rack","budget shoe rack"
+      ]
+    }
+  },
+
+  "sofa": {
+    "keywords": [
+      "sofa","couch","living sofa","home sofa","modern sofa",
+      "classic sofa","luxury sofa","fabric sofa","leather sofa","indoor sofa",
+      "room sofa","hall sofa","comfort sofa","premium sofa","budget sofa",
+      "decor sofa","large sofa","small sofa","family sofa","seating sofa"
+    ],
+    "subtypes": {
+      "sofaset": [
+        "sofa set","living room set","3 piece sofa set","5 seater sofa set","modern sofa set",
+        "classic sofa set","fabric sofa set","leather sofa set","luxury sofa set","family sofa set",
+        "l shape sofa set","corner sofa set","hall sofa set","home sofa set","premium sofa set",
+        "budget sofa set","compact sofa set","large sofa set","sectional sofa set","decor sofa set"
+      ],
+      "sofacumbed": [
+        "sofa cum bed","sofa bed","convertible sofa","foldable sofa bed","pull out sofa",
+        "modern sofa bed","fabric sofa bed","wood sofa bed","compact sofa bed","large sofa bed",
+        "guest sofa bed","multi purpose sofa","living sofa bed","home sofa bed","premium sofa bed",
+        "budget sofa bed","space saving sofa","dual use sofa","convert sofa","sleep sofa"
+      ],
+      "recliners": [
+        "recliner","recliner sofa","reclining chair","single recliner","double recliner",
+        "manual recliner","electric recliner","luxury recliner","comfort recliner","living recliner",
+        "home recliner","modern recliner","classic recliner","leather recliner","fabric recliner",
+        "premium recliner","budget recliner","adjustable recliner","family recliner","hall recliner"
+      ]
+    }
+  },
+
+  "bed": {
+    "keywords": [
+      "bed","sleep bed","home bed","modern bed","classic bed",
+      "wood bed","metal bed","indoor bed","room bed","family bed",
+      "large bed","small bed","luxury bed","premium bed","budget bed",
+      "bed frame","sleeping furniture","comfort bed","decor bed","house bed"
+    ],
+    "subtypes": {
+      "single": [
+        "single bed","1 person bed","compact single bed","modern single bed","classic single bed",
+        "wood single bed","metal single bed","home single bed","kids single bed","guest single bed",
+        "budget single bed","premium single bed","simple single bed","room single bed","sleep single bed",
+        "minimal single bed","light single bed","small single bed","study room bed","youth bed"
+      ],
+      "double": [
+        "double bed","2 person bed","couple bed","modern double bed","classic double bed",
+        "wood double bed","metal double bed","home double bed","family double bed","budget double bed",
+        "premium double bed","large double bed","comfort double bed","room double bed","sleep double bed",
+        "minimal double bed","simple double bed","guest double bed","standard double bed","indoor double bed"
+      ],
+      "king": [
+        "king bed","king size bed","large king bed","modern king bed","classic king bed",
+        "wood king bed","metal king bed","luxury king bed","premium king bed","budget king bed",
+        "family king bed","comfort king bed","room king bed","sleep king bed","big king bed",
+        "extra large bed","royal bed","master bedroom bed","king frame","home king bed"
+      ],
+      "queen": [
+        "queen bed","queen size bed","modern queen bed","classic queen bed","wood queen bed",
+        "metal queen bed","luxury queen bed","premium queen bed","budget queen bed","family queen bed",
+        "comfort queen bed","room queen bed","sleep queen bed","medium size bed","queen frame",
+        "home queen bed","stylish queen bed","indoor queen bed","standard queen bed","decor queen bed"
+      ]
+    }
+  }
+ },
+
+  "constraints": {
+
+    "price": {
+      "very_low": [
+        "cheapest","lowest","lowcost","minimal price","low cost",
+        "economy","economical","save money",
+        "tight budget","low budget","under","below",
+        "less than","affordable","budget friendly"
+      ],
+
+      "mid": [
+        "midrange","moderate","reasonable",
+        "average price","fair price",
+        "balanced price","not too expensive",
+        "value","worth","cost effective"
+      ],
+
+      "premium": [
+        "premium","luxury","highend",
+        "expensive","costly","elite",
+        "top quality","best quality",
+        "high quality","exclusive",
+        "deluxe","superior"
+      ]
+    },
+
+    "space": {
+      "tiny": [
+        "tiny","very small","compact",
+        "cramped","limited space",
+        "tight space","small room",
+        "studio","apartment","pg"
+      ],
+
+      "medium": [
+        "medium","normal","standard size",
+        "regular room","average room","average sized room"
+      ],
+
+      "large": [
+        "large","big","spacious",
+        "hall","villa","wide room",
+        "open space","big house"
+      ]
+    },
+
+    "dimensions": {
+      "compact": [
+        "compact","short","small size",
+        "low height","space saving",
+        "foldable","slim","narrow"
+      ],
+
+      "tall": [
+        "tall","high back","highback",
+        "long back","extended back",
+        "extra height"
+      ],
+
+      "wide": [
+        "wide","broad","large width",
+        "extra wide","big seat"
+      ]
+    }
+  },
+
+  "material": {
+    "wood": [
+      "wood","wooden","teak","oak",
+      "sheesham","engineered wood",
+      "solid wood"
+    ],
+
+    "metal": [
+      "metal","steel","iron","alloy",
+      "powder coated","metallic"
+    ],
+
+    "fabric": [
+      "fabric","cloth","mesh",
+      "cotton","polyester"
+    ],
+
+    "leather": [
+      "leather","rexine","faux",
+      "synthetic leather"
+    ]
+  },
+
+  "style": {
+    "modern": [
+      "modern","minimal","sleek",
+      "contemporary","clean",
+      "simple","sharp"
+    ],
+
+    "classic": [
+      "classic","traditional",
+      "vintage","heritage"
+    ],
+
+    "industrial": [
+      "industrial","raw","rustic",
+      "metal frame","urban"
+    ],
+
+    "scandinavian": [
+      "scandinavian","nordic",
+      "light wood","neutral tone"
+    ]
+  },
+
+  "usage": {
+    "daily": [
+      "daily","everyday","regular use",
+      "routine","frequent use"
+    ],
+
+    "office": [
+      "office","work","professional",
+      "corporate","business"
+    ],
+
+    "guest": [
+      "guest","visitors","occasional",
+      "rare use"
+    ]
+  },
+
+  "decision_signals": {
+    "comfort": [
+      "comfortable","comfort","soft",
+      "cushion","padding","ergonomic",
+      "back support","lumbar support"
+    ],
+
+    "durability": [
+      "durable","strong","sturdy",
+      "long lasting","solid",
+      "reliable","heavy duty"
+    ],
+
+    "aesthetics": [
+      "aesthetic","design","look",
+      "appearance","stylish",
+      "attractive","beautiful"
+    ],
+
+    "space_fit": [
+      "fits","fit","space saving",
+      "adjustable","flexible",
+      "easy placement"
+    ]
+  }
+}

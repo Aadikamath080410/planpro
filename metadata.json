@@ -1,0 +1,7 @@
+{
+  "name": "PlanPro AR Furniture",
+  "description": "A high-end AR-powered furniture boutique featuring AI room building, blueprint designing, and real-time market comparisons.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

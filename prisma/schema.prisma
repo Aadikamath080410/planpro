@@ -1,0 +1,103 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model User {
+  id          String       @id @default(uuid())
+  email       String       @unique
+  name        String?
+  avatarUrl   String?
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  cart        Cart?
+  roomDesigns RoomDesign[]
+  wishlist    Wishlist[]
+}
+
+model Product {
+  id            String         @id @default(uuid())
+  name          String
+  description   String?
+  price         Decimal        @db.Decimal(10, 2)
+  originalPrice Decimal?       @db.Decimal(10, 2)
+  category      String
+  imageUrl      String
+  modelUrl      String?
+  gDriveFileId  String?
+  rating        Float          @default(0)
+  dimensions    Json?
+  colors        String[]
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+  cartItems     CartItem[]
+  wishlistItems WishlistItem[]
+}
+
+model Wishlist {
+  id        String         @id @default(uuid())
+  userId    String
+  createdAt DateTime       @default(now())
+  updatedAt DateTime       @updatedAt
+  user      User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  items     WishlistItem[]
+}
+
+model WishlistItem {
+  id         String   @id @default(uuid())
+  wishlistId String
+  productId  String
+  addedAt    DateTime @default(now())
+  product    Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  wishlist   Wishlist @relation(fields: [wishlistId], references: [id], onDelete: Cascade)
+
+  @@unique([wishlistId, productId])
+}
+
+model Cart {
+  id        String     @id @default(uuid())
+  userId    String     @unique
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  user      User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  items     CartItem[]
+}
+
+model CartItem {
+  id        String   @id @default(uuid())
+  cartId    String
+  productId String
+  quantity  Int      @default(1)
+  addedAt   DateTime @default(now())
+  cart      Cart     @relation(fields: [cartId], references: [id], onDelete: Cascade)
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@unique([cartId, productId])
+}
+
+model RoomDesign {
+  id           String   @id @default(uuid())
+  userId       String
+  name         String
+  layoutData   Json
+  thumbnailUrl String?
+  isPublic     Boolean  @default(false)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model ArSession {
+  id                String    @id @default(uuid())
+  startTime         DateTime  @default(now())
+  endTime           DateTime?
+  duration          Int?
+  modelsPlacedCount Int       @default(0)
+  deviceType        String?
+  createdAt         DateTime  @default(now())
+}

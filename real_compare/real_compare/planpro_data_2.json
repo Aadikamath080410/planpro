@@ -1,0 +1,5010 @@
+[
+  {
+    "ID": "c-casual-1",
+    "Name": "PLANPRO casual chair cs1",
+    "Dimension": "159.5 cm | 195.6 cm | 176.2 cm",
+    "Price": 16700,
+    "Rating": 4.2,
+    "ImageURL": "products/casual chair/cs1.png",
+    "ModelURL": "products/casual chair models/cs1.glb",
+    "Type": "chair",
+    "SubType": "casual_chair",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Aaron Almeida",
+        "Rated": 4.3,
+        "Comment": "Armrest height feels ergonomically correct.",
+        "Date": "2024-05-30"
+      },
+      {
+        "User": "Jason Lydia",
+        "Rated": 4.3,
+        "Comment": "Cushion firmness distribution feels balanced. Works as expected.",
+        "Date": "2024-02-20"
+      },
+      {
+        "User": "Dylan Gomes",
+        "Rated": 4.2,
+        "Comment": "Comfort level remains consistent over time. Suitable for long term use.",
+        "Date": "2024-08-05"
+      },
+      {
+        "User": "Jason Grace",
+        "Rated": 4.3,
+        "Comment": "Overall seating geometry feels well designed. Stability feels acceptable. After extended use, overall stability remains consistent.",
+        "Date": "2024-09-21"
+      },
+      {
+        "User": "Dylan D'Souza",
+        "Rated": 4,
+        "Comment": "Design proportions feel practical. Serves its purpose effectively.",
+        "Date": "2024-01-06"
+      }
+    ],
+    "Description": "A well-designed piece that balances comfort and practicality for everyday use. The structure is built to provide reliable support while keeping a modern appearance. Its clean design helps it blend easily with different room styles. Suitable for both compact and spacious interiors."
+  },
+  {
+    "ID": "c-casual-2",
+    "Name": "PLANPRO casual chair cs2",
+    "Dimension": "195.9 cm | 152.1 cm | 163.0 cm",
+    "Price": 16300,
+    "Rating": 4.2,
+    "ImageURL": "products/casual chair/cs2.png",
+    "ModelURL": "products/casual chair models/cs2.glb",
+    "Type": "chair",
+    "SubType": "casual_chair",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Ibrahim Shaikh",
+        "Rated": 4.1,
+        "Comment": "Armrest height feels ergonomically correct.",
+        "Date": "2024-02-27"
+      },
+      {
+        "User": "Ishaan Bansal",
+        "Rated": 4.4,
+        "Comment": "Recline positioning feels smooth. Craftsmanship feels satisfactory.",
+        "Date": "2024-10-03"
+      },
+      {
+        "User": "Meera Kumar",
+        "Rated": 4.2,
+        "Comment": "Build quality feels sturdy. Stable under regular conditions. After extended use, overall stability remains consistent.",
+        "Date": "2024-05-27"
+      },
+      {
+        "User": "Joseph Johancy",
+        "Rated": 4.5,
+        "Comment": "Overall weight distribution feels stable.",
+        "Date": "2024-03-10"
+      },
+      {
+        "User": "Joseph Mathew",
+        "Rated": 3.9,
+        "Comment": "Padding density feels optimal. Design feels straightforward. After extended use, overall stability remains consistent.",
+        "Date": "2024-08-30"
+      },
+      {
+        "User": "Sneha Nair",
+        "Rated": 4.5,
+        "Comment": "Finish texture feels refined. Material consistency feels strong.",
+        "Date": "2024-07-10"
+      },
+      {
+        "User": "Riya Agarwal",
+        "Rated": 4.3,
+        "Comment": "Frame stability remains steady. Build feels acceptable.",
+        "Date": "2024-09-15"
+      },
+      {
+        "User": "Tanvi Agarwal",
+        "Rated": 4,
+        "Comment": "Backrest support positioning is well engineered. Works well for daily usage.",
+        "Date": "2024-06-16"
+      }
+    ],
+    "Description": "Designed with attention to detail, this item brings both function and style into your home. The materials are selected to improve durability and longterm use. Its balanced proportions make it comfortable while maintaining a neat visual presence. Works well in modern living spaces."
+  },
+  {
+    "ID": "c-casual-3",
+    "Name": "PLANPRO casual chair cs3",
+    "Dimension": "177.5 cm | 134.2 cm | 117.8 cm",
+    "Price": 16000,
+    "Rating": 4.3,
+    "ImageURL": "products/casual chair/cs3.png",
+    "ModelURL": "products/casual chair models/cs3.glb",
+    "Type": "chair",
+    "SubType": "casual_chair",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Shravan Krishnan",
+        "Rated": 4.5,
+        "Comment": "Seat depth feels appropriate.",
+        "Date": "2024-10-26"
+      },
+      {
+        "User": "Ryan Gomes",
+        "Rated": 4.6,
+        "Comment": "Build quality feels sturdy.",
+        "Date": "2024-07-15"
+      },
+      {
+        "User": "Hiba Ansari",
+        "Rated": 4,
+        "Comment": "Lower back support feels consistent.",
+        "Date": "2024-04-28"
+      },
+      {
+        "User": "Tanvi Gupta",
+        "Rated": 4.3,
+        "Comment": "Structural alignment appears accurate. Performance remains adequate. After extended use, overall stability remains consistent.",
+        "Date": "2025-01-29"
+      },
+      {
+        "User": "Ishaan Kapoor",
+        "Rated": 4.4,
+        "Comment": "Armrest height feels ergonomically correct. Overall experience feels positive.",
+        "Date": "2024-02-12"
+      }
+    ],
+    "Description": "This product combines durability with a simple modern design. It is built to handle daily use while keeping a comfortable experience. The structure supports proper posture and relaxation. Its versatile look allows it to match many interior layouts."
+  },
+  {
+    "ID": "c-casual-4",
+    "Name": "PLANPRO casual chair cs4",
+    "Dimension": "130.8 cm | 195.7 cm | 149.4 cm",
+    "Price": 14400,
+    "Rating": 4,
+    "ImageURL": "products/casual chair/cs4.png",
+    "ModelURL": "products/casual chair models/cs4.glb",
+    "Type": "chair",
+    "SubType": "casual_chair",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Gavin Mathew",
+        "Rated": 4.1,
+        "Comment": "Armrest height feels ergonomically correct. Finish appears decent.",
+        "Date": "2024-09-23"
+      },
+      {
+        "User": "Arjun Verma",
+        "Rated": 3.7,
+        "Comment": "Padding density feels optimal. Structure remains steady.",
+        "Date": "2024-02-21"
+      },
+      {
+        "User": "Priya Mehta",
+        "Rated": 4.2,
+        "Comment": "Overall seating geometry feels well designed. Works as expected.",
+        "Date": "2024-01-11"
+      },
+      {
+        "User": "Alina Sheikh",
+        "Rated": 4,
+        "Comment": "Seat elevation feels comfortable. Works as expected. After extended use, overall stability remains consistent.",
+        "Date": "2024-07-03"
+      },
+      {
+        "User": "Imran Siddiqui",
+        "Rated": 4.2,
+        "Comment": "Cushion firmness distribution feels balanced. Works as expected. After extended use, overall stability remains consistent.",
+        "Date": "2025-01-09"
+      },
+      {
+        "User": "Ethan D'Souza",
+        "Rated": 3.8,
+        "Comment": "Leg support structure feels balanced. Suitable for long term use.",
+        "Date": "2024-01-18"
+      },
+      {
+        "User": "Nikhil Karuppasamy",
+        "Rated": 4.1,
+        "Comment": "Build quality feels sturdy.",
+        "Date": "2024-01-31"
+      },
+      {
+        "User": "Riya Singh",
+        "Rated": 3.9,
+        "Comment": "Seat depth feels appropriate. Suitable for long term use. After extended use, overall stability remains consistent.",
+        "Date": "2024-03-17"
+      }
+    ],
+    "Description": "A practical furniture choice that focuses on comfort and stability. The frame is structured for longlasting use while maintaining a clean aesthetic. Its design helps improve usability in everyday situations. A dependable addition to most home environments."
+  },
+  {
+    "ID": "c-casual-5",
+    "Name": "PLANPRO casual chair cs5",
+    "Dimension": "147.3 cm | 195.7 cm | 176.9 cm",
+    "Price": 15200,
+    "Rating": 4.2,
+    "ImageURL": "products/casual chair/cs5.png",
+    "ModelURL": "products/casual chair models/cs5.glb",
+    "Type": "chair",
+    "SubType": "casual_chair",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Karthik Krishnan",
+        "Rated": 4.4,
+        "Comment": "Seat elevation feels comfortable. Performance remains stable.",
+        "Date": "2024-12-26"
+      },
+      {
+        "User": "Harshita Kumar",
+        "Rated": 4.2,
+        "Comment": "Frame stability remains steady.",
+        "Date": "2024-03-13"
+      },
+      {
+        "User": "Shravan Pillai",
+        "Rated": 4.5,
+        "Comment": "Padding density feels optimal.",
+        "Date": "2024-06-22"
+      },
+      {
+        "User": "Gavin Sharon",
+        "Rated": 4.1,
+        "Comment": "Cushion firmness distribution feels balanced. Serves its purpose effectively. After extended use, overall stability remains consistent.",
+        "Date": "2024-02-28"
+      },
+      {
+        "User": "Kevin Fernandes",
+        "Rated": 4,
+        "Comment": "Overall weight distribution feels stable. Finish appears decent. After extended use, overall stability remains consistent.",
+        "Date": "2024-08-16"
+      },
+      {
+        "User": "Zoya Pathan",
+        "Rated": 4.3,
+        "Comment": "Backrest support positioning is well engineered. Quality feels decent.",
+        "Date": "2024-01-14"
+      },
+      {
+        "User": "Ayaan Syed",
+        "Rated": 4,
+        "Comment": "Seat depth feels appropriate. Design feels straightforward.",
+        "Date": "2024-11-13"
+      }
+    ],
+    "Description": "Created to improve everyday comfort while keeping a stylish presence in the room. The build quality ensures steady performance over time. Its thoughtful design allows it to integrate easily with surrounding furniture. Ideal for contemporary homes."
+  },
+  {
+    "ID": "t-coffee-1",
+    "Name": "PLANPRO coffee table c1",
+    "Dimension": "196.1 cm | 151.6 cm | 102.0 cm",
+    "Price": 16600,
+    "Rating": 4.4,
+    "ImageURL": "products/coffee table/c1.png",
+    "ModelURL": "products/coffee table models/c1.glb",
+    "Type": "table",
+    "SubType": "coffee_table",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Tanvi Kishan",
+        "Rated": 4.4,
+        "Comment": "Structural support feels reliable. Craftsmanship feels satisfactory. After extended use, overall stability remains consistent.",
+        "Date": "2024-09-25"
+      },
+      {
+        "User": "Harshita Pillai",
+        "Rated": 4.3,
+        "Comment": "Load handling remains stable. Quality feels decent.",
+        "Date": "2025-01-16"
+      },
+      {
+        "User": "Faizan Shaikh",
+        "Rated": 4.5,
+        "Comment": "Load handling remains stable.",
+        "Date": "2024-03-01"
+      },
+      {
+        "User": "Riya Chatterjee",
+        "Rated": 4.3,
+        "Comment": "Structural support feels reliable. Functionality is practical. After extended use, overall stability remains consistent.",
+        "Date": "2024-10-16"
+      },
+      {
+        "User": "Darren D'Souza",
+        "Rated": 4.2,
+        "Comment": "Surface texture feels smooth. Performance meets expectations.",
+        "Date": "2024-10-25"
+      },
+      {
+        "User": "Rohit Iyer",
+        "Rated": 4.2,
+        "Comment": "Base support structure feels steady. Material feels sufficient. After extended use, overall stability remains consistent.",
+        "Date": "2025-01-10"
+      },
+      {
+        "User": "Meera Rao",
+        "Rated": 4.3,
+        "Comment": "Base support structure feels steady. Suitable for long term use. After extended use, overall stability remains consistent.",
+        "Date": "2024-08-16"
+      },
+      {
+        "User": "Ibrahim Khan",
+        "Rated": 4.4,
+        "Comment": "Weight balance feels even.",
+        "Date": "2025-01-30"
+      },
+      {
+        "User": "Gavin Mathew",
+        "Rated": 4.5,
+        "Comment": "Surface polish feels premium.",
+        "Date": "2024-04-15"
+      }
+    ],
+    "Description": "A well-designed piece that balances comfort and practicality for everyday use. The structure is built to provide reliable support while keeping a modern appearance. Its clean design helps it blend easily with different room styles. Suitable for both compact and spacious interiors."
+  },
+  {
+    "ID": "t-coffee-2",
+    "Name": "PLANPRO coffee table c2",
+    "Dimension": "195.9 cm | 85.9 cm | 195.7 cm",
+    "Price": 14200,
+    "Rating": 4.4,
+    "ImageURL": "products/coffee table/c2.png",
+    "ModelURL": "products/coffee table models/c2.glb",
+    "Type": "table",
+    "SubType": "coffee_table",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Sameer Pathan",
+        "Rated": 4.4,
+        "Comment": "Load handling remains stable. Durability feels reliable. After extended use, overall stability remains consistent.",
+        "Date": "2024-05-22"
+      },
+      {
+        "User": "Sanjay Krishnan",
+        "Rated": 4.6,
+        "Comment": "Finish consistency appears uniform.",
+        "Date": "2024-05-15"
+      },
+      {
+        "User": "Hiba Sheikh",
+        "Rated": 4.1,
+        "Comment": "Surface polish feels premium.",
+        "Date": "2024-07-12"
+      },
+      {
+        "User": "Ethan Carvalho",
+        "Rated": 4.4,
+        "Comment": "Joint reinforcement feels strong.",
+        "Date": "2024-06-16"
+      },
+      {
+        "User": "Sanjay Karuppasamy",
+        "Rated": 4.6,
+        "Comment": "Weight balance feels even. Craftsmanship feels satisfactory. After extended use, overall stability remains consistent.",
+        "Date": "2024-09-26"
+      },
+      {
+        "User": "Maria Pereira",
+        "Rated": 4.5,
+        "Comment": "Build symmetry looks accurate. Durability feels reliable. After extended use, overall stability remains consistent.",
+        "Date": "2024-08-27"
+      }
+    ],
+    "Description": "Designed with attention to detail, this item brings both function and style into your home. The materials are selected to improve durability and longterm use. Its balanced proportions make it comfortable while maintaining a neat visual presence. Works well in modern living spaces."
+  },
+  {
+    "ID": "t-coffee-3",
+    "Name": "PLANPRO coffee table c3",
+    "Dimension": "196.5 cm | 99.1 cm | 92.8 cm",
+    "Price": 16100,
+    "Rating": 3.9,
+    "ImageURL": "products/coffee table/c3.png",
+    "ModelURL": "products/coffee table models/c3.glb",
+    "Type": "table",
+    "SubType": "coffee_table",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Neil Almeida",
+        "Rated": 4,
+        "Comment": "Surface finish appears refined. Comfort level feels adequate. After extended use, overall stability remains consistent.",
+        "Date": "2024-11-23"
+      },
+      {
+        "User": "Tanvi Kapoor",
+        "Rated": 3.8,
+        "Comment": "Leg stability feels dependable. Design feels straightforward. After extended use, overall stability remains consistent.",
+        "Date": "2024-08-27"
+      },
+      {
+        "User": "Hiba Ansari",
+        "Rated": 4.1,
+        "Comment": "Structural support feels reliable.",
+        "Date": "2024-01-08"
+      },
+      {
+        "User": "Kevin Almeida",
+        "Rated": 4.1,
+        "Comment": "Finish consistency appears uniform.",
+        "Date": "2024-12-02"
+      },
+      {
+        "User": "Kevin Gomes",
+        "Rated": 3.7,
+        "Comment": "Finish consistency appears uniform. Stability feels acceptable. After extended use, overall stability remains consistent.",
+        "Date": "2024-12-26"
+      },
+      {
+        "User": "Imran Al Hussaini",
+        "Rated": 3.8,
+        "Comment": "Weight balance feels even. Material feels sufficient. After extended use, overall stability remains consistent.",
+        "Date": "2024-02-04"
+      }
+    ],
+    "Description": "This product combines durability with a simple modern design. It is built to handle daily use while keeping a comfortable experience. The structure supports proper posture and relaxation. Its versatile look allows it to match many interior layouts."
+  },
+  {
+    "ID": "t-coffee-4",
+    "Name": "PLANPRO coffee table c4",
+    "Dimension": "196.1 cm | 90.5 cm | 121.2 cm",
+    "Price": 15900,
+    "Rating": 4.4,
+    "ImageURL": "products/coffee table/c4.png",
+    "ModelURL": "products/coffee table models/c4.glb",
+    "Type": "table",
+    "SubType": "coffee_table",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Ibrahim Sheikh",
+        "Rated": 4.1,
+        "Comment": "Surface texture feels smooth. Build feels acceptable. After extended use, overall stability remains consistent.",
+        "Date": "2024-03-03"
+      },
+      {
+        "User": "Naomi Rodrigues",
+        "Rated": 4.6,
+        "Comment": "Load handling remains stable. Fit and finish feel accurate. After extended use, overall stability remains consistent.",
+        "Date": "2024-11-28"
+      },
+      {
+        "User": "Nikhil Kamath",
+        "Rated": 4.2,
+        "Comment": "Finish consistency appears uniform. Performance remains adequate.",
+        "Date": "2024-06-14"
+      },
+      {
+        "User": "Ryan Furtado",
+        "Rated": 4.3,
+        "Comment": "Height feels ergonomically correct. Feels practical and functional. After extended use, overall stability remains consistent.",
+        "Date": "2025-01-30"
+      },
+      {
+        "User": "Ethan Fernandes",
+        "Rated": 4.5,
+        "Comment": "Structural support feels reliable.",
+        "Date": "2024-09-21"
+      },
+      {
+        "User": "Sophie Pereira",
+        "Rated": 4.3,
+        "Comment": "Top panel alignment feels accurate. Finish appears decent.",
+        "Date": "2024-09-28"
+      },
+      {
+        "User": "Clara Furtado",
+        "Rated": 4.5,
+        "Comment": "Edge detailing looks precise. Craftsmanship feels satisfactory.",
+        "Date": "2024-03-21"
+      },
+      {
+        "User": "Joseph Lydia",
+        "Rated": 4.3,
+        "Comment": "Material thickness feels adequate.",
+        "Date": "2024-05-26"
+      },
+      {
+        "User": "Meera Kamath",
+        "Rated": 4.3,
+        "Comment": "Corner finishing appears clean. Construction seems reasonable. After extended use, overall stability remains consistent.",
+        "Date": "2024-04-08"
+      }
+    ],
+    "Description": "A practical furniture choice that focuses on comfort and stability. The frame is structured for longlasting use while maintaining a clean aesthetic. Its design helps improve usability in everyday situations. A dependable addition to most home environments."
+  },
+  {
+    "ID": "t-coffee-5",
+    "Name": "PLANPRO coffee table c5",
+    "Dimension": "196.4 cm | 158.3 cm | 122.6 cm",
+    "Price": 14500,
+    "Rating": 3.8,
+    "ImageURL": "products/coffee table/c5.png",
+    "ModelURL": "products/coffee table models/c5.glb",
+    "Type": "table",
+    "SubType": "coffee_table",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Ryan Rodrigues",
+        "Rated": 4,
+        "Comment": "Load handling remains stable. Works as expected.",
+        "Date": "2024-07-24"
+      },
+      {
+        "User": "Divya Kamath",
+        "Rated": 3.8,
+        "Comment": "Base support structure feels steady. Quality feels decent.",
+        "Date": "2024-05-17"
+      },
+      {
+        "User": "Rohit Iyer",
+        "Rated": 3.5,
+        "Comment": "Surface finish appears refined.",
+        "Date": "2024-06-30"
+      },
+      {
+        "User": "Zaid Pathan",
+        "Rated": 3.7,
+        "Comment": "Top panel alignment feels accurate.",
+        "Date": "2024-09-08"
+      },
+      {
+        "User": "Ananya Verma",
+        "Rated": 3.5,
+        "Comment": "Surface texture feels smooth. Comfort level feels adequate. After extended use, overall stability remains consistent.",
+        "Date": "2024-08-12"
+      },
+      {
+        "User": "Aaron D'Souza",
+        "Rated": 3.8,
+        "Comment": "Base support structure feels steady.",
+        "Date": "2024-11-28"
+      },
+      {
+        "User": "Ananya Chopra",
+        "Rated": 3.7,
+        "Comment": "Panel thickness feels durable.",
+        "Date": "2024-08-19"
+      },
+      {
+        "User": "Faizan Qureshi",
+        "Rated": 3.6,
+        "Comment": "Leg stability feels dependable.",
+        "Date": "2024-08-28"
+      },
+      {
+        "User": "Dylan Lobo",
+        "Rated": 3.5,
+        "Comment": "Height feels ergonomically correct.",
+        "Date": "2024-10-07"
+      }
+    ],
+    "Description": "Created to improve everyday comfort while keeping a stylish presence in the room. The build quality ensures steady performance over time. Its thoughtful design allows it to integrate easily with surrounding furniture. Ideal for contemporary homes."
+  },
+  {
+    "ID": "st-cupboard-1",
+    "Name": "PLANPRO cupboard cp1",
+    "Dimension": "136.7 cm | 195.7 cm | 57.8 cm",
+    "Price": 17700,
+    "Rating": 3.8,
+    "ImageURL": "products/cupboard/cp1.png",
+    "ModelURL": "products/cupboard models/cp1.glb",
+    "Type": "storage",
+    "SubType": "cupboard",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Jomin Mathew",
+        "Rated": 3.6,
+        "Comment": "Seating posture alignment feels natural.",
+        "Date": "2024-07-25"
+      },
+      {
+        "User": "Sharon Johancy",
+        "Rated": 3.9,
+        "Comment": "Overall seating geometry feels well designed. Functionality is practical. After extended use, overall stability remains consistent.",
+        "Date": "2025-01-19"
+      },
+      {
+        "User": "Genelia Grace",
+        "Rated": 3.5,
+        "Comment": "Assembly joints feel reinforced. Material feels sufficient.",
+        "Date": "2024-07-09"
+      },
+      {
+        "User": "Arjun Nair",
+        "Rated": 4.1,
+        "Comment": "Structural alignment appears accurate. Performance remains adequate.",
+        "Date": "2024-02-15"
+      },
+      {
+        "User": "Joel Lydia",
+        "Rated": 3.8,
+        "Comment": "Seat depth feels appropriate. Stable under regular conditions.",
+        "Date": "2024-03-23"
+      },
+      {
+        "User": "Alina Sheikh",
+        "Rated": 4,
+        "Comment": "Padding density feels optimal. Quality feels decent.",
+        "Date": "2024-06-23"
+      }
+    ],
+    "Description": "A well-designed piece that balances comfort and practicality for everyday use. The structure is built to provide reliable support while keeping a modern appearance. Its clean design helps it blend easily with different room styles. Suitable for both compact and spacious interiors."
+  },
+  {
+    "ID": "st-cupboard-2",
+    "Name": "PLANPRO cupboard cp2",
+    "Dimension": "100.0 cm | 96.7 cm | 35.1 cm",
+    "Price": 15400,
+    "Rating": 4.5,
+    "ImageURL": "products/cupboard/cp2.png",
+    "ModelURL": "products/cupboard models/cp2.glb",
+    "Type": "storage",
+    "SubType": "cupboard",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Ira Pillai",
+        "Rated": 4.4,
+        "Comment": "Design proportions feel practical.",
+        "Date": "2024-05-09"
+      },
+      {
+        "User": "Ryan Lobo",
+        "Rated": 4.4,
+        "Comment": "Cushion firmness distribution feels balanced.",
+        "Date": "2024-02-08"
+      },
+      {
+        "User": "Isabella Lobo",
+        "Rated": 4.5,
+        "Comment": "Seat depth feels appropriate. Design quality feels balanced.",
+        "Date": "2024-09-14"
+      },
+      {
+        "User": "Rehan Qureshi",
+        "Rated": 4.4,
+        "Comment": "Frame stability remains steady. Finish quality is well maintained. After extended use, overall stability remains consistent.",
+        "Date": "2024-04-27"
+      },
+      {
+        "User": "Priya Verma",
+        "Rated": 4.3,
+        "Comment": "Seat depth feels appropriate. Meets regular usage needs. After extended use, overall stability remains consistent.",
+        "Date": "2024-02-27"
+      },
+      {
+        "User": "Anirudh Karuppasamy",
+        "Rated": 4.2,
+        "Comment": "Cushion firmness distribution feels balanced. Functionality is practical. After extended use, overall stability remains consistent.",
+        "Date": "2024-04-12"
+      }
+    ],
+    "Description": "Designed with attention to detail, this item brings both function and style into your home. The materials are selected to improve durability and longterm use. Its balanced proportions make it comfortable while maintaining a neat visual presence. Works well in modern living spaces."
+  },
+  {
+    "ID": "st-cupboard-3",
+    "Name": "PLANPRO cupboard cp3",
+    "Dimension": "44.7 cm | 100.0 cm | 29.1 cm",
+    "Price": 16200,
+    "Rating": 4.1,
+    "ImageURL": "products/cupboard/cp3.png",
+    "ModelURL": "products/cupboard models/cp3.glb",
+    "Type": "storage",
+    "SubType": "cupboard",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Harshita Subramanian",
+        "Rated": 3.8,
+        "Comment": "Frame stability remains steady. Performance meets expectations. After extended use, overall stability remains consistent.",
+        "Date": "2024-11-19"
+      },
+      {
+        "User": "Karthik Kamath",
+        "Rated": 3.8,
+        "Comment": "Seat depth feels appropriate. Functionality is practical. After extended use, overall stability remains consistent.",
+        "Date": "2024-09-24"
+      },
+      {
+        "User": "Ryan Carvalho",
+        "Rated": 4,
+        "Comment": "Pressure distribution feels even. Build feels acceptable. After extended use, overall stability remains consistent.",
+        "Date": "2024-09-09"
+      },
+      {
+        "User": "Mathew Joseph",
+        "Rated": 4.2,
+        "Comment": "Armrest height feels ergonomically correct. Design feels straightforward.",
+        "Date": "2024-06-24"
+      },
+      {
+        "User": "Darren Pereira",
+        "Rated": 4.2,
+        "Comment": "Armrest height feels ergonomically correct. Build feels acceptable. After extended use, overall stability remains consistent.",
+        "Date": "2024-01-08"
+      },
+      {
+        "User": "Zoya Qureshi",
+        "Rated": 4.3,
+        "Comment": "Cushion firmness distribution feels balanced. Serves its purpose effectively.",
+        "Date": "2024-07-18"
+      },
+      {
+        "User": "Ayesha Al Hussaini",
+        "Rated": 4,
+        "Comment": "Overall seating geometry feels well designed. Quality feels decent. After extended use, overall stability remains consistent.",
+        "Date": "2024-03-26"
+      }
+    ],
+    "Description": "This product combines durability with a simple modern design. It is built to handle daily use while keeping a comfortable experience. The structure supports proper posture and relaxation. Its versatile look allows it to match many interior layouts."
+  },
+  {
+    "ID": "st-cupboard-4",
+    "Name": "PLANPRO cupboard cp4",
+    "Dimension": "81.8 cm | 100.1 cm | 35.0 cm",
+    "Price": 17000,
+    "Rating": 3.9,
+    "ImageURL": "products/cupboard/cp4.png",
+    "ModelURL": "products/cupboard models/cp4.glb",
+    "Type": "storage",
+    "SubType": "cupboard",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Farhan Ansari",
+        "Rated": 3.9,
+        "Comment": "Structural alignment appears accurate. Overall experience is satisfactory. After extended use, overall stability remains consistent.",
+        "Date": "2024-10-18"
+      },
+      {
+        "User": "Shravan Subramanian",
+        "Rated": 3.7,
+        "Comment": "Recline positioning feels smooth. Quality feels decent. After extended use, overall stability remains consistent.",
+        "Date": "2024-11-29"
+      },
+      {
+        "User": "Ibrahim Qureshi",
+        "Rated": 4,
+        "Comment": "Overall seating geometry feels well designed. Serves its purpose effectively. After extended use, overall stability remains consistent.",
+        "Date": "2024-07-28"
+      },
+      {
+        "User": "Aarav Kishan",
+        "Rated": 3.7,
+        "Comment": "Structural alignment appears accurate. Construction seems reasonable.",
+        "Date": "2024-01-10"
+      },
+      {
+        "User": "Ishaan Verma",
+        "Rated": 4,
+        "Comment": "Finish texture feels refined. Material feels sufficient. After extended use, overall stability remains consistent.",
+        "Date": "2025-01-16"
+      },
+      {
+        "User": "Ayesha Sheikh",
+        "Rated": 4,
+        "Comment": "Build quality feels sturdy.",
+        "Date": "2024-07-10"
+      }
+    ],
+    "Description": "A practical furniture choice that focuses on comfort and stability. The frame is structured for longlasting use while maintaining a clean aesthetic. Its design helps improve usability in everyday situations. A dependable addition to most home environments."
+  },
+  {
+    "ID": "st-cupboard-5",
+    "Name": "PLANPRO cupboard cp5",
+    "Dimension": "61.8 cm | 100.1 cm | 28.2 cm",
+    "Price": 15100,
+    "Rating": 4,
+    "ImageURL": "products/cupboard/cp5.png",
+    "ModelURL": "products/cupboard models/cp5.glb",
+    "Type": "storage",
+    "SubType": "cupboard",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Aaron D'Souza",
+        "Rated": 4.3,
+        "Comment": "Seating posture alignment feels natural. Material feels sufficient. After extended use, overall stability remains consistent.",
+        "Date": "2024-01-17"
+      },
+      {
+        "User": "Arman Khan",
+        "Rated": 4.1,
+        "Comment": "Comfort level remains consistent over time. Feels practical and functional. After extended use, overall stability remains consistent.",
+        "Date": "2024-05-13"
+      },
+      {
+        "User": "Arman Pathan",
+        "Rated": 4.3,
+        "Comment": "Design proportions feel practical. Works as expected. After extended use, overall stability remains consistent.",
+        "Date": "2024-03-26"
+      },
+      {
+        "User": "Vikram Rao",
+        "Rated": 3.7,
+        "Comment": "Frame stability remains steady. Meets regular usage needs. After extended use, overall stability remains consistent.",
+        "Date": "2024-02-15"
+      },
+      {
+        "User": "Manav Nair",
+        "Rated": 3.7,
+        "Comment": "Recline positioning feels smooth.",
+        "Date": "2025-01-13"
+      },
+      {
+        "User": "Joel Joseph",
+        "Rated": 3.9,
+        "Comment": "Overall weight distribution feels stable. Functionality is practical. After extended use, overall stability remains consistent.",
+        "Date": "2024-05-08"
+      },
+      {
+        "User": "Rehan Ansari",
+        "Rated": 3.8,
+        "Comment": "Comfort level remains consistent over time. Suitable for long term use. After extended use, overall stability remains consistent.",
+        "Date": "2024-04-29"
+      },
+      {
+        "User": "Darren D'Souza",
+        "Rated": 4,
+        "Comment": "Overall seating geometry feels well designed.",
+        "Date": "2025-01-17"
+      },
+      {
+        "User": "Aarav Sharma",
+        "Rated": 4.1,
+        "Comment": "Build quality feels sturdy. Quality feels decent. After extended use, overall stability remains consistent.",
+        "Date": "2024-12-22"
+      }
+    ],
+    "Description": "Created to improve everyday comfort while keeping a stylish presence in the room. The build quality ensures steady performance over time. Its thoughtful design allows it to integrate easily with surrounding furniture. Ideal for contemporary homes."
+  },
+  {
+    "ID": "c-dining-1",
+    "Name": "PLANPRO dinning chair dc1",
+    "Dimension": "54.1 cm | 100.0 cm | 57.1 cm",
+    "Price": 16100,
+    "Rating": 4.2,
+    "ImageURL": "products/dinning chair/dc1.png",
+    "ModelURL": "products/dinning chair models/dc1.glb",
+    "Type": "chair",
+    "SubType": "dinning_chair",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Sana Qureshi",
+        "Rated": 4.2,
+        "Comment": "Armrest height feels ergonomically correct. Works as expected. After extended use, overall stability remains consistent.",
+        "Date": "2024-10-30"
+      },
+      {
+        "User": "Rehan Siddiqui",
+        "Rated": 4.3,
+        "Comment": "Armrest height feels ergonomically correct.",
+        "Date": "2024-11-28"
+      },
+      {
+        "User": "Kavya Mehta",
+        "Rated": 4.2,
+        "Comment": "Frame stability remains steady. Comfort level feels adequate.",
+        "Date": "2024-09-17"
+      },
+      {
+        "User": "Lydia Jones",
+        "Rated": 3.9,
+        "Comment": "Overall seating geometry feels well designed.",
+        "Date": "2024-01-12"
+      },
+      {
+        "User": "Aaron Fernandes",
+        "Rated": 4.2,
+        "Comment": "Lower back support feels consistent. Feels practical and functional.",
+        "Date": "2024-02-01"
+      },
+      {
+        "User": "Kabir Chopra",
+        "Rated": 3.9,
+        "Comment": "Build quality feels sturdy. Material feels sufficient.",
+        "Date": "2024-07-05"
+      },
+      {
+        "User": "Sophie D'Souza",
+        "Rated": 4.1,
+        "Comment": "Backrest support positioning is well engineered.",
+        "Date": "2024-08-16"
+      },
+      {
+        "User": "Divya Pillai",
+        "Rated": 4,
+        "Comment": "Seating posture alignment feels natural.",
+        "Date": "2024-03-31"
+      }
+    ],
+    "Description": "A well-designed piece that balances comfort and practicality for everyday use. The structure is built to provide reliable support while keeping a modern appearance. Its clean design helps it blend easily with different room styles. Suitable for both compact and spacious interiors."
+  },
+  {
+    "ID": "c-dining-2",
+    "Name": "PLANPRO dinning chair dc2",
+    "Dimension": "64.7 cm | 100.0 cm | 71.0 cm",
+    "Price": 15500,
+    "Rating": 4.3,
+    "ImageURL": "products/dinning chair/dc2.png",
+    "ModelURL": "products/dinning chair models/dc2.glb",
+    "Type": "chair",
+    "SubType": "dinning_chair",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Ethan Almeida",
+        "Rated": 4.2,
+        "Comment": "Overall weight distribution feels stable. Comfort level feels adequate. After extended use, overall stability remains consistent.",
+        "Date": "2024-02-27"
+      },
+      {
+        "User": "Arman Shaikh",
+        "Rated": 4.5,
+        "Comment": "Build quality feels sturdy.",
+        "Date": "2024-11-27"
+      },
+      {
+        "User": "Gavin Michael",
+        "Rated": 4.1,
+        "Comment": "Padding density feels optimal.",
+        "Date": "2024-05-27"
+      },
+      {
+        "User": "Sanjay Iyer",
+        "Rated": 4.2,
+        "Comment": "Structural alignment appears accurate. Material feels sufficient.",
+        "Date": "2024-10-12"
+      },
+      {
+        "User": "Zaid Pathan",
+        "Rated": 4.2,
+        "Comment": "Design proportions feel practical.",
+        "Date": "2024-11-13"
+      },
+      {
+        "User": "Mathew Joseph",
+        "Rated": 4.4,
+        "Comment": "Finish texture feels refined. Construction feels trustworthy.",
+        "Date": "2024-12-08"
+      },
+      {
+        "User": "Zaid Syed",
+        "Rated": 4,
+        "Comment": "Cushion firmness distribution feels balanced.",
+        "Date": "2024-02-14"
+      }
+    ],
+    "Description": "Designed with attention to detail, this item brings both function and style into your home. The materials are selected to improve durability and longterm use. Its balanced proportions make it comfortable while maintaining a neat visual presence. Works well in modern living spaces."
+  },
+  {
+    "ID": "c-dining-3",
+    "Name": "PLANPRO dinning chair dc3",
+    "Dimension": "60.6 cm | 100.0 cm | 71.3 cm",
+    "Price": 16800,
+    "Rating": 4.4,
+    "ImageURL": "products/dinning chair/dc3.png",
+    "ModelURL": "products/dinning chair models/dc3.glb",
+    "Type": "chair",
+    "SubType": "dinning_chair",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Ayaan Sheikh",
+        "Rated": 4.4,
+        "Comment": "Overall seating geometry feels well designed. Material finish appears consistent.",
+        "Date": "2024-12-15"
+      },
+      {
+        "User": "Ibrahim Syed",
+        "Rated": 4.4,
+        "Comment": "Recline positioning feels smooth.",
+        "Date": "2024-03-24"
+      },
+      {
+        "User": "Lydia Mathew",
+        "Rated": 4.4,
+        "Comment": "Armrest height feels ergonomically correct.",
+        "Date": "2024-04-11"
+      },
+      {
+        "User": "Meera Nair",
+        "Rated": 4.5,
+        "Comment": "Seating posture alignment feels natural. Material finish appears consistent. After extended use, overall stability remains consistent.",
+        "Date": "2024-06-26"
+      },
+      {
+        "User": "Harshita Kumar",
+        "Rated": 4.7,
+        "Comment": "Seating posture alignment feels natural.",
+        "Date": "2024-03-07"
+      },
+      {
+        "User": "Imran Qureshi",
+        "Rated": 4.1,
+        "Comment": "Pressure distribution feels even.",
+        "Date": "2024-10-09"
+      }
+    ],
+    "Description": "This product combines durability with a simple modern design. It is built to handle daily use while keeping a comfortable experience. The structure supports proper posture and relaxation. Its versatile look allows it to match many interior layouts."
+  },
+  {
+    "ID": "c-dining-4",
+    "Name": "PLANPRO dinning chair dc4",
+    "Dimension": "60.5 cm | 100.1 cm | 71.1 cm",
+    "Price": 14400,
+    "Rating": 4.2,
+    "ImageURL": "products/dinning chair/dc4.png",
+    "ModelURL": "products/dinning chair models/dc4.glb",
+    "Type": "chair",
+    "SubType": "dinning_chair",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Ethan D'Souza",
+        "Rated": 4.1,
+        "Comment": "Backrest support positioning is well engineered. Works as expected.",
+        "Date": "2024-09-25"
+      },
+      {
+        "User": "Elena Pereira",
+        "Rated": 4.2,
+        "Comment": "Comfort level remains consistent over time. Meets regular usage needs.",
+        "Date": "2024-12-08"
+      },
+      {
+        "User": "Ira Iyer",
+        "Rated": 4.3,
+        "Comment": "Lower back support feels consistent.",
+        "Date": "2024-10-25"
+      },
+      {
+        "User": "Arjun Trivedi",
+        "Rated": 3.9,
+        "Comment": "Design proportions feel practical. Design feels straightforward. After extended use, overall stability remains consistent.",
+        "Date": "2024-03-13"
+      },
+      {
+        "User": "Joseph Mathew",
+        "Rated": 4.2,
+        "Comment": "Finish texture feels refined. Design feels straightforward. After extended use, overall stability remains consistent.",
+        "Date": "2024-12-14"
+      },
+      {
+        "User": "Vivaan Kapoor",
+        "Rated": 4,
+        "Comment": "Armrest height feels ergonomically correct. Functionality is practical.",
+        "Date": "2024-02-21"
+      }
+    ],
+    "Description": "A practical furniture choice that focuses on comfort and stability. The frame is structured for longlasting use while maintaining a clean aesthetic. Its design helps improve usability in everyday situations. A dependable addition to most home environments."
+  },
+  {
+    "ID": "c-dining-5",
+    "Name": "PLANPRO dinning chair dc5",
+    "Dimension": "47.8 cm | 100.1 cm | 60.2 cm",
+    "Price": 14500,
+    "Rating": 4.3,
+    "ImageURL": "products/dinning chair/dc5.png",
+    "ModelURL": "products/dinning chair models/dc5.glb",
+    "Type": "chair",
+    "SubType": "dinning_chair",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Shravan Bhat",
+        "Rated": 4,
+        "Comment": "Pressure distribution feels even. Design feels straightforward. After extended use, overall stability remains consistent.",
+        "Date": "2024-10-24"
+      },
+      {
+        "User": "Clara Pereira",
+        "Rated": 4.3,
+        "Comment": "Pressure distribution feels even.",
+        "Date": "2024-06-09"
+      },
+      {
+        "User": "Kavya Joshi",
+        "Rated": 4.5,
+        "Comment": "Cushion firmness distribution feels balanced. Build meets expectations comfortably.",
+        "Date": "2024-10-19"
+      },
+      {
+        "User": "Mathew Johancy",
+        "Rated": 4.1,
+        "Comment": "Seat elevation feels comfortable.",
+        "Date": "2024-12-15"
+      },
+      {
+        "User": "Rehan Al Hussaini",
+        "Rated": 4.6,
+        "Comment": "Pressure distribution feels even. Material consistency feels strong.",
+        "Date": "2024-07-15"
+      },
+      {
+        "User": "Vikram Pillai",
+        "Rated": 4.6,
+        "Comment": "Armrest height feels ergonomically correct. Fit and finish feel accurate.",
+        "Date": "2024-01-11"
+      },
+      {
+        "User": "Ryan Rodrigues",
+        "Rated": 4.5,
+        "Comment": "Pressure distribution feels even. Overall build feels dependable.",
+        "Date": "2024-08-31"
+      }
+    ],
+    "Description": "Created to improve everyday comfort while keeping a stylish presence in the room. The build quality ensures steady performance over time. Its thoughtful design allows it to integrate easily with surrounding furniture. Ideal for contemporary homes."
+  },
+  {
+    "ID": "t-dining-1",
+    "Name": "PLANPRO Dinning table d1",
+    "Dimension": "196.0 cm | 95.9 cm | 134.1 cm",
+    "Price": 17000,
+    "Rating": 4,
+    "ImageURL": "products/Dinning table/d1.png",
+    "ModelURL": "products/Dinning table models/d1.glb",
+    "Type": "table",
+    "SubType": "dinning_table",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Alina Khan",
+        "Rated": 4,
+        "Comment": "Corner finishing appears clean. Performance meets expectations. After extended use, overall stability remains consistent.",
+        "Date": "2024-11-06"
+      },
+      {
+        "User": "Aarav Trivedi",
+        "Rated": 4.2,
+        "Comment": "Design proportions feel practical. Material feels sufficient. After extended use, overall stability remains consistent.",
+        "Date": "2024-08-31"
+      },
+      {
+        "User": "Elena Pereira",
+        "Rated": 4.2,
+        "Comment": "Material thickness feels adequate. Functionality is practical. After extended use, overall stability remains consistent.",
+        "Date": "2024-11-11"
+      },
+      {
+        "User": "Rohit Nair",
+        "Rated": 4.3,
+        "Comment": "Material grain looks consistent. Meets regular usage needs. After extended use, overall stability remains consistent.",
+        "Date": "2024-03-14"
+      },
+      {
+        "User": "Divya Kamath",
+        "Rated": 4,
+        "Comment": "Build symmetry looks accurate.",
+        "Date": "2024-09-09"
+      },
+      {
+        "User": "Naomi Pereira",
+        "Rated": 4.2,
+        "Comment": "Surface finish appears refined.",
+        "Date": "2024-10-14"
+      }
+    ],
+    "Description": "A well-designed piece that balances comfort and practicality for everyday use. The structure is built to provide reliable support while keeping a modern appearance. Its clean design helps it blend easily with different room styles. Suitable for both compact and spacious interiors."
+  },
+  {
+    "ID": "t-dining-2",
+    "Name": "PLANPRO Dinning table d2",
+    "Dimension": "133.5 cm | 81.3 cm | 195.7 cm",
+    "Price": 15200,
+    "Rating": 4,
+    "ImageURL": "products/Dinning table/d2.png",
+    "ModelURL": "products/Dinning table models/d2.glb",
+    "Type": "table",
+    "SubType": "dinning_table",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Hiba Shaikh",
+        "Rated": 4,
+        "Comment": "Corner finishing appears clean. Build feels acceptable.",
+        "Date": "2024-04-01"
+      },
+      {
+        "User": "Zaid Qureshi",
+        "Rated": 3.8,
+        "Comment": "Corner finishing appears clean. Meets regular usage needs.",
+        "Date": "2025-01-23"
+      },
+      {
+        "User": "Ethan Carvalho",
+        "Rated": 4.3,
+        "Comment": "Panel thickness feels durable. Structure remains steady.",
+        "Date": "2024-05-25"
+      },
+      {
+        "User": "Arjun Sharma",
+        "Rated": 3.7,
+        "Comment": "Corner finishing appears clean. Serves its purpose effectively.",
+        "Date": "2024-12-07"
+      },
+      {
+        "User": "Jomin Grace",
+        "Rated": 4.2,
+        "Comment": "Height feels ergonomically correct. Design feels straightforward.",
+        "Date": "2024-11-27"
+      },
+      {
+        "User": "Genelia Mathew",
+        "Rated": 4,
+        "Comment": "Load handling remains stable. Meets regular usage needs. After extended use, overall stability remains consistent.",
+        "Date": "2024-06-25"
+      },
+      {
+        "User": "Ryan Rodrigues",
+        "Rated": 3.7,
+        "Comment": "Surface finish appears refined. Works well for daily usage.",
+        "Date": "2024-08-03"
+      },
+      {
+        "User": "Lydia Lydia",
+        "Rated": 4.1,
+        "Comment": "Edge detailing looks precise.",
+        "Date": "2024-06-15"
+      },
+      {
+        "User": "Kavya Singh",
+        "Rated": 4.2,
+        "Comment": "Edge detailing looks precise.",
+        "Date": "2024-06-13"
+      }
+    ],
+    "Description": "Designed with attention to detail, this item brings both function and style into your home. The materials are selected to improve durability and longterm use. Its balanced proportions make it comfortable while maintaining a neat visual presence. Works well in modern living spaces."
+  },
+  {
+    "ID": "t-dining-3",
+    "Name": "PLANPRO Dinning table d3",
+    "Dimension": "196.4 cm | 86.4 cm | 93.2 cm",
+    "Price": 16700,
+    "Rating": 3.9,
+    "ImageURL": "products/Dinning table/d3.png",
+    "ModelURL": "products/Dinning table models/d3.glb",
+    "Type": "table",
+    "SubType": "dinning_table",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Kavya Shah",
+        "Rated": 4.1,
+        "Comment": "Edge detailing looks precise. Structure remains steady.",
+        "Date": "2024-09-12"
+      },
+      {
+        "User": "Joel Sharon",
+        "Rated": 3.9,
+        "Comment": "Corner finishing appears clean. Stability feels acceptable. After extended use, overall stability remains consistent.",
+        "Date": "2024-04-15"
+      },
+      {
+        "User": "Imran Al Hussaini",
+        "Rated": 3.9,
+        "Comment": "Surface texture feels smooth. Stable under regular conditions.",
+        "Date": "2024-07-09"
+      },
+      {
+        "User": "Joel Lydia",
+        "Rated": 3.7,
+        "Comment": "Design proportions feel practical.",
+        "Date": "2025-01-04"
+      },
+      {
+        "User": "Sana Syed",
+        "Rated": 3.7,
+        "Comment": "Panel thickness feels durable. Finish appears decent. After extended use, overall stability remains consistent.",
+        "Date": "2024-03-09"
+      },
+      {
+        "User": "Gavin Johancy",
+        "Rated": 3.7,
+        "Comment": "Base support structure feels steady. Works as expected.",
+        "Date": "2024-01-26"
+      },
+      {
+        "User": "Elena D'Souza",
+        "Rated": 3.8,
+        "Comment": "Finish consistency appears uniform. Feels practical and functional. After extended use, overall stability remains consistent.",
+        "Date": "2024-05-16"
+      },
+      {
+        "User": "Maria Furtado",
+        "Rated": 4,
+        "Comment": "Leg stability feels dependable. Design feels straightforward. After extended use, overall stability remains consistent.",
+        "Date": "2025-01-14"
+      }
+    ],
+    "Description": "This product combines durability with a simple modern design. It is built to handle daily use while keeping a comfortable experience. The structure supports proper posture and relaxation. Its versatile look allows it to match many interior layouts."
+  },
+  {
+    "ID": "t-dining-4",
+    "Name": "PLANPRO Dinning table d4",
+    "Dimension": "131.1 cm | 102.5 cm | 195.7 cm",
+    "Price": 14100,
+    "Rating": 4.1,
+    "ImageURL": "products/Dinning table/d4.png",
+    "ModelURL": "products/Dinning table models/d4.glb",
+    "Type": "table",
+    "SubType": "dinning_table",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Tanvi Chatterjee",
+        "Rated": 4,
+        "Comment": "Height feels ergonomically correct. Build feels acceptable. After extended use, overall stability remains consistent.",
+        "Date": "2024-02-13"
+      },
+      {
+        "User": "Isabella Rodrigues",
+        "Rated": 3.9,
+        "Comment": "Overall sturdiness feels reliable. Meets regular usage needs. After extended use, overall stability remains consistent.",
+        "Date": "2024-12-24"
+      },
+      {
+        "User": "Sana Siddiqui",
+        "Rated": 3.9,
+        "Comment": "Surface texture feels smooth.",
+        "Date": "2024-10-07"
+      },
+      {
+        "User": "Zoya Ansari",
+        "Rated": 4.3,
+        "Comment": "Joint reinforcement feels strong. Stable under regular conditions.",
+        "Date": "2024-11-20"
+      },
+      {
+        "User": "Farhan Al Hussaini",
+        "Rated": 3.9,
+        "Comment": "Edge detailing looks precise. Stable under regular conditions. After extended use, overall stability remains consistent.",
+        "Date": "2025-01-22"
+      },
+      {
+        "User": "Clara D'Souza",
+        "Rated": 4,
+        "Comment": "Weight balance feels even. Design feels straightforward.",
+        "Date": "2024-03-21"
+      },
+      {
+        "User": "Divya Reddy",
+        "Rated": 4.3,
+        "Comment": "Surface polish feels premium. Build feels acceptable. After extended use, overall stability remains consistent.",
+        "Date": "2024-12-23"
+      }
+    ],
+    "Description": "A practical furniture choice that focuses on comfort and stability. The frame is structured for longlasting use while maintaining a clean aesthetic. Its design helps improve usability in everyday situations. A dependable addition to most home environments."
+  },
+  {
+    "ID": "t-dining-5",
+    "Name": "PLANPRO Dinning table d5",
+    "Dimension": "196.1 cm | 107.5 cm | 73.4 cm",
+    "Price": 15700,
+    "Rating": 4.2,
+    "ImageURL": "products/Dinning table/d5.png",
+    "ModelURL": "products/Dinning table models/d5.glb",
+    "Type": "table",
+    "SubType": "dinning_table",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Aditi Nair",
+        "Rated": 4.2,
+        "Comment": "Leg stability feels dependable.",
+        "Date": "2024-02-22"
+      },
+      {
+        "User": "Divya Rao",
+        "Rated": 4.2,
+        "Comment": "Material thickness feels adequate. Performance remains adequate.",
+        "Date": "2024-06-09"
+      },
+      {
+        "User": "Harshita Kumar",
+        "Rated": 4,
+        "Comment": "Leg stability feels dependable.",
+        "Date": "2024-07-27"
+      },
+      {
+        "User": "Sanjay Bhat",
+        "Rated": 4.2,
+        "Comment": "Height feels ergonomically correct.",
+        "Date": "2024-12-25"
+      },
+      {
+        "User": "Rohit Nair",
+        "Rated": 4.4,
+        "Comment": "Surface polish feels premium.",
+        "Date": "2024-01-20"
+      },
+      {
+        "User": "Sameer Pathan",
+        "Rated": 4,
+        "Comment": "Material grain looks consistent. Quality feels decent. After extended use, overall stability remains consistent.",
+        "Date": "2024-04-02"
+      },
+      {
+        "User": "Hiba Pathan",
+        "Rated": 4.2,
+        "Comment": "Height feels ergonomically correct.",
+        "Date": "2024-12-17"
+      },
+      {
+        "User": "Imran Qureshi",
+        "Rated": 4.2,
+        "Comment": "Material grain looks consistent.",
+        "Date": "2025-01-03"
+      },
+      {
+        "User": "Tanvi Agarwal",
+        "Rated": 4.3,
+        "Comment": "Build symmetry looks accurate. Works well for daily usage. After extended use, overall stability remains consistent.",
+        "Date": "2024-10-22"
+      }
+    ],
+    "Description": "Created to improve everyday comfort while keeping a stylish presence in the room. The build quality ensures steady performance over time. Its thoughtful design allows it to integrate easily with surrounding furniture. Ideal for contemporary homes."
+  },
+  {
+    "ID": "b-double-1",
+    "Name": "PLANPRO double bed db1",
+    "Dimension": "130.5 cm | 58.8 cm | 195.3 cm",
+    "Price": 14900,
+    "Rating": 4.2,
+    "ImageURL": "products/double bed/db1.png",
+    "ModelURL": "products/double bed models/db1.glb",
+    "Type": "bed",
+    "SubType": "double_bed",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Vikram Kumar",
+        "Rated": 4.3,
+        "Comment": "Seat elevation feels comfortable. Functionality is practical.",
+        "Date": "2024-11-09"
+      },
+      {
+        "User": "Maria D'Souza",
+        "Rated": 4.3,
+        "Comment": "Comfort level remains consistent over time. Construction seems reasonable.",
+        "Date": "2024-05-01"
+      },
+      {
+        "User": "Vikram Iyer",
+        "Rated": 4.4,
+        "Comment": "Finish texture feels refined. Material finish appears consistent. After extended use, overall stability remains consistent.",
+        "Date": "2024-08-11"
+      },
+      {
+        "User": "Jomin Sharon",
+        "Rated": 4.3,
+        "Comment": "Padding density feels optimal. Serves its purpose effectively. After extended use, overall stability remains consistent.",
+        "Date": "2025-01-06"
+      },
+      {
+        "User": "Tanvi Saxena",
+        "Rated": 4.2,
+        "Comment": "Assembly joints feel reinforced. Serves its purpose effectively. After extended use, overall stability remains consistent.",
+        "Date": "2024-03-07"
+      },
+      {
+        "User": "Neil Gomes",
+        "Rated": 4.3,
+        "Comment": "Lower back support feels consistent. Structure remains steady. After extended use, overall stability remains consistent.",
+        "Date": "2025-01-18"
+      },
+      {
+        "User": "Ira Nair",
+        "Rated": 4.5,
+        "Comment": "Seat depth feels appropriate.",
+        "Date": "2024-12-21"
+      },
+      {
+        "User": "Joel Fernandes",
+        "Rated": 4.1,
+        "Comment": "Pressure distribution feels even. Quality feels decent. After extended use, overall stability remains consistent.",
+        "Date": "2024-08-25"
+      },
+      {
+        "User": "Riya Verma",
+        "Rated": 4.5,
+        "Comment": "Overall weight distribution feels stable.",
+        "Date": "2024-10-22"
+      }
+    ],
+    "Description": "A well-designed piece that balances comfort and practicality for everyday use. The structure is built to provide reliable support while keeping a modern appearance. Its clean design helps it blend easily with different room styles. Suitable for both compact and spacious interiors."
+  },
+  {
+    "ID": "b-double-2",
+    "Name": "PLANPRO double bed db2",
+    "Dimension": "174.3 cm | 99.8 cm | 195.0 cm",
+    "Price": 14800,
+    "Rating": 3.9,
+    "ImageURL": "products/double bed/db2.png",
+    "ModelURL": "products/double bed models/db2.glb",
+    "Type": "bed",
+    "SubType": "double_bed",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Imran Ansari",
+        "Rated": 4.1,
+        "Comment": "Overall seating geometry feels well designed. Stability feels acceptable. After extended use, overall stability remains consistent.",
+        "Date": "2024-04-16"
+      },
+      {
+        "User": "Dylan Gomes",
+        "Rated": 4,
+        "Comment": "Recline positioning feels smooth. Functionality is practical.",
+        "Date": "2024-07-19"
+      },
+      {
+        "User": "Shravan Iyer",
+        "Rated": 3.9,
+        "Comment": "Seat elevation feels comfortable. Feels practical and functional.",
+        "Date": "2024-11-20"
+      },
+      {
+        "User": "Gavin Lydia",
+        "Rated": 3.9,
+        "Comment": "Armrest height feels ergonomically correct. Works as expected. After extended use, overall stability remains consistent.",
+        "Date": "2024-11-27"
+      },
+      {
+        "User": "Manav Saxena",
+        "Rated": 4,
+        "Comment": "Assembly joints feel reinforced. Suitable for long term use. After extended use, overall stability remains consistent.",
+        "Date": "2024-12-13"
+      },
+      {
+        "User": "Ibrahim Sheikh",
+        "Rated": 4,
+        "Comment": "Frame stability remains steady. Serves its purpose effectively. After extended use, overall stability remains consistent.",
+        "Date": "2024-07-11"
+      },
+      {
+        "User": "Mathew Sharon",
+        "Rated": 4,
+        "Comment": "Assembly joints feel reinforced. Material feels sufficient.",
+        "Date": "2024-02-10"
+      }
+    ],
+    "Description": "Designed with attention to detail, this item brings both function and style into your home. The materials are selected to improve durability and longterm use. Its balanced proportions make it comfortable while maintaining a neat visual presence. Works well in modern living spaces."
+  },
+  {
+    "ID": "b-double-3",
+    "Name": "PLANPRO double bed db3",
+    "Dimension": "111.6 cm | 69.7 cm | 195.7 cm",
+    "Price": 17800,
+    "Rating": 4.2,
+    "ImageURL": "products/double bed/db3.png",
+    "ModelURL": "products/double bed models/db3.glb",
+    "Type": "bed",
+    "SubType": "double_bed",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Jason Johancy",
+        "Rated": 4.3,
+        "Comment": "Padding density feels optimal. Structure remains steady. After extended use, overall stability remains consistent.",
+        "Date": "2024-06-11"
+      },
+      {
+        "User": "Zaid Siddiqui",
+        "Rated": 3.9,
+        "Comment": "Seating posture alignment feels natural. Serves its purpose effectively.",
+        "Date": "2024-08-20"
+      },
+      {
+        "User": "Rohit Kamath",
+        "Rated": 4.3,
+        "Comment": "Assembly joints feel reinforced. Functionality is practical. After extended use, overall stability remains consistent.",
+        "Date": "2025-01-22"
+      },
+      {
+        "User": "Ira Karuppasamy",
+        "Rated": 4,
+        "Comment": "Armrest height feels ergonomically correct. Functionality is practical.",
+        "Date": "2024-11-24"
+      },
+      {
+        "User": "Aditi Krishnan",
+        "Rated": 4.4,
+        "Comment": "Finish texture feels refined. Performance remains stable. After extended use, overall stability remains consistent.",
+        "Date": "2024-07-05"
+      },
+      {
+        "User": "Shravan Karuppasamy",
+        "Rated": 4,
+        "Comment": "Finish texture feels refined. Performance meets expectations. After extended use, overall stability remains consistent.",
+        "Date": "2024-11-07"
+      },
+      {
+        "User": "Ira Kamath",
+        "Rated": 3.9,
+        "Comment": "Structural alignment appears accurate. Overall experience is satisfactory. After extended use, overall stability remains consistent.",
+        "Date": "2024-11-30"
+      }
+    ],
+    "Description": "This product combines durability with a simple modern design. It is built to handle daily use while keeping a comfortable experience. The structure supports proper posture and relaxation. Its versatile look allows it to match many interior layouts."
+  },
+  {
+    "ID": "b-double-4",
+    "Name": "PLANPRO double bed db4",
+    "Dimension": "196.1 cm | 59.5 cm | 175.3 cm",
+    "Price": 16500,
+    "Rating": 4.3,
+    "ImageURL": "products/double bed/db4.png",
+    "ModelURL": "products/double bed models/db4.glb",
+    "Type": "bed",
+    "SubType": "double_bed",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Gavin Mathew",
+        "Rated": 4.5,
+        "Comment": "Seating posture alignment feels natural.",
+        "Date": "2024-06-05"
+      },
+      {
+        "User": "Sophie D'Souza",
+        "Rated": 4.5,
+        "Comment": "Leg support structure feels balanced. Material consistency feels strong. After extended use, overall stability remains consistent.",
+        "Date": "2024-02-23"
+      },
+      {
+        "User": "Tanvi Joshi",
+        "Rated": 4,
+        "Comment": "Design proportions feel practical.",
+        "Date": "2024-05-26"
+      },
+      {
+        "User": "Sameer Ansari",
+        "Rated": 4.4,
+        "Comment": "Armrest height feels ergonomically correct.",
+        "Date": "2024-10-02"
+      },
+      {
+        "User": "Karthik Rao",
+        "Rated": 4.2,
+        "Comment": "Design proportions feel practical.",
+        "Date": "2024-02-08"
+      }
+    ],
+    "Description": "A practical furniture choice that focuses on comfort and stability. The frame is structured for longlasting use while maintaining a clean aesthetic. Its design helps improve usability in everyday situations. A dependable addition to most home environments."
+  },
+  {
+    "ID": "b-double-5",
+    "Name": "PLANPRO double bed db5",
+    "Dimension": "159.0 cm | 63.5 cm | 195.7 cm",
+    "Price": 16500,
+    "Rating": 3.8,
+    "ImageURL": "products/double bed/db5.png",
+    "ModelURL": "products/double bed models/db5.glb",
+    "Type": "bed",
+    "SubType": "double_bed",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Jason Joseph",
+        "Rated": 3.5,
+        "Comment": "Structural alignment appears accurate. Performance meets expectations.",
+        "Date": "2024-07-21"
+      },
+      {
+        "User": "Faizan Al Hussaini",
+        "Rated": 3.9,
+        "Comment": "Lower back support feels consistent. Performance meets expectations.",
+        "Date": "2024-04-12"
+      },
+      {
+        "User": "Joseph Grace",
+        "Rated": 3.9,
+        "Comment": "Build quality feels sturdy. Functionality is practical.",
+        "Date": "2024-01-30"
+      },
+      {
+        "User": "Darren Gomes",
+        "Rated": 3.8,
+        "Comment": "Lower back support feels consistent. Build feels acceptable. After extended use, overall stability remains consistent.",
+        "Date": "2024-10-16"
+      },
+      {
+        "User": "Arjun Agarwal",
+        "Rated": 3.6,
+        "Comment": "Leg support structure feels balanced.",
+        "Date": "2024-09-12"
+      },
+      {
+        "User": "Divya Iyer",
+        "Rated": 4,
+        "Comment": "Structural alignment appears accurate. Quality feels decent.",
+        "Date": "2024-11-25"
+      },
+      {
+        "User": "Kabir Sharma",
+        "Rated": 4,
+        "Comment": "Pressure distribution feels even. Finish appears decent. After extended use, overall stability remains consistent.",
+        "Date": "2024-11-09"
+      }
+    ],
+    "Description": "Created to improve everyday comfort while keeping a stylish presence in the room. The build quality ensures steady performance over time. Its thoughtful design allows it to integrate easily with surrounding furniture. Ideal for contemporary homes."
+  },
+  {
+    "ID": "c-gaming-1",
+    "Name": "PLANPRO gaming chair G1",
+    "Dimension": "94.7 cm | 195.7 cm | 105.5 cm",
+    "Price": 14600,
+    "Rating": 4.2,
+    "ImageURL": "products/gaming chair/G1.png",
+    "ModelURL": "products/gaming chair moodels/G1.glb",
+    "Type": "chair",
+    "SubType": "gaming_chair",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Manav Singh",
+        "Rated": 4.4,
+        "Comment": "Lower back support feels consistent. Craftsmanship feels satisfactory.",
+        "Date": "2024-11-28"
+      },
+      {
+        "User": "Manav Bansal",
+        "Rated": 4.1,
+        "Comment": "Finish texture feels refined. Serves its purpose effectively. After extended use, overall stability remains consistent.",
+        "Date": "2025-01-05"
+      },
+      {
+        "User": "Pooja Agarwal",
+        "Rated": 4.4,
+        "Comment": "Seating posture alignment feels natural. Finish quality is well maintained.",
+        "Date": "2024-11-05"
+      },
+      {
+        "User": "Zaid Syed",
+        "Rated": 4,
+        "Comment": "Comfort level remains consistent over time. Finish appears decent.",
+        "Date": "2024-09-12"
+      },
+      {
+        "User": "Darren Lobo",
+        "Rated": 4.2,
+        "Comment": "Assembly joints feel reinforced. Design feels straightforward. After extended use, overall stability remains consistent.",
+        "Date": "2024-08-25"
+      },
+      {
+        "User": "Imran Khan",
+        "Rated": 4.1,
+        "Comment": "Comfort level remains consistent over time. Overall experience is satisfactory. After extended use, overall stability remains consistent.",
+        "Date": "2024-09-12"
+      },
+      {
+        "User": "Kabir Gupta",
+        "Rated": 3.9,
+        "Comment": "Structural alignment appears accurate.",
+        "Date": "2025-01-01"
+      }
+    ],
+    "Description": "A well-designed piece that balances comfort and practicality for everyday use. The structure is built to provide reliable support while keeping a modern appearance. Its clean design helps it blend easily with different room styles. Suitable for both compact and spacious interiors."
+  },
+  {
+    "ID": "c-gaming-2",
+    "Name": "PLANPRO gaming chair G2",
+    "Dimension": "110.2 cm | 195.7 cm | 114.7 cm",
+    "Price": 14300,
+    "Rating": 4.2,
+    "ImageURL": "products/gaming chair/G2.png",
+    "ModelURL": "products/gaming chair moodels/G2.glb",
+    "Type": "chair",
+    "SubType": "gaming_chair",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Zaid Siddiqui",
+        "Rated": 4.1,
+        "Comment": "Overall weight distribution feels stable.",
+        "Date": "2024-12-11"
+      },
+      {
+        "User": "Darren Carvalho",
+        "Rated": 4.5,
+        "Comment": "Structural alignment appears accurate.",
+        "Date": "2024-07-08"
+      },
+      {
+        "User": "Sana Ansari",
+        "Rated": 3.9,
+        "Comment": "Seating posture alignment feels natural.",
+        "Date": "2024-03-02"
+      },
+      {
+        "User": "Clara Furtado",
+        "Rated": 4.2,
+        "Comment": "Seating posture alignment feels natural. Material feels sufficient.",
+        "Date": "2024-11-23"
+      },
+      {
+        "User": "Arjun Joshi",
+        "Rated": 4,
+        "Comment": "Backrest support positioning is well engineered. Comfort level feels adequate. After extended use, overall stability remains consistent.",
+        "Date": "2025-01-04"
+      },
+      {
+        "User": "Karthik Iyer",
+        "Rated": 4.3,
+        "Comment": "Assembly joints feel reinforced. Performance meets expectations.",
+        "Date": "2024-03-14"
+      }
+    ],
+    "Description": "Designed with attention to detail, this item brings both function and style into your home. The materials are selected to improve durability and longterm use. Its balanced proportions make it comfortable while maintaining a neat visual presence. Works well in modern living spaces."
+  },
+  {
+    "ID": "c-gaming-3",
+    "Name": "PLANPRO gaming chair G3",
+    "Dimension": "115.4 cm | 195.7 cm | 115.0 cm",
+    "Price": 15300,
+    "Rating": 3.7,
+    "ImageURL": "products/gaming chair/G3.png",
+    "ModelURL": "products/gaming chair moodels/G3.glb",
+    "Type": "chair",
+    "SubType": "gaming_chair",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Ibrahim Khan",
+        "Rated": 3.5,
+        "Comment": "Pressure distribution feels even. Build feels acceptable.",
+        "Date": "2024-01-28"
+      },
+      {
+        "User": "Ayaan Khan",
+        "Rated": 3.9,
+        "Comment": "Padding density feels optimal. Structure remains steady. After extended use, overall stability remains consistent.",
+        "Date": "2024-11-23"
+      },
+      {
+        "User": "Sophie Lobo",
+        "Rated": 3.6,
+        "Comment": "Seat depth feels appropriate. Meets regular usage needs.",
+        "Date": "2024-03-03"
+      },
+      {
+        "User": "Jomin Mathew",
+        "Rated": 3.7,
+        "Comment": "Overall seating geometry feels well designed. Serves its purpose effectively. After extended use, overall stability remains consistent.",
+        "Date": "2024-06-30"
+      },
+      {
+        "User": "Joel Sharon",
+        "Rated": 3.5,
+        "Comment": "Comfort level remains consistent over time.",
+        "Date": "2025-01-09"
+      }
+    ],
+    "Description": "This product combines durability with a simple modern design. It is built to handle daily use while keeping a comfortable experience. The structure supports proper posture and relaxation. Its versatile look allows it to match many interior layouts."
+  },
+  {
+    "ID": "c-gaming-4",
+    "Name": "PLANPRO gaming chair G4",
+    "Dimension": "103.1 cm | 195.7 cm | 101.0 cm",
+    "Price": 17500,
+    "Rating": 4.5,
+    "ImageURL": "products/gaming chair/G4.png",
+    "ModelURL": "products/gaming chair moodels/G4.glb",
+    "Type": "chair",
+    "SubType": "gaming_chair",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Ayaan Syed",
+        "Rated": 4.8,
+        "Comment": "Comfort level remains consistent over time. Overall execution feels high end.",
+        "Date": "2024-10-19"
+      },
+      {
+        "User": "Vivaan Nair",
+        "Rated": 4.5,
+        "Comment": "Backrest support positioning is well engineered. Build meets expectations comfortably.",
+        "Date": "2024-04-03"
+      },
+      {
+        "User": "Dylan Pereira",
+        "Rated": 4.3,
+        "Comment": "Backrest support positioning is well engineered.",
+        "Date": "2024-01-21"
+      },
+      {
+        "User": "Aarav Nair",
+        "Rated": 4.6,
+        "Comment": "Seating posture alignment feels natural.",
+        "Date": "2024-11-22"
+      },
+      {
+        "User": "Arjun Bansal",
+        "Rated": 4.8,
+        "Comment": "Backrest support positioning is well engineered.",
+        "Date": "2024-09-03"
+      },
+      {
+        "User": "Jason Jones",
+        "Rated": 4.3,
+        "Comment": "Build quality feels sturdy. Quality feels decent. After extended use, overall stability remains consistent.",
+        "Date": "2024-02-01"
+      },
+      {
+        "User": "Ananya Bansal",
+        "Rated": 4.6,
+        "Comment": "Finish texture feels refined.",
+        "Date": "2024-04-24"
+      }
+    ],
+    "Description": "A practical furniture choice that focuses on comfort and stability. The frame is structured for longlasting use while maintaining a clean aesthetic. Its design helps improve usability in everyday situations. A dependable addition to most home environments."
+  },
+  {
+    "ID": "c-gaming-5",
+    "Name": "PLANPRO gaming chair G5",
+    "Dimension": "93.4 cm | 195.7 cm | 107.9 cm",
+    "Price": 14000,
+    "Rating": 4.3,
+    "ImageURL": "products/gaming chair/G5.png",
+    "ModelURL": "products/gaming chair moodels/G5.glb",
+    "Type": "chair",
+    "SubType": "gaming_chair",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Sana Al Hussaini",
+        "Rated": 4,
+        "Comment": "Padding density feels optimal. Meets regular usage needs.",
+        "Date": "2024-11-27"
+      },
+      {
+        "User": "Riya Bansal",
+        "Rated": 4.1,
+        "Comment": "Comfort level remains consistent over time.",
+        "Date": "2024-02-21"
+      },
+      {
+        "User": "Darren Furtado",
+        "Rated": 4.6,
+        "Comment": "Seating posture alignment feels natural. Design quality feels balanced. After extended use, overall stability remains consistent.",
+        "Date": "2024-01-14"
+      },
+      {
+        "User": "Jomin Sharon",
+        "Rated": 4.4,
+        "Comment": "Build quality feels sturdy. Assembly quality feels solid.",
+        "Date": "2024-03-10"
+      },
+      {
+        "User": "Vivaan Shah",
+        "Rated": 4.1,
+        "Comment": "Frame stability remains steady. Works as expected. After extended use, overall stability remains consistent.",
+        "Date": "2024-06-27"
+      },
+      {
+        "User": "Vikram Kamath",
+        "Rated": 4.2,
+        "Comment": "Comfort level remains consistent over time. Build feels acceptable.",
+        "Date": "2024-05-14"
+      },
+      {
+        "User": "Joel Sharon",
+        "Rated": 4,
+        "Comment": "Lower back support feels consistent. Structure remains steady.",
+        "Date": "2024-04-19"
+      }
+    ],
+    "Description": "Created to improve everyday comfort while keeping a stylish presence in the room. The build quality ensures steady performance over time. Its thoughtful design allows it to integrate easily with surrounding furniture. Ideal for contemporary homes."
+  },
+  {
+    "ID": "b-king-1",
+    "Name": "PLANPRO king bed k1",
+    "Dimension": "145.4 cm | 54.4 cm | 195.7 cm",
+    "Price": 15600,
+    "Rating": 4.1,
+    "ImageURL": "products/king bed/k1.png",
+    "ModelURL": "products/king bed models/k1.glb",
+    "Type": "bed",
+    "SubType": "king_bed",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Anirudh Karuppasamy",
+        "Rated": 4.4,
+        "Comment": "Cushion firmness distribution feels balanced. Fit and finish feel accurate. After extended use, overall stability remains consistent.",
+        "Date": "2025-01-30"
+      },
+      {
+        "User": "Sharon Joseph",
+        "Rated": 4.1,
+        "Comment": "Frame stability remains steady. Feels practical and functional.",
+        "Date": "2024-12-03"
+      },
+      {
+        "User": "Ayaan Siddiqui",
+        "Rated": 4.2,
+        "Comment": "Overall seating geometry feels well designed. Build feels acceptable.",
+        "Date": "2024-03-26"
+      },
+      {
+        "User": "Rohit Rao",
+        "Rated": 3.8,
+        "Comment": "Overall seating geometry feels well designed. Structure remains steady.",
+        "Date": "2024-08-13"
+      },
+      {
+        "User": "Aditi Rao",
+        "Rated": 4.1,
+        "Comment": "Leg support structure feels balanced. Performance meets expectations.",
+        "Date": "2024-04-15"
+      },
+      {
+        "User": "Ananya Trivedi",
+        "Rated": 3.9,
+        "Comment": "Recline positioning feels smooth. Performance meets expectations.",
+        "Date": "2024-01-08"
+      },
+      {
+        "User": "Karthik Karuppasamy",
+        "Rated": 4.3,
+        "Comment": "Assembly joints feel reinforced.",
+        "Date": "2024-08-10"
+      },
+      {
+        "User": "Aaron Lobo",
+        "Rated": 3.9,
+        "Comment": "Leg support structure feels balanced. Comfort level feels adequate.",
+        "Date": "2025-01-11"
+      }
+    ],
+    "Description": "A well-designed piece that balances comfort and practicality for everyday use. The structure is built to provide reliable support while keeping a modern appearance. Its clean design helps it blend easily with different room styles. Suitable for both compact and spacious interiors."
+  },
+  {
+    "ID": "b-king-2",
+    "Name": "PLANPRO king bed k2",
+    "Dimension": "212.7 cm | 62.1 cm | 223.5 cm",
+    "Price": 17800,
+    "Rating": 3.9,
+    "ImageURL": "products/king bed/k2.png",
+    "ModelURL": "products/king bed models/k2.glb",
+    "Type": "bed",
+    "SubType": "king_bed",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Mathew Joseph",
+        "Rated": 4,
+        "Comment": "Comfort level remains consistent over time. Design feels straightforward. After extended use, overall stability remains consistent.",
+        "Date": "2024-01-23"
+      },
+      {
+        "User": "Imran Khan",
+        "Rated": 3.7,
+        "Comment": "Armrest height feels ergonomically correct.",
+        "Date": "2024-02-01"
+      },
+      {
+        "User": "Farhan Ansari",
+        "Rated": 3.9,
+        "Comment": "Comfort level remains consistent over time.",
+        "Date": "2024-09-15"
+      },
+      {
+        "User": "Yash Chatterjee",
+        "Rated": 3.8,
+        "Comment": "Lower back support feels consistent.",
+        "Date": "2024-07-02"
+      },
+      {
+        "User": "Dylan Gomes",
+        "Rated": 3.8,
+        "Comment": "Lower back support feels consistent. Performance remains adequate. After extended use, overall stability remains consistent.",
+        "Date": "2025-01-22"
+      }
+    ],
+    "Description": "Designed with attention to detail, this item brings both function and style into your home. The materials are selected to improve durability and longterm use. Its balanced proportions make it comfortable while maintaining a neat visual presence. Works well in modern living spaces."
+  },
+  {
+    "ID": "b-king-3",
+    "Name": "PLANPRO king bed k3",
+    "Dimension": "171.8 cm | 63.3 cm | 195.5 cm",
+    "Price": 15400,
+    "Rating": 4.3,
+    "ImageURL": "products/king bed/k3.png",
+    "ModelURL": "products/king bed models/k3.glb",
+    "Type": "bed",
+    "SubType": "king_bed",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Joel Fernandes",
+        "Rated": 4.6,
+        "Comment": "Seat depth feels appropriate. Craftsmanship feels satisfactory.",
+        "Date": "2024-07-10"
+      },
+      {
+        "User": "Ibrahim Qureshi",
+        "Rated": 4.5,
+        "Comment": "Leg support structure feels balanced. Design quality feels balanced. After extended use, overall stability remains consistent.",
+        "Date": "2024-05-12"
+      },
+      {
+        "User": "Faizan Syed",
+        "Rated": 4.3,
+        "Comment": "Leg support structure feels balanced. Stable under regular conditions.",
+        "Date": "2024-08-18"
+      },
+      {
+        "User": "Sana Pathan",
+        "Rated": 4.2,
+        "Comment": "Seat depth feels appropriate. Serves its purpose effectively. After extended use, overall stability remains consistent.",
+        "Date": "2024-05-08"
+      },
+      {
+        "User": "Shravan Iyer",
+        "Rated": 4.3,
+        "Comment": "Overall seating geometry feels well designed. Overall experience is satisfactory. After extended use, overall stability remains consistent.",
+        "Date": "2024-12-14"
+      },
+      {
+        "User": "Sharon Michael",
+        "Rated": 4.2,
+        "Comment": "Lower back support feels consistent. Overall experience is satisfactory. After extended use, overall stability remains consistent.",
+        "Date": "2024-01-31"
+      },
+      {
+        "User": "Joel Lydia",
+        "Rated": 4,
+        "Comment": "Leg support structure feels balanced. Feels practical and functional. After extended use, overall stability remains consistent.",
+        "Date": "2024-01-22"
+      },
+      {
+        "User": "Mathew Michael",
+        "Rated": 4,
+        "Comment": "Comfort level remains consistent over time. Feels practical and functional. After extended use, overall stability remains consistent.",
+        "Date": "2025-01-15"
+      },
+      {
+        "User": "Tanvi Joshi",
+        "Rated": 4.4,
+        "Comment": "Assembly joints feel reinforced. Sturdiness remains reliable. After extended use, overall stability remains consistent.",
+        "Date": "2024-12-01"
+      }
+    ],
+    "Description": "This product combines durability with a simple modern design. It is built to handle daily use while keeping a comfortable experience. The structure supports proper posture and relaxation. Its versatile look allows it to match many interior layouts."
+  },
+  {
+    "ID": "b-king-4",
+    "Name": "PLANPRO king bed k4",
+    "Dimension": "138.0 cm | 82.5 cm | 184.8 cm",
+    "Price": 15200,
+    "Rating": 3.9,
+    "ImageURL": "products/king bed/k4.png",
+    "ModelURL": "products/king bed models/k4.glb",
+    "Type": "bed",
+    "SubType": "king_bed",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Joel Michael",
+        "Rated": 3.7,
+        "Comment": "Armrest height feels ergonomically correct. Works as expected.",
+        "Date": "2024-07-05"
+      },
+      {
+        "User": "Rohit Pillai",
+        "Rated": 3.7,
+        "Comment": "Seat depth feels appropriate.",
+        "Date": "2024-08-28"
+      },
+      {
+        "User": "Sophie Gomes",
+        "Rated": 4,
+        "Comment": "Seating posture alignment feels natural. Stability feels acceptable. After extended use, overall stability remains consistent.",
+        "Date": "2024-11-01"
+      },
+      {
+        "User": "Yash Chatterjee",
+        "Rated": 3.9,
+        "Comment": "Assembly joints feel reinforced.",
+        "Date": "2024-11-13"
+      },
+      {
+        "User": "Zoya Siddiqui",
+        "Rated": 4,
+        "Comment": "Seat elevation feels comfortable.",
+        "Date": "2024-11-07"
+      },
+      {
+        "User": "Rahul Verma",
+        "Rated": 4,
+        "Comment": "Armrest height feels ergonomically correct. Suitable for long term use.",
+        "Date": "2024-07-10"
+      },
+      {
+        "User": "Harshita Pillai",
+        "Rated": 3.9,
+        "Comment": "Overall seating geometry feels well designed. Functionality is practical. After extended use, overall stability remains consistent.",
+        "Date": "2024-08-14"
+      },
+      {
+        "User": "Aditi Kamath",
+        "Rated": 3.7,
+        "Comment": "Build quality feels sturdy. Comfort level feels adequate.",
+        "Date": "2024-09-30"
+      },
+      {
+        "User": "Sanjay Kumar",
+        "Rated": 3.6,
+        "Comment": "Overall seating geometry feels well designed. Feels practical and functional.",
+        "Date": "2024-10-05"
+      }
+    ],
+    "Description": "A practical furniture choice that focuses on comfort and stability. The frame is structured for longlasting use while maintaining a clean aesthetic. Its design helps improve usability in everyday situations. A dependable addition to most home environments."
+  },
+  {
+    "ID": "b-king-5",
+    "Name": "PLANPRO king bed k5",
+    "Dimension": "127.8 cm | 32.2 cm | 193.5 cm",
+    "Price": 15700,
+    "Rating": 4.5,
+    "ImageURL": "products/king bed/k5.png",
+    "ModelURL": "products/king bed models/k5.glb",
+    "Type": "bed",
+    "SubType": "king_bed",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Imran Pathan",
+        "Rated": 4.7,
+        "Comment": "Armrest height feels ergonomically correct.",
+        "Date": "2024-05-15"
+      },
+      {
+        "User": "Joel Michael",
+        "Rated": 4.4,
+        "Comment": "Pressure distribution feels even. Build meets expectations comfortably. After extended use, overall stability remains consistent.",
+        "Date": "2024-01-20"
+      },
+      {
+        "User": "Hiba Syed",
+        "Rated": 4.8,
+        "Comment": "Padding density feels optimal.",
+        "Date": "2024-07-23"
+      },
+      {
+        "User": "Tanvi Trivedi",
+        "Rated": 4.3,
+        "Comment": "Backrest support positioning is well engineered.",
+        "Date": "2024-11-22"
+      },
+      {
+        "User": "Imran Syed",
+        "Rated": 4.2,
+        "Comment": "Seating posture alignment feels natural. Quality feels decent. After extended use, overall stability remains consistent.",
+        "Date": "2025-01-14"
+      },
+      {
+        "User": "Vivaan Verma",
+        "Rated": 4.6,
+        "Comment": "Comfort level remains consistent over time. Construction feels trustworthy. After extended use, overall stability remains consistent.",
+        "Date": "2024-06-07"
+      },
+      {
+        "User": "Gavin Sharon",
+        "Rated": 4.2,
+        "Comment": "Overall weight distribution feels stable. Works as expected.",
+        "Date": "2024-05-24"
+      }
+    ],
+    "Description": "Created to improve everyday comfort while keeping a stylish presence in the room. The build quality ensures steady performance over time. Its thoughtful design allows it to integrate easily with surrounding furniture. Ideal for contemporary homes."
+  },
+  {
+    "ID": "c-office-1",
+    "Name": "PLANPRO office chair ch1",
+    "Dimension": "171.7 cm | 195.6 cm | 162.4 cm",
+    "Price": 15900,
+    "Rating": 4.5,
+    "ImageURL": "products/office chair/ch1.png",
+    "ModelURL": "products/office chair models/ch1.glb",
+    "Type": "chair",
+    "SubType": "office_chair",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Lydia Grace",
+        "Rated": 4.3,
+        "Comment": "Cushion firmness distribution feels balanced. Material feels sufficient.",
+        "Date": "2024-09-12"
+      },
+      {
+        "User": "Jason Grace",
+        "Rated": 4.2,
+        "Comment": "Finish texture feels refined. Construction seems reasonable. After extended use, overall stability remains consistent.",
+        "Date": "2024-09-17"
+      },
+      {
+        "User": "Joel Lobo",
+        "Rated": 4.7,
+        "Comment": "Finish texture feels refined.",
+        "Date": "2024-11-10"
+      },
+      {
+        "User": "Meera Pillai",
+        "Rated": 4.3,
+        "Comment": "Design proportions feel practical. Structure remains steady. After extended use, overall stability remains consistent.",
+        "Date": "2024-11-21"
+      },
+      {
+        "User": "Ishaan Verma",
+        "Rated": 4.2,
+        "Comment": "Structural alignment appears accurate.",
+        "Date": "2024-02-18"
+      },
+      {
+        "User": "Aditya Agarwal",
+        "Rated": 4.3,
+        "Comment": "Design proportions feel practical.",
+        "Date": "2024-11-10"
+      },
+      {
+        "User": "Manav Shah",
+        "Rated": 4.6,
+        "Comment": "Armrest height feels ergonomically correct. Craftsmanship feels satisfactory.",
+        "Date": "2024-06-20"
+      }
+    ],
+    "Description": "A well-designed piece that balances comfort and practicality for everyday use. The structure is built to provide reliable support while keeping a modern appearance. Its clean design helps it blend easily with different room styles. Suitable for both compact and spacious interiors."
+  },
+  {
+    "ID": "c-office-2",
+    "Name": "PLANPRO office chair ch2",
+    "Dimension": "122.8 cm | 195.7 cm | 129.9 cm",
+    "Price": 15900,
+    "Rating": 4.6,
+    "ImageURL": "products/office chair/ch2.png",
+    "ModelURL": "products/office chair models/ch2.glb",
+    "Type": "chair",
+    "SubType": "office_chair",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Sana Ansari",
+        "Rated": 4.5,
+        "Comment": "Leg support structure feels balanced. Performance remains stable.",
+        "Date": "2024-01-08"
+      },
+      {
+        "User": "Manav Bansal",
+        "Rated": 4.6,
+        "Comment": "Seat depth feels appropriate. Design execution feels polished. After extended use, overall stability remains consistent.",
+        "Date": "2024-03-22"
+      },
+      {
+        "User": "Aarav Joshi",
+        "Rated": 4.5,
+        "Comment": "Seating posture alignment feels natural. Structure handles regular use well. After extended use, overall stability remains consistent.",
+        "Date": "2024-02-27"
+      },
+      {
+        "User": "Farhan Ansari",
+        "Rated": 4.7,
+        "Comment": "Structural alignment appears accurate.",
+        "Date": "2024-08-18"
+      },
+      {
+        "User": "Zoya Syed",
+        "Rated": 4.6,
+        "Comment": "Build quality feels sturdy. Material finish appears consistent.",
+        "Date": "2024-01-15"
+      },
+      {
+        "User": "Aaron Pereira",
+        "Rated": 4.9,
+        "Comment": "Cushion firmness distribution feels balanced. Execution quality feels refined.",
+        "Date": "2024-10-14"
+      }
+    ],
+    "Description": "Designed with attention to detail, this item brings both function and style into your home. The materials are selected to improve durability and longterm use. Its balanced proportions make it comfortable while maintaining a neat visual presence. Works well in modern living spaces."
+  },
+  {
+    "ID": "c-office-3",
+    "Name": "PLANPRO office chair ch3",
+    "Dimension": "112.2 cm | 195.7 cm | 100.6 cm",
+    "Price": 16100,
+    "Rating": 3.9,
+    "ImageURL": "products/office chair/ch3.png",
+    "ModelURL": "products/office chair models/ch3.glb",
+    "Type": "chair",
+    "SubType": "office_chair",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Zaid Pathan",
+        "Rated": 3.7,
+        "Comment": "Pressure distribution feels even. Stable under regular conditions. After extended use, overall stability remains consistent.",
+        "Date": "2024-09-01"
+      },
+      {
+        "User": "Joel Joseph",
+        "Rated": 3.6,
+        "Comment": "Assembly joints feel reinforced. Suitable for long term use.",
+        "Date": "2024-08-23"
+      },
+      {
+        "User": "Arjun Saxena",
+        "Rated": 4.1,
+        "Comment": "Lower back support feels consistent. Quality feels decent.",
+        "Date": "2024-07-14"
+      },
+      {
+        "User": "Jomin Mathew",
+        "Rated": 4.1,
+        "Comment": "Comfort level remains consistent over time.",
+        "Date": "2024-01-19"
+      },
+      {
+        "User": "Rahul Mehta",
+        "Rated": 3.8,
+        "Comment": "Seating posture alignment feels natural. Quality feels decent. After extended use, overall stability remains consistent.",
+        "Date": "2024-01-07"
+      }
+    ],
+    "Description": "This product combines durability with a simple modern design. It is built to handle daily use while keeping a comfortable experience. The structure supports proper posture and relaxation. Its versatile look allows it to match many interior layouts."
+  },
+  {
+    "ID": "c-office-4",
+    "Name": "PLANPRO office chair ch4",
+    "Dimension": "108.2 cm | 195.7 cm | 101.9 cm",
+    "Price": 16300,
+    "Rating": 4.6,
+    "ImageURL": "products/office chair/ch4.png",
+    "ModelURL": "products/office chair models/ch4.glb",
+    "Type": "chair",
+    "SubType": "office_chair",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Ryan Rodrigues",
+        "Rated": 4.3,
+        "Comment": "Build quality feels sturdy. Performance meets expectations.",
+        "Date": "2024-04-03"
+      },
+      {
+        "User": "Gavin Mathew",
+        "Rated": 4.7,
+        "Comment": "Cushion firmness distribution feels balanced.",
+        "Date": "2024-12-29"
+      },
+      {
+        "User": "Riya Bansal",
+        "Rated": 4.4,
+        "Comment": "Recline positioning feels smooth. Build meets expectations comfortably.",
+        "Date": "2024-01-30"
+      },
+      {
+        "User": "Lydia Michael",
+        "Rated": 4.6,
+        "Comment": "Seating posture alignment feels natural.",
+        "Date": "2024-12-10"
+      },
+      {
+        "User": "Arman Khan",
+        "Rated": 4.6,
+        "Comment": "Design proportions feel practical. Craftsmanship feels satisfactory.",
+        "Date": "2024-06-23"
+      },
+      {
+        "User": "Karthik Reddy",
+        "Rated": 4.7,
+        "Comment": "Seat depth feels appropriate. Finish quality is well maintained. After extended use, overall stability remains consistent.",
+        "Date": "2024-05-15"
+      }
+    ],
+    "Description": "A practical furniture choice that focuses on comfort and stability. The frame is structured for longlasting use while maintaining a clean aesthetic. Its design helps improve usability in everyday situations. A dependable addition to most home environments."
+  },
+  {
+    "ID": "c-office-5",
+    "Name": "PLANPRO office chair ch5",
+    "Dimension": "174.5 cm | 195.7 cm | 137.0 cm",
+    "Price": 14400,
+    "Rating": 4.2,
+    "ImageURL": "products/office chair/ch5.png",
+    "ModelURL": "products/office chair models/ch5.glb",
+    "Type": "chair",
+    "SubType": "office_chair",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Ayaan Khan",
+        "Rated": 4.3,
+        "Comment": "Recline positioning feels smooth. Design feels straightforward. After extended use, overall stability remains consistent.",
+        "Date": "2024-09-19"
+      },
+      {
+        "User": "Karthik Nair",
+        "Rated": 4.3,
+        "Comment": "Finish texture feels refined. Design feels straightforward. After extended use, overall stability remains consistent.",
+        "Date": "2024-06-19"
+      },
+      {
+        "User": "Ayesha Qureshi",
+        "Rated": 4.1,
+        "Comment": "Cushion firmness distribution feels balanced.",
+        "Date": "2024-11-17"
+      },
+      {
+        "User": "Imran Qureshi",
+        "Rated": 4.2,
+        "Comment": "Pressure distribution feels even. Stability feels acceptable.",
+        "Date": "2025-01-17"
+      },
+      {
+        "User": "Isabella Lobo",
+        "Rated": 3.9,
+        "Comment": "Design proportions feel practical. Overall experience is satisfactory.",
+        "Date": "2024-03-14"
+      },
+      {
+        "User": "Maria Lobo",
+        "Rated": 4.4,
+        "Comment": "Structural alignment appears accurate. Structure handles regular use well.",
+        "Date": "2024-06-19"
+      },
+      {
+        "User": "Ibrahim Sheikh",
+        "Rated": 4.3,
+        "Comment": "Seat depth feels appropriate. Stability feels acceptable.",
+        "Date": "2024-02-03"
+      },
+      {
+        "User": "Meera Bhat",
+        "Rated": 4.1,
+        "Comment": "Seat depth feels appropriate. Works as expected.",
+        "Date": "2024-03-25"
+      },
+      {
+        "User": "Neil Pereira",
+        "Rated": 4.1,
+        "Comment": "Seating posture alignment feels natural. Works well for daily usage. After extended use, overall stability remains consistent.",
+        "Date": "2024-11-13"
+      }
+    ],
+    "Description": "Created to improve everyday comfort while keeping a stylish presence in the room. The build quality ensures steady performance over time. Its thoughtful design allows it to integrate easily with surrounding furniture. Ideal for contemporary homes."
+  },
+  {
+    "ID": "b-queen-1",
+    "Name": "PLANPRO queen bed q1",
+    "Dimension": "99.5 cm | 52.6 cm | 99.8 cm",
+    "Price": 17700,
+    "Rating": 4.5,
+    "ImageURL": "products/queen bed/q1.png",
+    "ModelURL": "products/queen bed models/q1.glb",
+    "Type": "bed",
+    "SubType": "queen_bed",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Elena Rodrigues",
+        "Rated": 4.6,
+        "Comment": "Cushion firmness distribution feels balanced. Performance remains stable.",
+        "Date": "2024-11-11"
+      },
+      {
+        "User": "Sana Pathan",
+        "Rated": 4.8,
+        "Comment": "Finish texture feels refined.",
+        "Date": "2024-05-03"
+      },
+      {
+        "User": "Yash Trivedi",
+        "Rated": 4.7,
+        "Comment": "Seating posture alignment feels natural.",
+        "Date": "2024-09-24"
+      },
+      {
+        "User": "Ananya Nair",
+        "Rated": 4.3,
+        "Comment": "Pressure distribution feels even. Design feels straightforward.",
+        "Date": "2024-06-11"
+      },
+      {
+        "User": "Elena D'Souza",
+        "Rated": 4.6,
+        "Comment": "Padding density feels optimal. Performance remains steady over time. After extended use, overall stability remains consistent.",
+        "Date": "2024-02-24"
+      },
+      {
+        "User": "Lydia Lydia",
+        "Rated": 4.3,
+        "Comment": "Leg support structure feels balanced.",
+        "Date": "2024-03-31"
+      },
+      {
+        "User": "Gavin Johancy",
+        "Rated": 4.7,
+        "Comment": "Seat depth feels appropriate. Sturdiness remains reliable. After extended use, overall stability remains consistent.",
+        "Date": "2024-07-17"
+      },
+      {
+        "User": "Ayaan Khan",
+        "Rated": 4.5,
+        "Comment": "Overall weight distribution feels stable. Overall experience feels positive. After extended use, overall stability remains consistent.",
+        "Date": "2024-02-25"
+      }
+    ],
+    "Description": "A well-designed piece that balances comfort and practicality for everyday use. The structure is built to provide reliable support while keeping a modern appearance. Its clean design helps it blend easily with different room styles. Suitable for both compact and spacious interiors."
+  },
+  {
+    "ID": "b-queen-2",
+    "Name": "PLANPRO queen bed q2",
+    "Dimension": "73.2 cm | 49.6 cm | 99.3 cm",
+    "Price": 16000,
+    "Rating": 4.6,
+    "ImageURL": "products/queen bed/q2.png",
+    "ModelURL": "products/queen bed models/q2.glb",
+    "Type": "bed",
+    "SubType": "queen_bed",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Rohit Reddy",
+        "Rated": 4.8,
+        "Comment": "Overall weight distribution feels stable. Attention to detail feels meticulous.",
+        "Date": "2024-08-06"
+      },
+      {
+        "User": "Genelia Grace",
+        "Rated": 4.4,
+        "Comment": "Leg support structure feels balanced.",
+        "Date": "2024-02-15"
+      },
+      {
+        "User": "Joel Furtado",
+        "Rated": 4.6,
+        "Comment": "Pressure distribution feels even. Build meets expectations comfortably.",
+        "Date": "2024-07-18"
+      },
+      {
+        "User": "Jason Joseph",
+        "Rated": 4.8,
+        "Comment": "Padding density feels optimal. Construction consistency is remarkable. After extended use, overall stability remains consistent.",
+        "Date": "2024-07-22"
+      },
+      {
+        "User": "Kevin Lobo",
+        "Rated": 4.6,
+        "Comment": "Comfort level remains consistent over time. Finish quality is well maintained. After extended use, overall stability remains consistent.",
+        "Date": "2024-08-28"
+      },
+      {
+        "User": "Meera Bhat",
+        "Rated": 4.7,
+        "Comment": "Recline positioning feels smooth. Fit and finish feel accurate.",
+        "Date": "2024-05-29"
+      }
+    ],
+    "Description": "Designed with attention to detail, this item brings both function and style into your home. The materials are selected to improve durability and longterm use. Its balanced proportions make it comfortable while maintaining a neat visual presence. Works well in modern living spaces."
+  },
+  {
+    "ID": "b-queen-3",
+    "Name": "PLANPRO queen bed q3",
+    "Dimension": "100.0 cm | 52.9 cm | 99.6 cm",
+    "Price": 16600,
+    "Rating": 4,
+    "ImageURL": "products/queen bed/q3.png",
+    "ModelURL": "products/queen bed models/q3.glb",
+    "Type": "bed",
+    "SubType": "queen_bed",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Elena Gomes",
+        "Rated": 3.8,
+        "Comment": "Pressure distribution feels even. Finish appears decent. After extended use, overall stability remains consistent.",
+        "Date": "2024-06-16"
+      },
+      {
+        "User": "Jomin Lydia",
+        "Rated": 3.8,
+        "Comment": "Design proportions feel practical.",
+        "Date": "2024-11-17"
+      },
+      {
+        "User": "Gavin Mathew",
+        "Rated": 4.2,
+        "Comment": "Backrest support positioning is well engineered. Overall experience is satisfactory.",
+        "Date": "2024-12-17"
+      },
+      {
+        "User": "Jason Mathew",
+        "Rated": 4,
+        "Comment": "Armrest height feels ergonomically correct.",
+        "Date": "2024-08-03"
+      },
+      {
+        "User": "Joseph Johancy",
+        "Rated": 4,
+        "Comment": "Leg support structure feels balanced. Performance remains adequate. After extended use, overall stability remains consistent.",
+        "Date": "2024-02-22"
+      }
+    ],
+    "Description": "This product combines durability with a simple modern design. It is built to handle daily use while keeping a comfortable experience. The structure supports proper posture and relaxation. Its versatile look allows it to match many interior layouts."
+  },
+  {
+    "ID": "b-queen-4",
+    "Name": "PLANPRO queen bed q4",
+    "Dimension": "82.5 cm | 49.2 cm | 100.0 cm",
+    "Price": 17100,
+    "Rating": 4.5,
+    "ImageURL": "products/queen bed/q4.png",
+    "ModelURL": "products/queen bed models/q4.glb",
+    "Type": "bed",
+    "SubType": "queen_bed",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Vivaan Kapoor",
+        "Rated": 4.5,
+        "Comment": "Padding density feels optimal.",
+        "Date": "2024-06-04"
+      },
+      {
+        "User": "Zaid Al Hussaini",
+        "Rated": 4.4,
+        "Comment": "Structural alignment appears accurate.",
+        "Date": "2024-11-06"
+      },
+      {
+        "User": "Arman Al Hussaini",
+        "Rated": 4.6,
+        "Comment": "Leg support structure feels balanced.",
+        "Date": "2025-01-11"
+      },
+      {
+        "User": "Sneha Joshi",
+        "Rated": 4.6,
+        "Comment": "Padding density feels optimal.",
+        "Date": "2024-01-10"
+      },
+      {
+        "User": "Jomin Michael",
+        "Rated": 4.8,
+        "Comment": "Comfort level remains consistent over time. Material quality feels premium.",
+        "Date": "2024-03-03"
+      },
+      {
+        "User": "Joseph Sharon",
+        "Rated": 4.8,
+        "Comment": "Finish texture feels refined. Overall execution feels high end.",
+        "Date": "2024-10-24"
+      },
+      {
+        "User": "Ryan Almeida",
+        "Rated": 4.2,
+        "Comment": "Overall weight distribution feels stable. Meets regular usage needs.",
+        "Date": "2024-04-15"
+      },
+      {
+        "User": "Maria Almeida",
+        "Rated": 4.5,
+        "Comment": "Pressure distribution feels even. Design quality feels balanced.",
+        "Date": "2024-04-28"
+      }
+    ],
+    "Description": "A practical furniture choice that focuses on comfort and stability. The frame is structured for longlasting use while maintaining a clean aesthetic. Its design helps improve usability in everyday situations. A dependable addition to most home environments."
+  },
+  {
+    "ID": "b-queen-5",
+    "Name": "PLANPRO queen bed q5",
+    "Dimension": "79.2 cm | 42.5 cm | 99.9 cm",
+    "Price": 16400,
+    "Rating": 4.1,
+    "ImageURL": "products/queen bed/q5.png",
+    "ModelURL": "products/queen bed models/q5.glb",
+    "Type": "bed",
+    "SubType": "queen_bed",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Sneha Kapoor",
+        "Rated": 4.1,
+        "Comment": "Seat elevation feels comfortable.",
+        "Date": "2025-01-10"
+      },
+      {
+        "User": "Joel Grace",
+        "Rated": 3.9,
+        "Comment": "Comfort level remains consistent over time. Serves its purpose effectively.",
+        "Date": "2024-10-07"
+      },
+      {
+        "User": "Aditya Bansal",
+        "Rated": 4.3,
+        "Comment": "Seating posture alignment feels natural. Works well for daily usage. After extended use, overall stability remains consistent.",
+        "Date": "2024-08-16"
+      },
+      {
+        "User": "Meera Krishnan",
+        "Rated": 4,
+        "Comment": "Structural alignment appears accurate.",
+        "Date": "2024-02-22"
+      },
+      {
+        "User": "Genelia Jones",
+        "Rated": 4.3,
+        "Comment": "Pressure distribution feels even. Build feels acceptable. After extended use, overall stability remains consistent.",
+        "Date": "2024-05-13"
+      },
+      {
+        "User": "Lydia Michael",
+        "Rated": 4,
+        "Comment": "Pressure distribution feels even. Finish appears decent. After extended use, overall stability remains consistent.",
+        "Date": "2024-09-30"
+      },
+      {
+        "User": "Faizan Pathan",
+        "Rated": 4.1,
+        "Comment": "Seat elevation feels comfortable.",
+        "Date": "2024-09-06"
+      },
+      {
+        "User": "Joel Fernandes",
+        "Rated": 4,
+        "Comment": "Seat elevation feels comfortable.",
+        "Date": "2024-02-09"
+      }
+    ],
+    "Description": "Created to improve everyday comfort while keeping a stylish presence in the room. The build quality ensures steady performance over time. Its thoughtful design allows it to integrate easily with surrounding furniture. Ideal for contemporary homes."
+  },
+  {
+    "ID": "s-recliner-1",
+    "Name": "PLANPRO recliner r1",
+    "Dimension": "196.1 cm | 131.8 cm | 137.4 cm",
+    "Price": 15600,
+    "Rating": 4.4,
+    "ImageURL": "products/recliner/r1.png",
+    "ModelURL": "products/recliner models/r1.glb",
+    "Type": "sofa",
+    "SubType": "recliner",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Gavin Michael",
+        "Rated": 4.1,
+        "Comment": "Leg support structure feels balanced. Works as expected. After extended use, overall stability remains consistent.",
+        "Date": "2024-03-23"
+      },
+      {
+        "User": "Sameer Syed",
+        "Rated": 4.3,
+        "Comment": "Overall weight distribution feels stable. Stability feels acceptable.",
+        "Date": "2024-03-28"
+      },
+      {
+        "User": "Ayaan Syed",
+        "Rated": 4.3,
+        "Comment": "Armrest height feels ergonomically correct. Design feels straightforward.",
+        "Date": "2025-01-18"
+      },
+      {
+        "User": "Kabir Chatterjee",
+        "Rated": 4.3,
+        "Comment": "Leg support structure feels balanced. Feels practical and functional. After extended use, overall stability remains consistent.",
+        "Date": "2024-01-25"
+      },
+      {
+        "User": "Dylan D'Souza",
+        "Rated": 4.2,
+        "Comment": "Padding density feels optimal.",
+        "Date": "2024-10-16"
+      }
+    ],
+    "Description": "A well-designed piece that balances comfort and practicality for everyday use. The structure is built to provide reliable support while keeping a modern appearance. Its clean design helps it blend easily with different room styles. Suitable for both compact and spacious interiors."
+  },
+  {
+    "ID": "s-recliner-2",
+    "Name": "PLANPRO recliner r2",
+    "Dimension": "163.2 cm | 154.0 cm | 173.8 cm",
+    "Price": 14700,
+    "Rating": 4.3,
+    "ImageURL": "products/recliner/r2.png",
+    "ModelURL": "products/recliner models/r2.glb",
+    "Type": "sofa",
+    "SubType": "recliner",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Zaid Siddiqui",
+        "Rated": 4.3,
+        "Comment": "Lower back support feels consistent. Overall experience is satisfactory. After extended use, overall stability remains consistent.",
+        "Date": "2024-04-12"
+      },
+      {
+        "User": "Imran Syed",
+        "Rated": 4.1,
+        "Comment": "Padding density feels optimal. Performance remains adequate.",
+        "Date": "2024-10-12"
+      },
+      {
+        "User": "Faizan Sheikh",
+        "Rated": 4.5,
+        "Comment": "Pressure distribution feels even. Material consistency feels strong. After extended use, overall stability remains consistent.",
+        "Date": "2025-01-13"
+      },
+      {
+        "User": "Elena Furtado",
+        "Rated": 4.1,
+        "Comment": "Leg support structure feels balanced.",
+        "Date": "2024-04-02"
+      },
+      {
+        "User": "Joel Jones",
+        "Rated": 4.4,
+        "Comment": "Build quality feels sturdy.",
+        "Date": "2024-07-16"
+      },
+      {
+        "User": "Imran Shaikh",
+        "Rated": 4.5,
+        "Comment": "Structural alignment appears accurate. Sturdiness remains reliable. After extended use, overall stability remains consistent.",
+        "Date": "2024-03-09"
+      },
+      {
+        "User": "Ira Bhat",
+        "Rated": 4.6,
+        "Comment": "Lower back support feels consistent. Material finish appears consistent. After extended use, overall stability remains consistent.",
+        "Date": "2024-08-05"
+      },
+      {
+        "User": "Aditi Nair",
+        "Rated": 4.5,
+        "Comment": "Padding density feels optimal. Overall experience feels positive.",
+        "Date": "2024-11-20"
+      }
+    ],
+    "Description": "Designed with attention to detail, this item brings both function and style into your home. The materials are selected to improve durability and longterm use. Its balanced proportions make it comfortable while maintaining a neat visual presence. Works well in modern living spaces."
+  },
+  {
+    "ID": "s-recliner-3",
+    "Name": "PLANPRO recliner r3",
+    "Dimension": "2195516.2 cm | 5342021.9 cm | 5307897.2 cm",
+    "Price": 15900,
+    "Rating": 4.2,
+    "ImageURL": "products/recliner/r3.png",
+    "ModelURL": "products/recliner models/r3.glb",
+    "Type": "sofa",
+    "SubType": "recliner",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Ananya Chopra",
+        "Rated": 4.5,
+        "Comment": "Backrest support positioning is well engineered.",
+        "Date": "2024-05-04"
+      },
+      {
+        "User": "Alina Qureshi",
+        "Rated": 4.3,
+        "Comment": "Lower back support feels consistent. Serves its purpose effectively. After extended use, overall stability remains consistent.",
+        "Date": "2024-05-05"
+      },
+      {
+        "User": "Lydia Jones",
+        "Rated": 4.4,
+        "Comment": "Structural alignment appears accurate.",
+        "Date": "2024-09-21"
+      },
+      {
+        "User": "Maria Lobo",
+        "Rated": 4.3,
+        "Comment": "Backrest support positioning is well engineered.",
+        "Date": "2024-04-06"
+      },
+      {
+        "User": "Nikhil Nair",
+        "Rated": 4.5,
+        "Comment": "Assembly joints feel reinforced. Overall build feels dependable.",
+        "Date": "2024-04-17"
+      },
+      {
+        "User": "Joel Gomes",
+        "Rated": 4,
+        "Comment": "Build quality feels sturdy.",
+        "Date": "2025-01-19"
+      },
+      {
+        "User": "Sanjay Subramanian",
+        "Rated": 4.1,
+        "Comment": "Seat elevation feels comfortable. Serves its purpose effectively.",
+        "Date": "2024-05-24"
+      },
+      {
+        "User": "Pooja Singh",
+        "Rated": 4.2,
+        "Comment": "Frame stability remains steady. Construction seems reasonable. After extended use, overall stability remains consistent.",
+        "Date": "2024-07-30"
+      },
+      {
+        "User": "Joel Grace",
+        "Rated": 4.2,
+        "Comment": "Pressure distribution feels even.",
+        "Date": "2024-06-09"
+      }
+    ],
+    "Description": "This product combines durability with a simple modern design. It is built to handle daily use while keeping a comfortable experience. The structure supports proper posture and relaxation. Its versatile look allows it to match many interior layouts."
+  },
+  {
+    "ID": "s-recliner-4",
+    "Name": "PLANPRO recliner r4",
+    "Dimension": "135.8 cm | 151.9 cm | 146.9 cm",
+    "Price": 17400,
+    "Rating": 4,
+    "ImageURL": "products/recliner/r4.png",
+    "ModelURL": "products/recliner models/r4.glb",
+    "Type": "sofa",
+    "SubType": "recliner",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Rohit Rao",
+        "Rated": 4.3,
+        "Comment": "Lower back support feels consistent. Stable under regular conditions. After extended use, overall stability remains consistent.",
+        "Date": "2024-10-25"
+      },
+      {
+        "User": "Kabir Bansal",
+        "Rated": 3.8,
+        "Comment": "Overall weight distribution feels stable. Comfort level feels adequate. After extended use, overall stability remains consistent.",
+        "Date": "2024-02-27"
+      },
+      {
+        "User": "Joel Gomes",
+        "Rated": 4.2,
+        "Comment": "Cushion firmness distribution feels balanced. Finish appears decent. After extended use, overall stability remains consistent.",
+        "Date": "2024-10-14"
+      },
+      {
+        "User": "Rehan Qureshi",
+        "Rated": 4.1,
+        "Comment": "Recline positioning feels smooth.",
+        "Date": "2024-03-09"
+      },
+      {
+        "User": "Meera Bhat",
+        "Rated": 4.2,
+        "Comment": "Design proportions feel practical. Structure remains steady.",
+        "Date": "2024-04-23"
+      },
+      {
+        "User": "Imran Pathan",
+        "Rated": 3.9,
+        "Comment": "Finish texture feels refined. Stability feels acceptable.",
+        "Date": "2024-02-22"
+      },
+      {
+        "User": "Ethan Lobo",
+        "Rated": 4,
+        "Comment": "Build quality feels sturdy.",
+        "Date": "2024-08-21"
+      },
+      {
+        "User": "Ira Iyer",
+        "Rated": 4,
+        "Comment": "Overall seating geometry feels well designed. Feels practical and functional. After extended use, overall stability remains consistent.",
+        "Date": "2024-11-13"
+      }
+    ],
+    "Description": "A practical furniture choice that focuses on comfort and stability. The frame is structured for longlasting use while maintaining a clean aesthetic. Its design helps improve usability in everyday situations. A dependable addition to most home environments."
+  },
+  {
+    "ID": "s-recliner-5",
+    "Name": "PLANPRO recliner r5",
+    "Dimension": "130.7 cm | 148.4 cm | 152.8 cm",
+    "Price": 17000,
+    "Rating": 4.4,
+    "ImageURL": "products/recliner/r5.png",
+    "ModelURL": "products/recliner models/r5.glb",
+    "Type": "sofa",
+    "SubType": "recliner",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Ibrahim Syed",
+        "Rated": 4.6,
+        "Comment": "Comfort level remains consistent over time.",
+        "Date": "2025-01-22"
+      },
+      {
+        "User": "Ayesha Qureshi",
+        "Rated": 4.2,
+        "Comment": "Comfort level remains consistent over time. Performance meets expectations. After extended use, overall stability remains consistent.",
+        "Date": "2024-03-05"
+      },
+      {
+        "User": "Elena Lobo",
+        "Rated": 4.1,
+        "Comment": "Comfort level remains consistent over time.",
+        "Date": "2024-03-17"
+      },
+      {
+        "User": "Ira Krishnan",
+        "Rated": 4.3,
+        "Comment": "Structural alignment appears accurate. Performance meets expectations.",
+        "Date": "2024-08-16"
+      },
+      {
+        "User": "Sanjay Pillai",
+        "Rated": 4.6,
+        "Comment": "Pressure distribution feels even. Construction feels trustworthy.",
+        "Date": "2025-01-06"
+      },
+      {
+        "User": "Nikhil Bhat",
+        "Rated": 4.4,
+        "Comment": "Armrest height feels ergonomically correct. Sturdiness remains reliable. After extended use, overall stability remains consistent.",
+        "Date": "2025-01-03"
+      },
+      {
+        "User": "Sameer Pathan",
+        "Rated": 4.5,
+        "Comment": "Leg support structure feels balanced.",
+        "Date": "2024-03-19"
+      },
+      {
+        "User": "Ira Iyer",
+        "Rated": 4.2,
+        "Comment": "Cushion firmness distribution feels balanced. Performance remains adequate. After extended use, overall stability remains consistent.",
+        "Date": "2024-08-07"
+      }
+    ],
+    "Description": "Created to improve everyday comfort while keeping a stylish presence in the room. The build quality ensures steady performance over time. Its thoughtful design allows it to integrate easily with surrounding furniture. Ideal for contemporary homes."
+  },
+  {
+    "ID": "c-rocking-1",
+    "Name": "PLANPRO rocking chair rc1",
+    "Dimension": "54.3 cm | 70.1 cm | 100.0 cm",
+    "Price": 14500,
+    "Rating": 3.9,
+    "ImageURL": "products/rocking chair/rc1.png",
+    "ModelURL": "products/rocking chair models/rc1.glb",
+    "Type": "chair",
+    "SubType": "rocking_chair",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Zoya Siddiqui",
+        "Rated": 3.7,
+        "Comment": "Recline positioning feels smooth. Performance meets expectations.",
+        "Date": "2024-04-24"
+      },
+      {
+        "User": "Maria Gomes",
+        "Rated": 3.6,
+        "Comment": "Padding density feels optimal. Feels practical and functional. After extended use, overall stability remains consistent.",
+        "Date": "2024-07-22"
+      },
+      {
+        "User": "Farhan Qureshi",
+        "Rated": 3.6,
+        "Comment": "Structural alignment appears accurate. Structure remains steady.",
+        "Date": "2024-05-01"
+      },
+      {
+        "User": "Joseph Mathew",
+        "Rated": 3.8,
+        "Comment": "Assembly joints feel reinforced.",
+        "Date": "2024-10-07"
+      },
+      {
+        "User": "Kavya Bansal",
+        "Rated": 3.9,
+        "Comment": "Seating posture alignment feels natural. Suitable for long term use.",
+        "Date": "2025-01-10"
+      },
+      {
+        "User": "Isabella Almeida",
+        "Rated": 4.1,
+        "Comment": "Assembly joints feel reinforced.",
+        "Date": "2024-02-19"
+      },
+      {
+        "User": "Sharon Michael",
+        "Rated": 4.1,
+        "Comment": "Lower back support feels consistent. Stability feels acceptable.",
+        "Date": "2024-08-25"
+      },
+      {
+        "User": "Riya Singh",
+        "Rated": 4.1,
+        "Comment": "Leg support structure feels balanced. Performance remains adequate.",
+        "Date": "2024-09-05"
+      }
+    ],
+    "Description": "A well-designed piece that balances comfort and practicality for everyday use. The structure is built to provide reliable support while keeping a modern appearance. Its clean design helps it blend easily with different room styles. Suitable for both compact and spacious interiors."
+  },
+  {
+    "ID": "c-rocking-2",
+    "Name": "PLANPRO rocking chair rc2",
+    "Dimension": "57.1 cm | 66.5 cm | 99.9 cm",
+    "Price": 15300,
+    "Rating": 4.3,
+    "ImageURL": "products/rocking chair/rc2.png",
+    "ModelURL": "products/rocking chair models/rc2.glb",
+    "Type": "chair",
+    "SubType": "rocking_chair",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Sharon Lydia",
+        "Rated": 4.3,
+        "Comment": "Pressure distribution feels even. Quality feels decent. After extended use, overall stability remains consistent.",
+        "Date": "2024-01-19"
+      },
+      {
+        "User": "Rahul Kapoor",
+        "Rated": 4.4,
+        "Comment": "Armrest height feels ergonomically correct. Build meets expectations comfortably.",
+        "Date": "2024-07-07"
+      },
+      {
+        "User": "Mathew Jones",
+        "Rated": 4.3,
+        "Comment": "Armrest height feels ergonomically correct. Structure remains steady.",
+        "Date": "2024-11-17"
+      },
+      {
+        "User": "Ayaan Khan",
+        "Rated": 4.2,
+        "Comment": "Seat elevation feels comfortable. Comfort level feels adequate.",
+        "Date": "2025-01-06"
+      },
+      {
+        "User": "Clara Fernandes",
+        "Rated": 4.3,
+        "Comment": "Seat depth feels appropriate.",
+        "Date": "2025-01-06"
+      },
+      {
+        "User": "Ryan Carvalho",
+        "Rated": 4.1,
+        "Comment": "Recline positioning feels smooth. Construction seems reasonable. After extended use, overall stability remains consistent.",
+        "Date": "2024-05-03"
+      },
+      {
+        "User": "Farhan Siddiqui",
+        "Rated": 4.4,
+        "Comment": "Overall weight distribution feels stable.",
+        "Date": "2024-02-25"
+      }
+    ],
+    "Description": "Designed with attention to detail, this item brings both function and style into your home. The materials are selected to improve durability and longterm use. Its balanced proportions make it comfortable while maintaining a neat visual presence. Works well in modern living spaces."
+  },
+  {
+    "ID": "c-rocking-3",
+    "Name": "PLANPRO rocking chair rc3",
+    "Dimension": "66.6 cm | 98.8 cm | 99.8 cm",
+    "Price": 16400,
+    "Rating": 4.4,
+    "ImageURL": "products/rocking chair/rc3.png",
+    "ModelURL": "products/rocking chair models/rc3.glb",
+    "Type": "chair",
+    "SubType": "rocking_chair",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Faizan Siddiqui",
+        "Rated": 4.7,
+        "Comment": "Frame stability remains steady. Build meets expectations comfortably.",
+        "Date": "2024-10-11"
+      },
+      {
+        "User": "Divya Pillai",
+        "Rated": 4.3,
+        "Comment": "Seat depth feels appropriate. Works well for daily usage. After extended use, overall stability remains consistent.",
+        "Date": "2024-09-01"
+      },
+      {
+        "User": "Joseph Mathew",
+        "Rated": 4.5,
+        "Comment": "Build quality feels sturdy. Durability feels reliable. After extended use, overall stability remains consistent.",
+        "Date": "2024-05-25"
+      },
+      {
+        "User": "Joel Sharon",
+        "Rated": 4.4,
+        "Comment": "Padding density feels optimal. Sturdiness remains reliable.",
+        "Date": "2024-12-31"
+      },
+      {
+        "User": "Aarav Chopra",
+        "Rated": 4.1,
+        "Comment": "Design proportions feel practical. Quality feels decent. After extended use, overall stability remains consistent.",
+        "Date": "2024-04-25"
+      },
+      {
+        "User": "Shravan Subramanian",
+        "Rated": 4.4,
+        "Comment": "Structural alignment appears accurate.",
+        "Date": "2024-11-29"
+      },
+      {
+        "User": "Genelia Johancy",
+        "Rated": 4.4,
+        "Comment": "Leg support structure feels balanced. Overall build feels dependable. After extended use, overall stability remains consistent.",
+        "Date": "2024-02-08"
+      },
+      {
+        "User": "Lydia Johancy",
+        "Rated": 4.3,
+        "Comment": "Finish texture feels refined.",
+        "Date": "2024-09-10"
+      },
+      {
+        "User": "Tanvi Sharma",
+        "Rated": 4.7,
+        "Comment": "Seating posture alignment feels natural. Build meets expectations comfortably.",
+        "Date": "2025-01-17"
+      }
+    ],
+    "Description": "This product combines durability with a simple modern design. It is built to handle daily use while keeping a comfortable experience. The structure supports proper posture and relaxation. Its versatile look allows it to match many interior layouts."
+  },
+  {
+    "ID": "c-rocking-4",
+    "Name": "PLANPRO rocking chair rc4",
+    "Dimension": "83.2 cm | 86.5 cm | 99.3 cm",
+    "Price": 16800,
+    "Rating": 4.2,
+    "ImageURL": "products/rocking chair/rc4.png",
+    "ModelURL": "products/rocking chair models/rc4.glb",
+    "Type": "chair",
+    "SubType": "rocking_chair",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Genelia Joseph",
+        "Rated": 4.1,
+        "Comment": "Frame stability remains steady. Works well for daily usage. After extended use, overall stability remains consistent.",
+        "Date": "2024-09-28"
+      },
+      {
+        "User": "Aditi Bhat",
+        "Rated": 4.3,
+        "Comment": "Overall seating geometry feels well designed. Design feels straightforward. After extended use, overall stability remains consistent.",
+        "Date": "2024-12-11"
+      },
+      {
+        "User": "Aarav Joshi",
+        "Rated": 4.2,
+        "Comment": "Seat elevation feels comfortable.",
+        "Date": "2024-08-15"
+      },
+      {
+        "User": "Manav Joshi",
+        "Rated": 4.4,
+        "Comment": "Finish texture feels refined.",
+        "Date": "2024-12-19"
+      },
+      {
+        "User": "Ananya Singh",
+        "Rated": 3.9,
+        "Comment": "Overall seating geometry feels well designed. Stable under regular conditions. After extended use, overall stability remains consistent.",
+        "Date": "2024-09-21"
+      },
+      {
+        "User": "Riya Shah",
+        "Rated": 4.1,
+        "Comment": "Build quality feels sturdy. Design feels straightforward. After extended use, overall stability remains consistent.",
+        "Date": "2024-11-09"
+      },
+      {
+        "User": "Zoya Syed",
+        "Rated": 4,
+        "Comment": "Backrest support positioning is well engineered. Construction seems reasonable. After extended use, overall stability remains consistent.",
+        "Date": "2024-03-17"
+      },
+      {
+        "User": "Jason Grace",
+        "Rated": 4,
+        "Comment": "Cushion firmness distribution feels balanced. Functionality is practical.",
+        "Date": "2024-09-20"
+      }
+    ],
+    "Description": "A practical furniture choice that focuses on comfort and stability. The frame is structured for longlasting use while maintaining a clean aesthetic. Its design helps improve usability in everyday situations. A dependable addition to most home environments."
+  },
+  {
+    "ID": "c-rocking-5",
+    "Name": "PLANPRO rocking chair rc5",
+    "Dimension": "67.2 cm | 99.8 cm | 91.1 cm",
+    "Price": 16100,
+    "Rating": 3.9,
+    "ImageURL": "products/rocking chair/rc5.png",
+    "ModelURL": "products/rocking chair models/rc5.glb",
+    "Type": "chair",
+    "SubType": "rocking_chair",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Sneha Verma",
+        "Rated": 4.1,
+        "Comment": "Padding density feels optimal. Works well for daily usage.",
+        "Date": "2024-02-17"
+      },
+      {
+        "User": "Joseph Joseph",
+        "Rated": 4.1,
+        "Comment": "Recline positioning feels smooth.",
+        "Date": "2024-06-02"
+      },
+      {
+        "User": "Rohit Pillai",
+        "Rated": 3.9,
+        "Comment": "Seat depth feels appropriate. Design feels straightforward.",
+        "Date": "2024-10-23"
+      },
+      {
+        "User": "Isabella Rodrigues",
+        "Rated": 4,
+        "Comment": "Finish texture feels refined. Performance remains adequate. After extended use, overall stability remains consistent.",
+        "Date": "2024-06-19"
+      },
+      {
+        "User": "Arjun Chatterjee",
+        "Rated": 3.7,
+        "Comment": "Overall weight distribution feels stable. Construction seems reasonable.",
+        "Date": "2024-06-11"
+      },
+      {
+        "User": "Lydia Jones",
+        "Rated": 3.6,
+        "Comment": "Cushion firmness distribution feels balanced. Build feels acceptable.",
+        "Date": "2024-02-02"
+      },
+      {
+        "User": "Vikram Krishnan",
+        "Rated": 3.7,
+        "Comment": "Backrest support positioning is well engineered.",
+        "Date": "2024-12-01"
+      }
+    ],
+    "Description": "Created to improve everyday comfort while keeping a stylish presence in the room. The build quality ensures steady performance over time. Its thoughtful design allows it to integrate easily with surrounding furniture. Ideal for contemporary homes."
+  },
+  {
+    "ID": "st-shoerack-1",
+    "Name": "PLANPRO shoerack sr1",
+    "Dimension": "74.2 cm | 99.8 cm | 78.9 cm",
+    "Price": 14700,
+    "Rating": 4.1,
+    "ImageURL": "products/shoerack/sr1.png",
+    "ModelURL": "products/shoerack models/sr1.glb",
+    "Type": "storage",
+    "SubType": "shoerack",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Maria Carvalho",
+        "Rated": 4,
+        "Comment": "Frame stability remains steady. Structure remains steady.",
+        "Date": "2024-07-31"
+      },
+      {
+        "User": "Arman Pathan",
+        "Rated": 3.9,
+        "Comment": "Armrest height feels ergonomically correct.",
+        "Date": "2024-10-11"
+      },
+      {
+        "User": "Maria Rodrigues",
+        "Rated": 4.1,
+        "Comment": "Finish texture feels refined.",
+        "Date": "2024-08-20"
+      },
+      {
+        "User": "Ryan D'Souza",
+        "Rated": 4,
+        "Comment": "Assembly joints feel reinforced. Meets regular usage needs.",
+        "Date": "2024-07-28"
+      },
+      {
+        "User": "Jason Joseph",
+        "Rated": 4.2,
+        "Comment": "Recline positioning feels smooth. Performance meets expectations. After extended use, overall stability remains consistent.",
+        "Date": "2024-06-15"
+      },
+      {
+        "User": "Joel Gomes",
+        "Rated": 4,
+        "Comment": "Seat depth feels appropriate. Construction seems reasonable.",
+        "Date": "2024-08-26"
+      },
+      {
+        "User": "Shravan Karuppasamy",
+        "Rated": 4,
+        "Comment": "Padding density feels optimal.",
+        "Date": "2024-07-31"
+      }
+    ],
+    "Description": "A well-designed piece that balances comfort and practicality for everyday use. The structure is built to provide reliable support while keeping a modern appearance. Its clean design helps it blend easily with different room styles. Suitable for both compact and spacious interiors."
+  },
+  {
+    "ID": "st-shoerack-2",
+    "Name": "PLANPRO shoerack sr2",
+    "Dimension": "75.4 cm | 100.1 cm | 26.8 cm",
+    "Price": 16900,
+    "Rating": 4.2,
+    "ImageURL": "products/shoerack/sr2.png",
+    "ModelURL": "products/shoerack models/sr2.glb",
+    "Type": "storage",
+    "SubType": "shoerack",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Sameer Qureshi",
+        "Rated": 4.3,
+        "Comment": "Seat elevation feels comfortable.",
+        "Date": "2024-12-16"
+      },
+      {
+        "User": "Joel Gomes",
+        "Rated": 4,
+        "Comment": "Comfort level remains consistent over time. Suitable for long term use. After extended use, overall stability remains consistent.",
+        "Date": "2024-10-07"
+      },
+      {
+        "User": "Sophie Fernandes",
+        "Rated": 4.4,
+        "Comment": "Structural alignment appears accurate. Structural stability remains consistent. After extended use, overall stability remains consistent.",
+        "Date": "2024-12-06"
+      },
+      {
+        "User": "Sophie Furtado",
+        "Rated": 4,
+        "Comment": "Padding density feels optimal. Design feels straightforward.",
+        "Date": "2024-11-05"
+      },
+      {
+        "User": "Gavin Johancy",
+        "Rated": 4.1,
+        "Comment": "Pressure distribution feels even. Serves its purpose effectively.",
+        "Date": "2024-10-09"
+      },
+      {
+        "User": "Arman Pathan",
+        "Rated": 3.9,
+        "Comment": "Seat depth feels appropriate. Stability feels acceptable.",
+        "Date": "2024-02-16"
+      },
+      {
+        "User": "Ibrahim Ansari",
+        "Rated": 4.2,
+        "Comment": "Cushion firmness distribution feels balanced. Functionality is practical. After extended use, overall stability remains consistent.",
+        "Date": "2025-01-08"
+      },
+      {
+        "User": "Manav Singh",
+        "Rated": 4,
+        "Comment": "Overall seating geometry feels well designed.",
+        "Date": "2024-12-16"
+      }
+    ],
+    "Description": "Designed with attention to detail, this item brings both function and style into your home. The materials are selected to improve durability and longterm use. Its balanced proportions make it comfortable while maintaining a neat visual presence. Works well in modern living spaces."
+  },
+  {
+    "ID": "st-shoerack-3",
+    "Name": "PLANPRO shoerack sr3",
+    "Dimension": "82.2 cm | 100.1 cm | 52.8 cm",
+    "Price": 17500,
+    "Rating": 4.4,
+    "ImageURL": "products/shoerack/sr3.png",
+    "ModelURL": "products/shoerack models/sr3.glb",
+    "Type": "storage",
+    "SubType": "shoerack",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Vivaan Kapoor",
+        "Rated": 4.6,
+        "Comment": "Seat elevation feels comfortable. Material consistency feels strong. After extended use, overall stability remains consistent.",
+        "Date": "2024-05-03"
+      },
+      {
+        "User": "Mathew Johancy",
+        "Rated": 4.6,
+        "Comment": "Seating posture alignment feels natural.",
+        "Date": "2025-01-17"
+      },
+      {
+        "User": "Ibrahim Khan",
+        "Rated": 4.7,
+        "Comment": "Structural alignment appears accurate.",
+        "Date": "2024-03-28"
+      },
+      {
+        "User": "Rohit Karuppasamy",
+        "Rated": 4.6,
+        "Comment": "Design proportions feel practical. Assembly quality feels solid.",
+        "Date": "2024-09-27"
+      },
+      {
+        "User": "Gavin Michael",
+        "Rated": 4.7,
+        "Comment": "Overall seating geometry feels well designed.",
+        "Date": "2024-11-01"
+      },
+      {
+        "User": "Harshita Bhat",
+        "Rated": 4.1,
+        "Comment": "Design proportions feel practical. Meets regular usage needs.",
+        "Date": "2025-01-03"
+      },
+      {
+        "User": "Ira Iyer",
+        "Rated": 4.4,
+        "Comment": "Seating posture alignment feels natural. Finish quality is well maintained. After extended use, overall stability remains consistent.",
+        "Date": "2024-10-20"
+      },
+      {
+        "User": "Faizan Shaikh",
+        "Rated": 4.1,
+        "Comment": "Armrest height feels ergonomically correct. Comfort level feels adequate.",
+        "Date": "2024-12-19"
+      },
+      {
+        "User": "Jomin Joseph",
+        "Rated": 4.5,
+        "Comment": "Leg support structure feels balanced. Build meets expectations comfortably. After extended use, overall stability remains consistent.",
+        "Date": "2024-08-19"
+      }
+    ],
+    "Description": "This product combines durability with a simple modern design. It is built to handle daily use while keeping a comfortable experience. The structure supports proper posture and relaxation. Its versatile look allows it to match many interior layouts."
+  },
+  {
+    "ID": "st-shoerack-4",
+    "Name": "PLANPRO shoerack sr4",
+    "Dimension": "99.9 cm | 96.6 cm | 35.4 cm",
+    "Price": 14800,
+    "Rating": 4.3,
+    "ImageURL": "products/shoerack/sr4.png",
+    "ModelURL": "products/shoerack models/sr4.glb",
+    "Type": "storage",
+    "SubType": "shoerack",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Aarav Nair",
+        "Rated": 4.1,
+        "Comment": "Pressure distribution feels even. Serves its purpose effectively. After extended use, overall stability remains consistent.",
+        "Date": "2024-03-06"
+      },
+      {
+        "User": "Elena Rodrigues",
+        "Rated": 4.5,
+        "Comment": "Structural alignment appears accurate. Design execution feels polished. After extended use, overall stability remains consistent.",
+        "Date": "2024-07-07"
+      },
+      {
+        "User": "Darren Furtado",
+        "Rated": 4.3,
+        "Comment": "Design proportions feel practical. Quality feels decent. After extended use, overall stability remains consistent.",
+        "Date": "2024-07-04"
+      },
+      {
+        "User": "Vikram Rao",
+        "Rated": 4.2,
+        "Comment": "Build quality feels sturdy.",
+        "Date": "2024-11-16"
+      },
+      {
+        "User": "Jason Johancy",
+        "Rated": 4,
+        "Comment": "Overall seating geometry feels well designed. Design feels straightforward. After extended use, overall stability remains consistent.",
+        "Date": "2024-10-17"
+      },
+      {
+        "User": "Jomin Mathew",
+        "Rated": 4.4,
+        "Comment": "Overall seating geometry feels well designed.",
+        "Date": "2024-10-01"
+      },
+      {
+        "User": "Alina Pathan",
+        "Rated": 4.3,
+        "Comment": "Seat elevation feels comfortable.",
+        "Date": "2024-07-07"
+      }
+    ],
+    "Description": "A practical furniture choice that focuses on comfort and stability. The frame is structured for longlasting use while maintaining a clean aesthetic. Its design helps improve usability in everyday situations. A dependable addition to most home environments."
+  },
+  {
+    "ID": "st-shoerack-5",
+    "Name": "PLANPRO shoerack sr5",
+    "Dimension": "86.6 cm | 100.1 cm | 38.2 cm",
+    "Price": 14600,
+    "Rating": 3.9,
+    "ImageURL": "products/shoerack/sr5.png",
+    "ModelURL": "products/shoerack models/sr5.glb",
+    "Type": "storage",
+    "SubType": "shoerack",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Nikhil Reddy",
+        "Rated": 3.9,
+        "Comment": "Pressure distribution feels even. Stability feels acceptable. After extended use, overall stability remains consistent.",
+        "Date": "2024-04-14"
+      },
+      {
+        "User": "Aditi Krishnan",
+        "Rated": 4.2,
+        "Comment": "Build quality feels sturdy. Material feels sufficient. After extended use, overall stability remains consistent.",
+        "Date": "2024-02-17"
+      },
+      {
+        "User": "Jason Sharon",
+        "Rated": 4.2,
+        "Comment": "Comfort level remains consistent over time.",
+        "Date": "2024-09-15"
+      },
+      {
+        "User": "Clara Carvalho",
+        "Rated": 3.9,
+        "Comment": "Design proportions feel practical. Stable under regular conditions.",
+        "Date": "2024-03-26"
+      },
+      {
+        "User": "Joel Sharon",
+        "Rated": 3.8,
+        "Comment": "Lower back support feels consistent. Serves its purpose effectively.",
+        "Date": "2024-06-27"
+      },
+      {
+        "User": "Naomi Rodrigues",
+        "Rated": 4,
+        "Comment": "Comfort level remains consistent over time. Construction seems reasonable. After extended use, overall stability remains consistent.",
+        "Date": "2024-01-24"
+      },
+      {
+        "User": "Ishaan Verma",
+        "Rated": 3.8,
+        "Comment": "Seat depth feels appropriate. Works well for daily usage.",
+        "Date": "2024-09-29"
+      }
+    ],
+    "Description": "Created to improve everyday comfort while keeping a stylish presence in the room. The build quality ensures steady performance over time. Its thoughtful design allows it to integrate easily with surrounding furniture. Ideal for contemporary homes."
+  },
+  {
+    "ID": "b-single-1",
+    "Name": "PLANPRO single bed sb1",
+    "Dimension": "100.5 cm | 66.6 cm | 195.8 cm",
+    "Price": 16000,
+    "Rating": 4.3,
+    "ImageURL": "products/single bed/sb1.png",
+    "ModelURL": "products/single bed models/sb1.glb",
+    "Type": "bed",
+    "SubType": "single_bed",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Elena D'Souza",
+        "Rated": 4.3,
+        "Comment": "Seating posture alignment feels natural. Performance remains adequate.",
+        "Date": "2024-02-24"
+      },
+      {
+        "User": "Aarav Kapoor",
+        "Rated": 4.4,
+        "Comment": "Overall weight distribution feels stable. Sturdiness remains reliable.",
+        "Date": "2024-11-26"
+      },
+      {
+        "User": "Farhan Syed",
+        "Rated": 4.3,
+        "Comment": "Build quality feels sturdy. Quality feels decent.",
+        "Date": "2024-12-29"
+      },
+      {
+        "User": "Sophie Pereira",
+        "Rated": 4,
+        "Comment": "Seat elevation feels comfortable.",
+        "Date": "2024-05-01"
+      },
+      {
+        "User": "Zoya Syed",
+        "Rated": 4.1,
+        "Comment": "Frame stability remains steady.",
+        "Date": "2024-03-17"
+      },
+      {
+        "User": "Neil Furtado",
+        "Rated": 4.3,
+        "Comment": "Leg support structure feels balanced.",
+        "Date": "2024-04-07"
+      },
+      {
+        "User": "Nikhil Subramanian",
+        "Rated": 4.3,
+        "Comment": "Finish texture feels refined. Finish appears decent. After extended use, overall stability remains consistent.",
+        "Date": "2024-01-10"
+      }
+    ],
+    "Description": "A well-designed piece that balances comfort and practicality for everyday use. The structure is built to provide reliable support while keeping a modern appearance. Its clean design helps it blend easily with different room styles. Suitable for both compact and spacious interiors."
+  },
+  {
+    "ID": "b-single-2",
+    "Name": "PLANPRO single bed sb2",
+    "Dimension": "88.8 cm | 84.5 cm | 195.2 cm",
+    "Price": 17400,
+    "Rating": 4.6,
+    "ImageURL": "products/single bed/sb2.png",
+    "ModelURL": "products/single bed models/sb2.glb",
+    "Type": "bed",
+    "SubType": "single_bed",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Darren Furtado",
+        "Rated": 4.8,
+        "Comment": "Lower back support feels consistent. Material finish feels upscale.",
+        "Date": "2024-06-20"
+      },
+      {
+        "User": "Sameer Ansari",
+        "Rated": 4.8,
+        "Comment": "Structural alignment appears accurate. Premium feel is evident throughout.",
+        "Date": "2024-02-20"
+      },
+      {
+        "User": "Genelia Jones",
+        "Rated": 4.5,
+        "Comment": "Pressure distribution feels even. Build meets expectations comfortably.",
+        "Date": "2024-04-06"
+      },
+      {
+        "User": "Joel Furtado",
+        "Rated": 4.4,
+        "Comment": "Overall seating geometry feels well designed. Design quality feels balanced. After extended use, overall stability remains consistent.",
+        "Date": "2024-08-31"
+      },
+      {
+        "User": "Rohit Subramanian",
+        "Rated": 4.3,
+        "Comment": "Design proportions feel practical. Design feels straightforward. After extended use, overall stability remains consistent.",
+        "Date": "2024-02-07"
+      },
+      {
+        "User": "Zoya Pathan",
+        "Rated": 4.3,
+        "Comment": "Leg support structure feels balanced. Comfort level feels adequate. After extended use, overall stability remains consistent.",
+        "Date": "2024-03-17"
+      },
+      {
+        "User": "Clara Rodrigues",
+        "Rated": 4.4,
+        "Comment": "Frame stability remains steady. Finish quality is well maintained. After extended use, overall stability remains consistent.",
+        "Date": "2024-02-08"
+      }
+    ],
+    "Description": "Designed with attention to detail, this item brings both function and style into your home. The materials are selected to improve durability and longterm use. Its balanced proportions make it comfortable while maintaining a neat visual presence. Works well in modern living spaces."
+  },
+  {
+    "ID": "b-single-3",
+    "Name": "PLANPRO single bed sb3",
+    "Dimension": "99.9 cm | 78.0 cm | 195.7 cm",
+    "Price": 15200,
+    "Rating": 4.1,
+    "ImageURL": "products/single bed/sb3.png",
+    "ModelURL": "products/single bed models/sb3.glb",
+    "Type": "bed",
+    "SubType": "single_bed",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Pooja Nair",
+        "Rated": 4.2,
+        "Comment": "Recline positioning feels smooth. Suitable for long term use.",
+        "Date": "2024-07-11"
+      },
+      {
+        "User": "Genelia Lydia",
+        "Rated": 4.2,
+        "Comment": "Assembly joints feel reinforced.",
+        "Date": "2024-10-26"
+      },
+      {
+        "User": "Karthik Kamath",
+        "Rated": 4,
+        "Comment": "Armrest height feels ergonomically correct. Serves its purpose effectively. After extended use, overall stability remains consistent.",
+        "Date": "2024-11-05"
+      },
+      {
+        "User": "Dylan Furtado",
+        "Rated": 4.2,
+        "Comment": "Seating posture alignment feels natural. Serves its purpose effectively.",
+        "Date": "2024-07-29"
+      },
+      {
+        "User": "Isabella Fernandes",
+        "Rated": 3.9,
+        "Comment": "Cushion firmness distribution feels balanced. Stability feels acceptable.",
+        "Date": "2024-08-12"
+      },
+      {
+        "User": "Manav Saxena",
+        "Rated": 3.8,
+        "Comment": "Structural alignment appears accurate. Material feels sufficient.",
+        "Date": "2024-06-13"
+      },
+      {
+        "User": "Zoya Al Hussaini",
+        "Rated": 4.1,
+        "Comment": "Finish texture feels refined. Quality feels decent. After extended use, overall stability remains consistent.",
+        "Date": "2024-05-19"
+      },
+      {
+        "User": "Imran Al Hussaini",
+        "Rated": 4.4,
+        "Comment": "Leg support structure feels balanced.",
+        "Date": "2024-06-16"
+      }
+    ],
+    "Description": "This product combines durability with a simple modern design. It is built to handle daily use while keeping a comfortable experience. The structure supports proper posture and relaxation. Its versatile look allows it to match many interior layouts."
+  },
+  {
+    "ID": "b-single-4",
+    "Name": "PLANPRO single bed sb4",
+    "Dimension": "149.6 cm | 45.0 cm | 195.8 cm",
+    "Price": 16200,
+    "Rating": 4.3,
+    "ImageURL": "products/single bed/sb4.png",
+    "ModelURL": "products/single bed models/sb4.glb",
+    "Type": "bed",
+    "SubType": "single_bed",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Shravan Karuppasamy",
+        "Rated": 4.3,
+        "Comment": "Design proportions feel practical. Build feels acceptable.",
+        "Date": "2024-11-09"
+      },
+      {
+        "User": "Riya Shah",
+        "Rated": 4.5,
+        "Comment": "Backrest support positioning is well engineered. Material density feels appropriate. After extended use, overall stability remains consistent.",
+        "Date": "2024-03-16"
+      },
+      {
+        "User": "Joseph Lydia",
+        "Rated": 4.5,
+        "Comment": "Seat depth feels appropriate.",
+        "Date": "2024-02-23"
+      },
+      {
+        "User": "Ananya Sharma",
+        "Rated": 4.2,
+        "Comment": "Leg support structure feels balanced.",
+        "Date": "2024-03-16"
+      },
+      {
+        "User": "Lydia Johancy",
+        "Rated": 4.3,
+        "Comment": "Seat depth feels appropriate.",
+        "Date": "2024-02-28"
+      },
+      {
+        "User": "Ananya Mehta",
+        "Rated": 4.4,
+        "Comment": "Backrest support positioning is well engineered. Structure handles regular use well. After extended use, overall stability remains consistent.",
+        "Date": "2024-05-22"
+      },
+      {
+        "User": "Sharon Joseph",
+        "Rated": 4.5,
+        "Comment": "Build quality feels sturdy. Build meets expectations comfortably. After extended use, overall stability remains consistent.",
+        "Date": "2024-07-04"
+      },
+      {
+        "User": "Kavya Mehta",
+        "Rated": 4.1,
+        "Comment": "Overall seating geometry feels well designed. Feels practical and functional. After extended use, overall stability remains consistent.",
+        "Date": "2024-11-07"
+      }
+    ],
+    "Description": "A practical furniture choice that focuses on comfort and stability. The frame is structured for longlasting use while maintaining a clean aesthetic. Its design helps improve usability in everyday situations. A dependable addition to most home environments."
+  },
+  {
+    "ID": "b-single-5",
+    "Name": "PLANPRO single bed sb5",
+    "Dimension": "126.9 cm | 77.9 cm | 195.7 cm",
+    "Price": 16200,
+    "Rating": 4.5,
+    "ImageURL": "products/single bed/sb5.png",
+    "ModelURL": "products/single bed models/sb5.glb",
+    "Type": "bed",
+    "SubType": "single_bed",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Divya Bhat",
+        "Rated": 4.3,
+        "Comment": "Comfort level remains consistent over time.",
+        "Date": "2024-03-08"
+      },
+      {
+        "User": "Joel Sharon",
+        "Rated": 4.5,
+        "Comment": "Backrest support positioning is well engineered.",
+        "Date": "2024-02-24"
+      },
+      {
+        "User": "Aditya Nair",
+        "Rated": 4.4,
+        "Comment": "Overall seating geometry feels well designed. Assembly quality feels solid.",
+        "Date": "2024-02-09"
+      },
+      {
+        "User": "Nikhil Krishnan",
+        "Rated": 4.8,
+        "Comment": "Frame stability remains steady. Construction consistency is remarkable.",
+        "Date": "2024-03-12"
+      },
+      {
+        "User": "Gavin Joseph",
+        "Rated": 4.4,
+        "Comment": "Seat depth feels appropriate. Sturdiness remains reliable. After extended use, overall stability remains consistent.",
+        "Date": "2024-11-03"
+      },
+      {
+        "User": "Vikram Kamath",
+        "Rated": 4.4,
+        "Comment": "Lower back support feels consistent. Sturdiness remains reliable.",
+        "Date": "2024-07-05"
+      },
+      {
+        "User": "Aarav Joshi",
+        "Rated": 4.6,
+        "Comment": "Build quality feels sturdy.",
+        "Date": "2024-08-12"
+      },
+      {
+        "User": "Karthik Reddy",
+        "Rated": 4.5,
+        "Comment": "Pressure distribution feels even.",
+        "Date": "2024-02-14"
+      },
+      {
+        "User": "Manav Kapoor",
+        "Rated": 4.7,
+        "Comment": "Design proportions feel practical. Structure handles regular use well. After extended use, overall stability remains consistent.",
+        "Date": "2024-08-21"
+      }
+    ],
+    "Description": "Created to improve everyday comfort while keeping a stylish presence in the room. The build quality ensures steady performance over time. Its thoughtful design allows it to integrate easily with surrounding furniture. Ideal for contemporary homes."
+  },
+  {
+    "ID": "s-sofacumbed-1",
+    "Name": "PLANPRO sofacumbed sc1",
+    "Dimension": "195.2 cm | 104.7 cm | 90.3 cm",
+    "Price": 17200,
+    "Rating": 3.9,
+    "ImageURL": "products/sofacumbed/sc1.png",
+    "ModelURL": "products/sofacumbed models/sc1.glb",
+    "Type": "sofa",
+    "SubType": "sofacumbed",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Nikhil Kamath",
+        "Rated": 3.7,
+        "Comment": "Seat depth feels appropriate.",
+        "Date": "2024-04-20"
+      },
+      {
+        "User": "Aditi Reddy",
+        "Rated": 4.1,
+        "Comment": "Leg support structure feels balanced.",
+        "Date": "2024-12-25"
+      },
+      {
+        "User": "Darren Almeida",
+        "Rated": 3.8,
+        "Comment": "Seat elevation feels comfortable. Comfort level feels adequate. After extended use, overall stability remains consistent.",
+        "Date": "2024-02-23"
+      },
+      {
+        "User": "Isabella Almeida",
+        "Rated": 4.2,
+        "Comment": "Finish texture feels refined. Construction seems reasonable. After extended use, overall stability remains consistent.",
+        "Date": "2024-06-18"
+      },
+      {
+        "User": "Kavya Chopra",
+        "Rated": 4,
+        "Comment": "Pressure distribution feels even. Material feels sufficient.",
+        "Date": "2025-01-04"
+      }
+    ],
+    "Description": "A well-designed piece that balances comfort and practicality for everyday use. The structure is built to provide reliable support while keeping a modern appearance. Its clean design helps it blend easily with different room styles. Suitable for both compact and spacious interiors."
+  },
+  {
+    "ID": "s-sofacumbed-2",
+    "Name": "PLANPRO sofacumbed sc3",
+    "Dimension": "196.1 cm | 89.7 cm | 89.2 cm",
+    "Price": 15600,
+    "Rating": 4,
+    "ImageURL": "products/sofacumbed/sc3.png",
+    "ModelURL": "products/sofacumbed models/sc3.glb",
+    "Type": "sofa",
+    "SubType": "sofacumbed",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Aarav Bansal",
+        "Rated": 4.3,
+        "Comment": "Overall seating geometry feels well designed.",
+        "Date": "2024-06-26"
+      },
+      {
+        "User": "Imran Shaikh",
+        "Rated": 3.7,
+        "Comment": "Assembly joints feel reinforced.",
+        "Date": "2024-06-09"
+      },
+      {
+        "User": "Elena Rodrigues",
+        "Rated": 4.2,
+        "Comment": "Structural alignment appears accurate. Functionality is practical.",
+        "Date": "2024-11-22"
+      },
+      {
+        "User": "Joel Michael",
+        "Rated": 3.9,
+        "Comment": "Recline positioning feels smooth. Feels practical and functional.",
+        "Date": "2024-08-23"
+      },
+      {
+        "User": "Clara Gomes",
+        "Rated": 4.2,
+        "Comment": "Cushion firmness distribution feels balanced. Structure remains steady. After extended use, overall stability remains consistent.",
+        "Date": "2024-03-21"
+      }
+    ],
+    "Description": "Designed with attention to detail, this item brings both function and style into your home. The materials are selected to improve durability and longterm use. Its balanced proportions make it comfortable while maintaining a neat visual presence. Works well in modern living spaces."
+  },
+  {
+    "ID": "s-sofacumbed-3",
+    "Name": "PLANPRO sofacumbed sc4",
+    "Dimension": "196.2 cm | 87.5 cm | 101.2 cm",
+    "Price": 17900,
+    "Rating": 3.9,
+    "ImageURL": "products/sofacumbed/sc4.png",
+    "ModelURL": "products/sofacumbed models/sc4.glb",
+    "Type": "sofa",
+    "SubType": "sofacumbed",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Vivaan Chatterjee",
+        "Rated": 3.8,
+        "Comment": "Frame stability remains steady.",
+        "Date": "2024-01-11"
+      },
+      {
+        "User": "Naomi Furtado",
+        "Rated": 3.9,
+        "Comment": "Comfort level remains consistent over time.",
+        "Date": "2024-09-21"
+      },
+      {
+        "User": "Ayaan Sheikh",
+        "Rated": 3.9,
+        "Comment": "Finish texture feels refined. Design feels straightforward. After extended use, overall stability remains consistent.",
+        "Date": "2024-05-09"
+      },
+      {
+        "User": "Jomin Joseph",
+        "Rated": 4.2,
+        "Comment": "Recline positioning feels smooth. Build feels acceptable. After extended use, overall stability remains consistent.",
+        "Date": "2024-05-04"
+      },
+      {
+        "User": "Ananya Shah",
+        "Rated": 4,
+        "Comment": "Assembly joints feel reinforced. Design feels straightforward.",
+        "Date": "2024-05-29"
+      },
+      {
+        "User": "Genelia Johancy",
+        "Rated": 3.9,
+        "Comment": "Structural alignment appears accurate. Construction seems reasonable. After extended use, overall stability remains consistent.",
+        "Date": "2024-05-04"
+      }
+    ],
+    "Description": "This product combines durability with a simple modern design. It is built to handle daily use while keeping a comfortable experience. The structure supports proper posture and relaxation. Its versatile look allows it to match many interior layouts."
+  },
+  {
+    "ID": "s-sofacumbed-4",
+    "Name": "PLANPRO sofacumbed sc5",
+    "Dimension": "195.6 cm | 98.0 cm | 127.4 cm",
+    "Price": 15800,
+    "Rating": 4.1,
+    "ImageURL": "products/sofacumbed/sc5.png",
+    "ModelURL": "products/sofacumbed models/sc5.glb",
+    "Type": "sofa",
+    "SubType": "sofacumbed",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Farhan Syed",
+        "Rated": 4.2,
+        "Comment": "Structural alignment appears accurate. Feels practical and functional. After extended use, overall stability remains consistent.",
+        "Date": "2024-08-25"
+      },
+      {
+        "User": "Rahul Shah",
+        "Rated": 4.2,
+        "Comment": "Armrest height feels ergonomically correct.",
+        "Date": "2024-08-22"
+      },
+      {
+        "User": "Mathew Mathew",
+        "Rated": 4.1,
+        "Comment": "Build quality feels sturdy. Quality feels decent. After extended use, overall stability remains consistent.",
+        "Date": "2024-06-08"
+      },
+      {
+        "User": "Priya Singh",
+        "Rated": 3.9,
+        "Comment": "Seat elevation feels comfortable. Comfort level feels adequate. After extended use, overall stability remains consistent.",
+        "Date": "2024-04-16"
+      },
+      {
+        "User": "Yash Singh",
+        "Rated": 4.1,
+        "Comment": "Cushion firmness distribution feels balanced. Performance meets expectations. After extended use, overall stability remains consistent.",
+        "Date": "2024-11-12"
+      },
+      {
+        "User": "Aaron Fernandes",
+        "Rated": 4.2,
+        "Comment": "Lower back support feels consistent. Performance meets expectations. After extended use, overall stability remains consistent.",
+        "Date": "2024-05-04"
+      }
+    ],
+    "Description": "A practical furniture choice that focuses on comfort and stability. The frame is structured for longlasting use while maintaining a clean aesthetic. Its design helps improve usability in everyday situations. A dependable addition to most home environments."
+  },
+  {
+    "ID": "s-sofaset-1",
+    "Name": "PLANPRO sofaset ss1",
+    "Dimension": "100.0 cm | 38.9 cm | 86.0 cm",
+    "Price": 16100,
+    "Rating": 4,
+    "ImageURL": "products/sofaset/ss1.png",
+    "ModelURL": "products/sofaset models/ss1.glb",
+    "Type": "sofa",
+    "SubType": "sofaset",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Genelia Johancy",
+        "Rated": 3.7,
+        "Comment": "Armrest height feels ergonomically correct. Suitable for long term use.",
+        "Date": "2024-02-11"
+      },
+      {
+        "User": "Aarav Chatterjee",
+        "Rated": 3.8,
+        "Comment": "Pressure distribution feels even. Stability feels acceptable.",
+        "Date": "2024-11-20"
+      },
+      {
+        "User": "Sanjay Subramanian",
+        "Rated": 3.9,
+        "Comment": "Lower back support feels consistent.",
+        "Date": "2025-01-28"
+      },
+      {
+        "User": "Sameer Syed",
+        "Rated": 4,
+        "Comment": "Recline positioning feels smooth. Overall experience is satisfactory. After extended use, overall stability remains consistent.",
+        "Date": "2025-01-14"
+      },
+      {
+        "User": "Maria Rodrigues",
+        "Rated": 4.1,
+        "Comment": "Assembly joints feel reinforced. Performance remains adequate.",
+        "Date": "2024-06-04"
+      }
+    ],
+    "Description": "Created to improve everyday comfort while keeping a stylish presence in the room. The build quality ensures steady performance over time. Its thoughtful design allows it to integrate easily with surrounding furniture. Ideal for contemporary homes."
+  },
+  {
+    "ID": "s-sofaset-2",
+    "Name": "PLANPRO sofaset ss2",
+    "Dimension": "99.1 cm | 41.7 cm | 99.7 cm",
+    "Price": 15700,
+    "Rating": 3.8,
+    "ImageURL": "products/sofaset/ss2.png",
+    "ModelURL": "products/sofaset models/ss2.glb",
+    "Type": "sofa",
+    "SubType": "sofaset",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Yash Gupta",
+        "Rated": 3.6,
+        "Comment": "Pressure distribution feels even.",
+        "Date": "2024-07-10"
+      },
+      {
+        "User": "Joel Gomes",
+        "Rated": 3.7,
+        "Comment": "Overall weight distribution feels stable. Construction seems reasonable.",
+        "Date": "2024-03-17"
+      },
+      {
+        "User": "Maria Furtado",
+        "Rated": 3.5,
+        "Comment": "Seating posture alignment feels natural.",
+        "Date": "2024-01-06"
+      },
+      {
+        "User": "Ryan Pereira",
+        "Rated": 3.8,
+        "Comment": "Design proportions feel practical. Feels practical and functional.",
+        "Date": "2024-11-27"
+      },
+      {
+        "User": "Harshita Krishnan",
+        "Rated": 3.7,
+        "Comment": "Padding density feels optimal. Material feels sufficient. After extended use, overall stability remains consistent.",
+        "Date": "2024-06-03"
+      },
+      {
+        "User": "Aditi Rao",
+        "Rated": 3.8,
+        "Comment": "Design proportions feel practical.",
+        "Date": "2024-05-03"
+      },
+      {
+        "User": "Joseph Joseph",
+        "Rated": 3.7,
+        "Comment": "Armrest height feels ergonomically correct. Stable under regular conditions. After extended use, overall stability remains consistent.",
+        "Date": "2024-07-18"
+      },
+      {
+        "User": "Ryan Rodrigues",
+        "Rated": 3.6,
+        "Comment": "Overall seating geometry feels well designed. Structure remains steady.",
+        "Date": "2025-01-29"
+      }
+    ],
+    "Description": "A well-designed piece that balances comfort and practicality for everyday use. The structure is built to provide reliable support while keeping a modern appearance. Its clean design helps it blend easily with different room styles. Suitable for both compact and spacious interiors."
+  },
+  {
+    "ID": "s-sofaset-3",
+    "Name": "PLANPRO sofaset ss3",
+    "Dimension": "93.2 cm | 36.4 cm | 99.9 cm",
+    "Price": 15400,
+    "Rating": 4,
+    "ImageURL": "products/sofaset/ss3.png",
+    "ModelURL": "products/sofaset models/ss3.glb",
+    "Type": "sofa",
+    "SubType": "sofaset",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Sharon Johancy",
+        "Rated": 4,
+        "Comment": "Pressure distribution feels even.",
+        "Date": "2024-12-22"
+      },
+      {
+        "User": "Genelia Grace",
+        "Rated": 4.3,
+        "Comment": "Recline positioning feels smooth.",
+        "Date": "2024-07-06"
+      },
+      {
+        "User": "Gavin Jones",
+        "Rated": 3.7,
+        "Comment": "Build quality feels sturdy.",
+        "Date": "2024-09-01"
+      },
+      {
+        "User": "Ayesha Pathan",
+        "Rated": 4,
+        "Comment": "Overall seating geometry feels well designed. Works as expected. After extended use, overall stability remains consistent.",
+        "Date": "2024-06-13"
+      },
+      {
+        "User": "Sharon Grace",
+        "Rated": 4.3,
+        "Comment": "Design proportions feel practical. Quality feels decent.",
+        "Date": "2024-08-22"
+      },
+      {
+        "User": "Aditya Bansal",
+        "Rated": 4,
+        "Comment": "Frame stability remains steady.",
+        "Date": "2024-10-11"
+      },
+      {
+        "User": "Sameer Al Hussaini",
+        "Rated": 4.1,
+        "Comment": "Assembly joints feel reinforced. Serves its purpose effectively. After extended use, overall stability remains consistent.",
+        "Date": "2024-02-25"
+      },
+      {
+        "User": "Vikram Rao",
+        "Rated": 4.3,
+        "Comment": "Overall seating geometry feels well designed. Construction seems reasonable.",
+        "Date": "2024-02-15"
+      },
+      {
+        "User": "Divya Subramanian",
+        "Rated": 3.8,
+        "Comment": "Comfort level remains consistent over time. Meets regular usage needs.",
+        "Date": "2025-01-22"
+      }
+    ],
+    "Description": "Designed with attention to detail, this item brings both function and style into your home. The materials are selected to improve durability and longterm use. Its balanced proportions make it comfortable while maintaining a neat visual presence. Works well in modern living spaces."
+  },
+  {
+    "ID": "s-sofaset-4",
+    "Name": "PLANPRO sofaset ss4",
+    "Dimension": "99.9 cm | 27.9 cm | 52.6 cm",
+    "Price": 14600,
+    "Rating": 4.1,
+    "ImageURL": "products/sofaset/ss4.png",
+    "ModelURL": "products/sofaset models/ss4.glb",
+    "Type": "sofa",
+    "SubType": "sofaset",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Faizan Qureshi",
+        "Rated": 4.2,
+        "Comment": "Padding density feels optimal.",
+        "Date": "2024-12-08"
+      },
+      {
+        "User": "Aarav Chatterjee",
+        "Rated": 4,
+        "Comment": "Backrest support positioning is well engineered.",
+        "Date": "2024-05-31"
+      },
+      {
+        "User": "Sharon Joseph",
+        "Rated": 3.9,
+        "Comment": "Lower back support feels consistent.",
+        "Date": "2024-03-19"
+      },
+      {
+        "User": "Rahul Trivedi",
+        "Rated": 4.1,
+        "Comment": "Lower back support feels consistent.",
+        "Date": "2024-08-17"
+      },
+      {
+        "User": "Yash Bansal",
+        "Rated": 3.9,
+        "Comment": "Design proportions feel practical. Structure remains steady. After extended use, overall stability remains consistent.",
+        "Date": "2024-04-03"
+      }
+    ],
+    "Description": "This product combines durability with a simple modern design. It is built to handle daily use while keeping a comfortable experience. The structure supports proper posture and relaxation. Its versatile look allows it to match many interior layouts."
+  },
+  {
+    "ID": "s-sofaset-5",
+    "Name": "PLANPRO sofaset ss5",
+    "Dimension": "99.9 cm | 29.4 cm | 91.6 cm",
+    "Price": 16700,
+    "Rating": 4.1,
+    "ImageURL": "products/sofaset/ss5.png",
+    "ModelURL": "products/sofaset models/ss5.glb",
+    "Type": "sofa",
+    "SubType": "sofaset",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Sharon Michael",
+        "Rated": 4,
+        "Comment": "Seat depth feels appropriate.",
+        "Date": "2024-11-25"
+      },
+      {
+        "User": "Shravan Bhat",
+        "Rated": 4,
+        "Comment": "Leg support structure feels balanced. Stability feels acceptable. After extended use, overall stability remains consistent.",
+        "Date": "2024-12-25"
+      },
+      {
+        "User": "Rohit Subramanian",
+        "Rated": 4,
+        "Comment": "Padding density feels optimal.",
+        "Date": "2024-06-11"
+      },
+      {
+        "User": "Aditi Iyer",
+        "Rated": 4,
+        "Comment": "Structural alignment appears accurate. Works as expected. After extended use, overall stability remains consistent.",
+        "Date": "2024-04-08"
+      },
+      {
+        "User": "Lydia Jones",
+        "Rated": 4.2,
+        "Comment": "Overall seating geometry feels well designed. Meets regular usage needs.",
+        "Date": "2024-12-17"
+      },
+      {
+        "User": "Farhan Qureshi",
+        "Rated": 4,
+        "Comment": "Padding density feels optimal. Suitable for long term use. After extended use, overall stability remains consistent.",
+        "Date": "2024-12-01"
+      },
+      {
+        "User": "Arman Ansari",
+        "Rated": 4.2,
+        "Comment": "Lower back support feels consistent. Material feels sufficient. After extended use, overall stability remains consistent.",
+        "Date": "2024-07-11"
+      },
+      {
+        "User": "Aarav Verma",
+        "Rated": 3.9,
+        "Comment": "Structural alignment appears accurate. Feels practical and functional.",
+        "Date": "2024-10-14"
+      }
+    ],
+    "Description": "A practical furniture choice that focuses on comfort and stability. The frame is structured for longlasting use while maintaining a clean aesthetic. Its design helps improve usability in everyday situations. A dependable addition to most home environments."
+  },
+  {
+    "ID": "t-study-1",
+    "Name": "PLANPRO Study table st1",
+    "Dimension": "120.6 cm | 117.4 cm | 195.7 cm",
+    "Price": 14900,
+    "Rating": 4.2,
+    "ImageURL": "products/Study table/st1.png",
+    "ModelURL": "products/Study table models/st1.glb",
+    "Type": "table",
+    "SubType": "study_table",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Ananya Mehta",
+        "Rated": 4,
+        "Comment": "Weight balance feels even.",
+        "Date": "2024-11-27"
+      },
+      {
+        "User": "Sana Khan",
+        "Rated": 4,
+        "Comment": "Design proportions feel practical.",
+        "Date": "2024-09-17"
+      },
+      {
+        "User": "Vivaan Shah",
+        "Rated": 4.5,
+        "Comment": "Joint reinforcement feels strong.",
+        "Date": "2024-04-17"
+      },
+      {
+        "User": "Gavin Mathew",
+        "Rated": 4.3,
+        "Comment": "Height feels ergonomically correct. Overall experience is satisfactory. After extended use, overall stability remains consistent.",
+        "Date": "2024-02-09"
+      },
+      {
+        "User": "Manav Mehta",
+        "Rated": 4.4,
+        "Comment": "Panel thickness feels durable. Fit and finish feel accurate.",
+        "Date": "2025-01-05"
+      },
+      {
+        "User": "Riya Gupta",
+        "Rated": 3.9,
+        "Comment": "Material thickness feels adequate. Build feels acceptable.",
+        "Date": "2024-05-15"
+      },
+      {
+        "User": "Jomin Mathew",
+        "Rated": 4.2,
+        "Comment": "Top panel alignment feels accurate. Quality feels decent.",
+        "Date": "2024-09-06"
+      }
+    ],
+    "Description": "Created to improve everyday comfort while keeping a stylish presence in the room. The build quality ensures steady performance over time. Its thoughtful design allows it to integrate easily with surrounding furniture. Ideal for contemporary homes."
+  },
+  {
+    "ID": "t-study-2",
+    "Name": "PLANPRO Study table st2",
+    "Dimension": "197.3 cm | 129.6 cm | 64.6 cm",
+    "Price": 15200,
+    "Rating": 4.1,
+    "ImageURL": "products/Study table/st2.png",
+    "ModelURL": "products/Study table models/st2.glb",
+    "Type": "table",
+    "SubType": "study_table",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Sneha Agarwal",
+        "Rated": 4.3,
+        "Comment": "Height feels ergonomically correct. Stability feels acceptable.",
+        "Date": "2024-03-11"
+      },
+      {
+        "User": "Kavya Shah",
+        "Rated": 4.1,
+        "Comment": "Surface finish appears refined. Feels practical and functional. After extended use, overall stability remains consistent.",
+        "Date": "2024-12-06"
+      },
+      {
+        "User": "Joseph Joseph",
+        "Rated": 4.1,
+        "Comment": "Build symmetry looks accurate.",
+        "Date": "2024-02-25"
+      },
+      {
+        "User": "Tanvi Verma",
+        "Rated": 4,
+        "Comment": "Overall sturdiness feels reliable. Build feels acceptable.",
+        "Date": "2024-02-12"
+      },
+      {
+        "User": "Farhan Ansari",
+        "Rated": 4,
+        "Comment": "Panel thickness feels durable. Works as expected.",
+        "Date": "2024-05-22"
+      },
+      {
+        "User": "Isabella Almeida",
+        "Rated": 4.2,
+        "Comment": "Material grain looks consistent. Works well for daily usage.",
+        "Date": "2024-04-28"
+      },
+      {
+        "User": "Divya Subramanian",
+        "Rated": 4.1,
+        "Comment": "Edge detailing looks precise.",
+        "Date": "2024-07-01"
+      },
+      {
+        "User": "Gavin Sharon",
+        "Rated": 4.1,
+        "Comment": "Panel thickness feels durable. Finish appears decent. After extended use, overall stability remains consistent.",
+        "Date": "2024-11-18"
+      },
+      {
+        "User": "Riya Chatterjee",
+        "Rated": 4.1,
+        "Comment": "Finish consistency appears uniform.",
+        "Date": "2024-02-10"
+      }
+    ],
+    "Description": "A well-designed piece that balances comfort and practicality for everyday use. The structure is built to provide reliable support while keeping a modern appearance. Its clean design helps it blend easily with different room styles. Suitable for both compact and spacious interiors."
+  },
+  {
+    "ID": "t-study-3",
+    "Name": "PLANPRO Study table st3",
+    "Dimension": "196.3 cm | 126.0 cm | 135.3 cm",
+    "Price": 14100,
+    "Rating": 4.2,
+    "ImageURL": "products/Study table/st3.png",
+    "ModelURL": "products/Study table models/st3.glb",
+    "Type": "table",
+    "SubType": "study_table",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Faizan Siddiqui",
+        "Rated": 4.1,
+        "Comment": "Build symmetry looks accurate.",
+        "Date": "2024-09-30"
+      },
+      {
+        "User": "Rohit Kamath",
+        "Rated": 4.1,
+        "Comment": "Material thickness feels adequate. Quality feels decent.",
+        "Date": "2024-04-30"
+      },
+      {
+        "User": "Jason Mathew",
+        "Rated": 4.2,
+        "Comment": "Leg stability feels dependable.",
+        "Date": "2024-01-30"
+      },
+      {
+        "User": "Ryan Rodrigues",
+        "Rated": 4,
+        "Comment": "Base support structure feels steady.",
+        "Date": "2024-12-26"
+      },
+      {
+        "User": "Jomin Michael",
+        "Rated": 4,
+        "Comment": "Material grain looks consistent. Performance meets expectations.",
+        "Date": "2024-07-19"
+      },
+      {
+        "User": "Genelia Johancy",
+        "Rated": 4.3,
+        "Comment": "Material grain looks consistent.",
+        "Date": "2024-09-12"
+      },
+      {
+        "User": "Rahul Kishan",
+        "Rated": 4,
+        "Comment": "Material grain looks consistent.",
+        "Date": "2024-01-09"
+      },
+      {
+        "User": "Aditi Kamath",
+        "Rated": 4.1,
+        "Comment": "Structural support feels reliable. Works well for daily usage.",
+        "Date": "2024-06-23"
+      },
+      {
+        "User": "Sana Ansari",
+        "Rated": 4,
+        "Comment": "Design proportions feel practical. Stability feels acceptable. After extended use, overall stability remains consistent.",
+        "Date": "2024-05-19"
+      }
+    ],
+    "Description": "Designed with attention to detail, this item brings both function and style into your home. The materials are selected to improve durability and longterm use. Its balanced proportions make it comfortable while maintaining a neat visual presence. Works well in modern living spaces."
+  },
+  {
+    "ID": "t-study-4",
+    "Name": "PLANPRO Study table st4",
+    "Dimension": "196.1 cm | 173.4 cm | 73.1 cm",
+    "Price": 17100,
+    "Rating": 4.2,
+    "ImageURL": "products/Study table/st4.png",
+    "ModelURL": "products/Study table models/st4.glb",
+    "Type": "table",
+    "SubType": "study_table",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Rahul Verma",
+        "Rated": 4,
+        "Comment": "Design proportions feel practical.",
+        "Date": "2024-12-27"
+      },
+      {
+        "User": "Maria Furtado",
+        "Rated": 4,
+        "Comment": "Design proportions feel practical. Design feels straightforward. After extended use, overall stability remains consistent.",
+        "Date": "2024-09-04"
+      },
+      {
+        "User": "Kabir Verma",
+        "Rated": 3.9,
+        "Comment": "Load handling remains stable. Functionality is practical.",
+        "Date": "2024-08-11"
+      },
+      {
+        "User": "Sharon Michael",
+        "Rated": 4.3,
+        "Comment": "Load handling remains stable.",
+        "Date": "2024-07-23"
+      },
+      {
+        "User": "Anirudh Subramanian",
+        "Rated": 4.1,
+        "Comment": "Height feels ergonomically correct.",
+        "Date": "2024-05-16"
+      },
+      {
+        "User": "Aaron D'Souza",
+        "Rated": 4.3,
+        "Comment": "Load handling remains stable.",
+        "Date": "2024-08-12"
+      },
+      {
+        "User": "Ryan Pereira",
+        "Rated": 4.3,
+        "Comment": "Build symmetry looks accurate. Comfort level feels adequate. After extended use, overall stability remains consistent.",
+        "Date": "2024-12-28"
+      },
+      {
+        "User": "Rohit Nair",
+        "Rated": 4.4,
+        "Comment": "Material thickness feels adequate.",
+        "Date": "2024-09-12"
+      }
+    ],
+    "Description": "This product combines durability with a simple modern design. It is built to handle daily use while keeping a comfortable experience. The structure supports proper posture and relaxation. Its versatile look allows it to match many interior layouts."
+  },
+  {
+    "ID": "t-study-5",
+    "Name": "PLANPRO Study table st5",
+    "Dimension": "58.7 cm | 49.2 cm | 38.5 cm",
+    "Price": 15900,
+    "Rating": 3.9,
+    "ImageURL": "products/Study table/st5.png",
+    "ModelURL": "products/Study table models/st5.glb",
+    "Type": "table",
+    "SubType": "study_table",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Harshita Karuppasamy",
+        "Rated": 4,
+        "Comment": "Overall sturdiness feels reliable. Finish appears decent.",
+        "Date": "2024-05-30"
+      },
+      {
+        "User": "Genelia Joseph",
+        "Rated": 3.8,
+        "Comment": "Leg stability feels dependable. Suitable for long term use. After extended use, overall stability remains consistent.",
+        "Date": "2024-11-12"
+      },
+      {
+        "User": "Manav Agarwal",
+        "Rated": 4.1,
+        "Comment": "Height feels ergonomically correct. Suitable for long term use. After extended use, overall stability remains consistent.",
+        "Date": "2024-02-19"
+      },
+      {
+        "User": "Lydia Sharon",
+        "Rated": 4.2,
+        "Comment": "Design proportions feel practical. Performance remains adequate. After extended use, overall stability remains consistent.",
+        "Date": "2025-01-15"
+      },
+      {
+        "User": "Sharon Johancy",
+        "Rated": 4,
+        "Comment": "Material thickness feels adequate.",
+        "Date": "2024-03-21"
+      }
+    ],
+    "Description": "A practical furniture choice that focuses on comfort and stability. The frame is structured for longlasting use while maintaining a clean aesthetic. Its design helps improve usability in everyday situations. A dependable addition to most home environments."
+  },
+  {
+    "ID": "s-sofacumbed-5",
+    "Name": "PLANPRO sofacumbed sc2",
+    "Dimension": "195.7 cm | 74.7 cm | 60.2 cm",
+    "Price": 17700,
+    "Rating": 4.3,
+    "ImageURL": "products/sofacumbed/sc2.png",
+    "ModelURL": "products/sofacumbed models/sc2.glb",
+    "Type": "sofa",
+    "SubType": "sofacumbed",
+    "Brand": "PLANPRO",
+    "ProductURL": "",
+    "Reviews": [
+      {
+        "User": "Ira Kamath",
+        "Rated": 4.1,
+        "Comment": "Backrest support positioning is well engineered.",
+        "Date": "2024-02-09"
+      },
+      {
+        "User": "Jomin Joseph",
+        "Rated": 4.3,
+        "Comment": "Finish texture feels refined. Works well for daily usage. After extended use, overall stability remains consistent.",
+        "Date": "2024-04-22"
+      },
+      {
+        "User": "Priya Chatterjee",
+        "Rated": 4.2,
+        "Comment": "Seating posture alignment feels natural. Design feels straightforward. After extended use, overall stability remains consistent.",
+        "Date": "2024-07-08"
+      },
+      {
+        "User": "Rahul Joshi",
+        "Rated": 4.4,
+        "Comment": "Armrest height feels ergonomically correct.",
+        "Date": "2025-01-22"
+      },
+      {
+        "User": "Naomi Pereira",
+        "Rated": 4.3,
+        "Comment": "Build quality feels sturdy. Overall experience is satisfactory. After extended use, overall stability remains consistent.",
+        "Date": "2024-03-20"
+      },
+      {
+        "User": "Sana Al Hussaini",
+        "Rated": 4.5,
+        "Comment": "Overall weight distribution feels stable.",
+        "Date": "2024-03-24"
+      },
+      {
+        "User": "Ayaan Khan",
+        "Rated": 4,
+        "Comment": "Cushion firmness distribution feels balanced.",
+        "Date": "2024-08-06"
+      }
+    ],
+    "Description": "Created to improve everyday comfort while keeping a stylish presence in the room. The build quality ensures steady performance over time. Its thoughtful design allows it to integrate easily with surrounding furniture. Ideal for contemporary homes."
+  }
+]

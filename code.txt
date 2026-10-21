@@ -1,0 +1,1084 @@
+BlueprintDesigner
+
+
+import React, { useState, useRef, useEffect } from 'react';
+import { Layout, Move, RotateCw, Plus, Trash2, Sparkles, Loader2, AlertCircle, X, Box, MousePointer2, Info, Star, ArrowLeft, ChevronRight, ArrowRight } from 'lucide-react';
+import { motion, AnimatePresence } from 'motion/react';
+import { BlueprintItem, Product } from '../types';
+import { PRODUCTS } from '../data/mockData';
+
+const BlueprintDesigner: React.FC = () => {
+  const [view, setView] = useState<'selection' | 'shape-selection' | 'designer' | 'ai-flow'>('selection');
+  const [selectedShape, setSelectedShape] = useState<string | null>(null);
+  const [items, setItems] = useState<BlueprintItem[]>([]);
+  const [selectedItem, setSelectedItem] = useState<string | null>(null);
+  const [hoveredProduct, setHoveredProduct] = useState<Product | null>(null);
+  const [isScrollableMode, setIsScrollableMode] = useState(false);
+  const [popupPos, setPopupPos] = useState({ top: 0, left: 0 });
+  const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
+  const [activeSidebarTab, setActiveSidebarTab] = useState<'structure' | 'appearance' | 'library'>('structure');
+  const [activeView, setActiveView] = useState<'free' | 'plan' | 'wall1' | 'wall2' | 'wall3' | 'wall4'>('free');
+  const canvasRef = useRef<HTMLDivElement>(null);
+  const sidebarRef = useRef<HTMLDivElement>(null);
+
+  const addItem = (type: string) => {
+    const newItem: BlueprintItem = {
+      id: Math.random().toString(36).substr(2, 9),
+      type,
+      x: isScrollableMode ? 1800 : 300,
+      y: isScrollableMode ? 1800 : 300,
+      rotation: 0
+    };
+    setItems([...items, newItem]);
+    setSelectedItem(newItem.id);
+  };
+
+  const removeItem = (id: string) => {
+    setItems(items.filter(i => i.id !== id));
+    if (selectedItem === id) setSelectedItem(null);
+  };
+
+  const updateItem = (id: string, updates: Partial<BlueprintItem>) => {
+    setItems(items.map(i => i.id === id ? { ...i, ...updates } : i));
+  };
+
+  const handleProductHover = (e: React.MouseEvent, product: Product) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const popupExpectedHeight = 520;
+    const margin = 20;
+    const safeTop = Math.max(
+      margin + 80,
+      Math.min(rect.top, window.innerHeight - popupExpectedHeight - margin)
+    );
+    setPopupPos({ top: safeTop, left: rect.right + 20 });
+    setHoveredProduct(product);
+  };
+
+  const archModules = [
+    { name: 'Living Room', category: 'Architecture', image: 'https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=600&auto=format&fit=crop' },
+    { name: 'Bedroom', category: 'Architecture', image: 'https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=600&auto=format&fit=crop' },
+    { name: 'Dining Area', category: 'Architecture', image: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?q=80&w=600&auto=format&fit=crop' },
+    { name: 'Suite Studio', category: 'Architecture', image: 'https://images.unsplash.com/photo-1556911220-e15022358364?q=80&w=600&auto=format&fit=crop' }
+  ];
+
+  if (view === 'selection') {
+    return (
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className="min-h-screen pt-24 bg-[#FBFBF9] flex flex-col items-center justify-center p-6 text-black overflow-hidden relative"
+      >
+        <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-0 border border-black/5 rounded-[40px] overflow-hidden bg-white shadow-[0_40px_100px_-20px_rgba(0,0,0,0.05)]">
+          {/* Manual Designer Side */}
+          <motion.div 
+            initial={{ x: -20, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            className="p-16 md:p-24 flex flex-col justify-between border-b md:border-b-0 md:border-r border-black/5 group hover:bg-[#FBFBF9] transition-colors duration-700"
+          >
+            <div className="space-y-8">
+              <span className="text-[10px] font-black uppercase tracking-[0.4em] text-black/20 block">Option 01</span>
+              <div className="space-y-4">
+                <h2 className="text-5xl font-serif tracking-tight leading-tight">Manual <br /><span className="font-light">Designer</span></h2>
+                <p className="text-black/40 text-sm leading-relaxed max-w-xs">Precision-driven spatial planning. Build your environment from the ground up with custom dimensions and architectural modules.</p>
+              </div>
+            </div>
+            <motion.button 
+              whileHover={{ x: 10 }}
+              onClick={() => setView('shape-selection')}
+              className="flex items-center gap-4 text-[11px] font-black uppercase tracking-[0.3em] group-hover:text-black text-black/40 transition-all mt-12"
+            >
+              Enter Studio <ArrowRight size={16} />
+            </motion.button>
+          </motion.div>
+
+          {/* AI Designer Side */}
+          <motion.div 
+            initial={{ x: 20, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.3 }}
+            className="p-16 md:p-24 flex flex-col justify-between bg-black text-white group relative overflow-hidden"
+          >
+            <div className="absolute top-0 right-0 p-12 opacity-10 group-hover:scale-110 transition-transform duration-1000">
+              <Sparkles size={200} strokeWidth={0.5} />
+            </div>
+            <div className="space-y-8 relative z-10">
+              <span className="text-[10px] font-black uppercase tracking-[0.4em] text-white/20 block">Option 02</span>
+              <div className="space-y-4">
+                <h2 className="text-5xl font-serif tracking-tight leading-tight">AI Image <br /><span className="font-light text-white/60">Synthesis</span></h2>
+                <p className="text-white/40 text-sm leading-relaxed max-w-xs">Neural reconstruction from photography. Upload your space and let our engine generate a digital twin in seconds.</p>
+              </div>
+            </div>
+            <motion.button 
+              whileHover={{ x: 10 }}
+              onClick={() => setView('ai-flow')}
+              className="flex items-center gap-4 text-[11px] font-black uppercase tracking-[0.3em] group-hover:text-white text-white/40 transition-all mt-12 relative z-10"
+            >
+              Initialize Flow <ArrowRight size={16} />
+            </motion.button>
+          </motion.div>
+        </div>
+
+        {/* Minimal Footer */}
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6 }}
+          className="mt-12 text-[9px] font-black uppercase tracking-[0.5em] text-black/10"
+        >
+          PlanPro Architectural Suite © 2026
+        </motion.div>
+      </motion.div>
+    );
+  }
+
+  if (view === 'shape-selection') {
+    const shapes = [
+      { id: 'square', name: 'Square', icon: <div className="w-12 h-12 border border-black/20 rounded-sm" /> },
+      { id: 'l-shaped', name: 'L-Shaped', icon: (
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="stroke-black/20 stroke-[1.5]">
+          <path d="M10 10V38H38V24H24V10H10Z" />
+        </svg>
+      )},
+      { id: 't-shaped', name: 'T-Shaped', icon: (
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="stroke-black/20 stroke-[1.5]">
+          <path d="M10 10H38V24H28V38H20V24H10V10Z" />
+        </svg>
+      )},
+      { id: 'hexagon', name: 'Hexagon', icon: (
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="stroke-black/20 stroke-[1.5]">
+          <path d="M24 6L39.5885 15V33L24 42L8.41154 33V15L24 6Z" />
+        </svg>
+      )},
+    ];
+
+    return (
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className="min-h-screen pt-24 bg-[#FBFBF9] flex flex-col items-center justify-center p-6 text-black overflow-hidden relative"
+      >
+        <motion.button 
+          initial={{ x: -20, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          onClick={() => setView('selection')}
+          className="absolute top-32 left-10 flex items-center gap-3 text-[10px] font-black uppercase tracking-widest text-black/40 hover:text-black transition-colors"
+        >
+          <ArrowLeft size={14} /> Back
+        </motion.button>
+
+        <div className="max-w-5xl w-full space-y-24 text-center">
+          <div className="space-y-4">
+            <span className="text-[10px] font-black uppercase tracking-[0.4em] text-black/20 block">Spatial Footprint</span>
+            <h2 className="text-5xl font-serif tracking-tight leading-tight">Select <span className="font-light">Foundation</span></h2>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
+            {shapes.map((shape, idx) => (
+              <motion.button 
+                key={shape.id}
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: idx * 0.1 }}
+                whileHover={{ y: -10 }}
+                onClick={() => {
+                  setSelectedShape(shape.id);
+                  setView('designer');
+                  addItem(shape.name);
+                }}
+                className="group flex flex-col items-center gap-8"
+              >
+                <div className="w-full aspect-square rounded-[40px] bg-white border border-black/5 flex items-center justify-center group-hover:border-black transition-all duration-500 group-hover:shadow-[0_30px_60px_rgba(0,0,0,0.05)]">
+                  {shape.icon}
+                </div>
+                <span className="text-[10px] font-black uppercase tracking-[0.3em] text-black/30 group-hover:text-black transition-colors">{shape.name}</span>
+              </motion.button>
+            ))}
+          </div>
+        </div>
+      </motion.div>
+    );
+  }
+
+  if (view === 'ai-flow') {
+    return (
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className="min-h-screen pt-24 bg-[#FBFBF9] flex flex-col items-center justify-center p-6 text-black overflow-hidden relative"
+      >
+        <motion.button 
+          initial={{ x: -20, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          onClick={() => setView('selection')}
+          className="absolute top-32 left-10 flex items-center gap-3 text-[10px] font-black uppercase tracking-widest text-black/40 hover:text-black transition-colors"
+        >
+          <ArrowLeft size={14} /> Back
+        </motion.button>
+
+        <div className="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+          <div className="space-y-8">
+            <span className="text-[10px] font-black uppercase tracking-[0.4em] text-black/20 block">Neural Engine</span>
+            <h2 className="text-5xl font-serif tracking-tight leading-tight">Room <br /><span className="font-light">Stitching</span></h2>
+            <p className="text-black/40 text-sm leading-relaxed">Our AI analyzes visual depth and spatial geometry from your photos to construct a precise 3D model.</p>
+            
+            <div className="space-y-4 pt-8 border-t border-black/5">
+              <div className="flex items-center gap-4 text-[10px] font-black uppercase tracking-widest text-black/40">
+                <div className="w-1.5 h-1.5 rounded-full bg-black" />
+                Minimum 3 angles required
+              </div>
+              <div className="flex items-center gap-4 text-[10px] font-black uppercase tracking-widest text-black/40">
+                <div className="w-1.5 h-1.5 rounded-full bg-black" />
+                High resolution preferred
+              </div>
+            </div>
+          </div>
+
+          <motion.div 
+            whileHover={{ scale: 1.02 }}
+            className="aspect-square bg-white border border-black/5 rounded-[40px] p-12 flex flex-col items-center justify-center text-center space-y-8 shadow-[0_40px_100px_rgba(0,0,0,0.05)] cursor-pointer group"
+          >
+            <div className="w-20 h-20 bg-black/5 rounded-full flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all duration-500">
+              <Plus size={32} />
+            </div>
+            <div className="space-y-2">
+              <p className="text-[11px] font-black uppercase tracking-widest">Drop files here</p>
+              <p className="text-[9px] text-black/30 uppercase tracking-widest">or click to browse</p>
+            </div>
+          </motion.div>
+        </div>
+      </motion.div>
+    );
+  }
+
+  return (
+    <div className="flex h-screen pt-24 bg-[#F5F5F3] overflow-hidden relative">
+      {/* Product Info Popup */}
+      {hoveredProduct && (
+        <div 
+          className="fixed z-[300] w-[320px] bg-white border border-black/5 rounded-[40px] shadow-[0_40px_80px_rgba(0,0,0,0.15)] pointer-events-none animate-in fade-in zoom-in duration-300 flex flex-col overflow-hidden max-h-[85vh]"
+          style={{ top: `${popupPos.top}px`, left: `${popupPos.left}px` }}
+        >
+          <div className="aspect-[4/3] w-full overflow-hidden bg-[#F5F5F3]">
+            <img src={hoveredProduct.image} className="w-full h-full object-cover" alt={hoveredProduct.name} />
+          </div>
+          <div className="p-8 space-y-5 overflow-y-auto custom-scrollbar">
+            <div className="space-y-1">
+              <span className="text-[9px] uppercase tracking-[0.3em] text-black/30 font-black block">{hoveredProduct.category}</span>
+              <h5 className="font-serif text-2xl leading-tight text-black">{hoveredProduct.name}</h5>
+            </div>
+            <div className="flex justify-between items-center py-4 border-y border-black/5">
+              <span className="text-2xl font-bold tracking-tighter text-black">${hoveredProduct.price}</span>
+              <div className="flex items-center gap-1.5 px-3 py-1 bg-amber-50 rounded-full text-amber-500">
+                <Star size={14} fill="currentColor" />
+                <span className="text-[11px] font-black text-black">{hoveredProduct.rating}</span>
+              </div>
+            </div>
+            <p className="text-[11px] text-black/40 leading-relaxed font-medium">{hoveredProduct.description}</p>
+          </div>
+        </div>
+      )}
+
+      {/* Collapsible Sidebar */}
+      <motion.aside 
+        initial={false}
+        animate={{ width: isSidebarCollapsed ? 0 : 320, opacity: isSidebarCollapsed ? 0 : 1 }}
+        className="h-full bg-white border-r border-black/5 flex flex-col z-10 shadow-xl shadow-black/5 overflow-hidden relative"
+      >
+        <div className="p-8 border-b border-black/5 space-y-6">
+          <div className="flex items-center justify-between">
+            <div className="space-y-1">
+              <div className="flex items-center gap-3">
+                <button 
+                  onClick={() => setView('selection')}
+                  className="p-2 -ml-2 hover:bg-black/5 rounded-full transition-colors text-black/40 hover:text-black"
+                  title="Back to Selection"
+                >
+                  <ArrowLeft size={20} />
+                </button>
+                <h2 className="text-3xl font-serif text-black">Architect Tool</h2>
+              </div>
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-black/30">Precise Room Design</p>
+            </div>
+            <button 
+              onClick={() => setIsSidebarCollapsed(true)}
+              className="p-2 hover:bg-black/5 rounded-full transition-colors"
+              title="Collapse Sidebar"
+            >
+              <ChevronRight className="rotate-180" size={20} />
+            </button>
+          </div>
+
+          <div className="flex gap-2 p-1 bg-black/5 rounded-2xl">
+            {(['structure', 'appearance', 'library'] as const).map((tab) => (
+              <button
+                key={tab}
+                onClick={() => setActiveSidebarTab(tab)}
+                className={`flex-1 py-2.5 rounded-xl text-[9px] font-black uppercase tracking-widest transition-all ${
+                  activeSidebarTab === tab ? 'bg-black text-white shadow-lg' : 'text-black/40 hover:text-black'
+                }`}
+              >
+                {tab}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="flex-1 overflow-y-auto custom-scrollbar p-8 space-y-10">
+          {activeSidebarTab === 'structure' && (
+            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="space-y-10">
+              <div className="space-y-6">
+                <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-black/30">Room Dimensions</h3>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-white border border-black/5 p-5 rounded-3xl space-y-2">
+                    <p className="text-[8px] font-black text-black/30 uppercase tracking-widest">Length (m)</p>
+                    <input type="text" defaultValue="6" className="text-2xl font-bold tracking-tighter w-full bg-transparent focus:outline-none" />
+                  </div>
+                  <div className="bg-white border border-black/5 p-5 rounded-3xl space-y-2">
+                    <p className="text-[8px] font-black text-black/30 uppercase tracking-widest">Width (m)</p>
+                    <input type="text" defaultValue="06" className="text-2xl font-bold tracking-tighter w-full bg-transparent focus:outline-none" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="space-y-6">
+                <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-black/30">Portals & Apertures</h3>
+                <div className="grid grid-cols-2 gap-3">
+                  {['Door', 'Window', 'Arch', 'Stairs'].map(item => (
+                    <button key={item} className="p-4 border border-black/5 rounded-2xl text-[9px] font-black uppercase tracking-widest hover:border-black transition-all text-black/40 hover:text-black">
+                      {item}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+          )}
+
+          {activeSidebarTab === 'library' && (
+            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="space-y-10">
+              <section className="space-y-6">
+                <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-black/40 px-1">Spatial Modules</h3>
+                <div className="grid grid-cols-2 gap-3">
+                  {archModules.map(module => (
+                    <button key={module.name} onClick={() => addItem(module.name)} className="group relative aspect-square rounded-2xl overflow-hidden border border-black/5 hover:border-black/20 hover:shadow-lg transition-all">
+                      <img src={module.image} className="w-full h-full object-cover brightness-[0.7] group-hover:scale-110 transition-transform duration-700" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent flex flex-col justify-end p-4">
+                        <span className="text-[9px] font-black uppercase tracking-widest text-white leading-tight">{module.name}</span>
+                      </div>
+                    </button>
+                  ))}
+                </div>
+              </section>
+
+              <section className="space-y-6">
+                <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-black/40 px-1">Furniture Pieces</h3>
+                <div className="grid grid-cols-2 gap-3">
+                  {PRODUCTS.map(p => (
+                    <button key={p.id} onClick={() => addItem(p.name)} onMouseEnter={(e) => handleProductHover(e, p)} onMouseLeave={() => setHoveredProduct(null)} className="group flex flex-col gap-2">
+                      <div className="aspect-square bg-[#F5F5F3] rounded-2xl overflow-hidden border border-black/5 group-hover:border-black transition-all p-3 relative shadow-sm">
+                        <img src={p.image} className="w-full h-full object-contain group-hover:scale-110 transition-transform" />
+                        <div className="absolute top-2 right-2 p-1.5 rounded-full bg-white opacity-0 group-hover:opacity-100"><Info size={10} /></div>
+                      </div>
+                      <span className="text-[8px] font-bold uppercase tracking-widest text-black/40 group-hover:text-black truncate px-1">{p.name}</span>
+                    </button>
+                  ))}
+                </div>
+              </section>
+            </motion.div>
+          )}
+        </div>
+
+        <div className="p-8 border-t border-black/5 bg-white space-y-6">
+          <div className="flex justify-between items-center">
+            <span className="text-[10px] font-black uppercase tracking-widest text-black/30">Total Value</span>
+            <span className="text-lg font-bold tracking-tighter">$0</span>
+          </div>
+          <button className="w-full py-5 bg-black text-white rounded-3xl font-black uppercase tracking-[0.2em] text-[10px] shadow-2xl hover:bg-black/80 transition-all">
+            Save Project
+          </button>
+        </div>
+      </motion.aside>
+
+      {/* Sidebar Toggle Button (When collapsed) */}
+      {isSidebarCollapsed && (
+        <button 
+          onClick={() => setIsSidebarCollapsed(false)}
+          className="fixed left-6 top-32 z-20 p-4 bg-white border border-black/5 rounded-2xl shadow-xl hover:scale-105 transition-all"
+        >
+          <ChevronRight size={20} />
+        </button>
+      )}
+
+      {/* Main Workspace Viewport */}
+      <main className={`flex-1 relative bg-[#FBFBF9] custom-scrollbar ${isScrollableMode ? 'overflow-auto' : 'overflow-hidden'}`}>
+        
+        {/* Top Navigation Bar */}
+        <div className="absolute top-8 left-0 right-0 px-8 flex justify-center items-start z-20 pointer-events-none">
+          {/* View Selection Pill */}
+          <div className="pointer-events-auto bg-white/80 backdrop-blur-2xl border border-black/5 p-1 rounded-full flex items-center shadow-[0_20px_50px_rgba(0,0,0,0.05)]">
+            {(['free', 'plan', 'wall1', 'wall2', 'wall3', 'wall4'] as const).map((v) => (
+              <button
+                key={v}
+                onClick={() => setActiveView(v)}
+                className={`px-6 py-2.5 rounded-full text-[9px] font-black uppercase tracking-[0.2em] transition-all whitespace-nowrap ${
+                  activeView === v ? 'bg-black text-white shadow-lg' : 'text-black/30 hover:text-black'
+                }`}
+              >
+                {v === 'free' ? 'Free View' : v === 'plan' ? 'Plan View' : v.replace('wall', 'Wall ')}
+              </button>
+            ))}
+          </div>
+        </div>
+
+
+        {/* Static Empty State (Centered in Viewport) */}
+        {items.length === 0 && (
+          <div className="absolute inset-0 z-0 flex flex-col items-center justify-center text-black/10 pointer-events-none animate-fade-up">
+            <Layout size={80} strokeWidth={1} className="opacity-40 animate-subtle-bounce" />
+            <h2 className="font-serif text-5xl text-black/10 tracking-tight mt-10">Empty Workspace</h2>
+            <p className="text-[10px] mt-6 font-black uppercase tracking-[0.4em] text-black/5">Drag modules to begin designing</p>
+          </div>
+        )}
+
+        {/* Scrollable Canvas Area */}
+        <div 
+          ref={canvasRef}
+          className={`relative z-10 bg-[linear-gradient(to_right,#00000005_1px,transparent_1px),linear-gradient(to_bottom,#00000005_1px,transparent_1px)] bg-[size:50px_50px] ${isScrollableMode ? 'w-[4000px] h-[4000px]' : 'w-full h-full'}`}
+          onClick={() => setSelectedItem(null)}
+        >
+          <div className="relative w-full h-full p-20 overflow-visible">
+            {items.map(item => (
+              <motion.div
+                key={item.id}
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                onClick={(e) => { e.stopPropagation(); setSelectedItem(item.id); }}
+                className={`absolute p-6 border transition-all cursor-move group/item ${
+                  selectedItem === item.id 
+                    ? 'bg-black text-white border-black shadow-[0_30px_60px_rgba(0,0,0,0.3)] z-20' 
+                    : 'bg-white text-black border-black/5 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:border-black/20'
+                }`}
+                style={{ left: item.x, top: item.y, transform: `rotate(${item.rotation}deg)`, minWidth: '180px', borderRadius: '32px' }}
+                draggable
+                onDragEnd={(e) => {
+                  const rect = canvasRef.current?.getBoundingClientRect();
+                  if (rect) {
+                    const scrollLeft = canvasRef.current?.parentElement?.scrollLeft || 0;
+                    const scrollTop = canvasRef.current?.parentElement?.scrollTop || 0;
+                    updateItem(item.id, { 
+                      x: e.clientX - rect.left + scrollLeft - 90, 
+                      y: e.clientY - rect.top + scrollTop - 40 
+                    });
+                  }
+                }}
+              >
+                <div className="flex justify-between items-center gap-8">
+                  <span className="text-[9px] font-black uppercase tracking-[0.3em] truncate">{item.type}</span>
+                  {selectedItem === item.id && (
+                    <motion.div 
+                      initial={{ x: 10, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      className="flex gap-4"
+                    >
+                      <button 
+                        onClick={(e) => { e.stopPropagation(); updateItem(item.id, { rotation: item.rotation + 45 }) }}
+                        className="hover:scale-110 transition-transform"
+                      >
+                        <RotateCw size={14} />
+                      </button>
+                      <button 
+                        onClick={(e) => { e.stopPropagation(); removeItem(item.id) }} 
+                        className="text-red-400 hover:scale-110 transition-transform"
+                      >
+                        <Trash2 size={14} />
+                      </button>
+                    </motion.div>
+                  )}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </main>
+    </div>
+  );
+};
+
+export default BlueprintDesigner;
+
+
+
+
+
+
+cartview
+import React from 'react';
+import { Trash2, Minus, Plus, ShoppingBag, ArrowRight, ChevronRight } from 'lucide-react';
+import { motion, AnimatePresence } from 'motion/react';
+import { Product } from '../types';
+import { PRODUCTS } from '../data/mockData';
+
+interface CartViewProps {
+  cart: { id: string; qty: number }[];
+  onUpdateQty: (id: string, delta: number) => void;
+  onRemove: (id: string) => void;
+  onCheckout: () => void;
+  onContinueShopping: () => void;
+}
+
+const CartView: React.FC<CartViewProps> = ({ 
+  cart, onUpdateQty, onRemove, onCheckout, onContinueShopping 
+}) => {
+  const cartItems = cart.map(item => {
+    const product = PRODUCTS.find(p => p.id === item.id);
+    return { ...product, qty: item.qty } as Product & { qty: number };
+  });
+
+  const subtotal = cartItems.reduce((acc, item) => acc + (item.price * item.qty), 0);
+  const shipping = subtotal > 1000 ? 0 : 50;
+  const total = subtotal + shipping;
+
+  if (cart.length === 0) {
+    return (
+      <div className="min-h-[70vh] flex flex-col items-center justify-center px-4 text-center space-y-8">
+        <div className="w-24 h-24 bg-black/5 rounded-full flex items-center justify-center animate-pulse">
+          <ShoppingBag size={40} className="text-black/20" />
+        </div>
+        <div className="space-y-2">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tighter uppercase">Your collection is empty</h2>
+          <p className="text-black/40 text-sm max-w-xs mx-auto">Looks like you haven't added any pieces to your collection yet.</p>
+        </div>
+        <button 
+          onClick={onContinueShopping}
+          className="px-8 py-4 bg-black text-white rounded-2xl font-bold text-xs uppercase tracking-widest hover:scale-105 transition-all shadow-xl flex items-center gap-2"
+        >
+          Start Exploring <ArrowRight size={16} />
+        </button>
+      </div>
+    );
+  }
+
+  return (
+    <div className="max-w-7xl mx-auto px-4 md:px-6 py-12">
+      <div className="flex flex-col lg:grid lg:grid-cols-12 gap-12">
+        {/* Cart Items List */}
+        <div className="lg:col-span-8 space-y-8">
+          <div className="flex items-center justify-between border-b border-black/5 pb-6">
+            <h2 className="text-3xl font-bold tracking-tighter uppercase">Your Collection</h2>
+            <span className="text-xs font-bold text-black/40 uppercase tracking-widest">{cart.length} Items</span>
+          </div>
+
+          <div className="space-y-6">
+            <AnimatePresence mode="popLayout">
+              {cartItems.map((item) => (
+                <motion.div 
+                  key={item.id}
+                  layout
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, x: -20 }}
+                  className="flex flex-col sm:flex-row items-center gap-6 p-6 bg-white rounded-[32px] border border-black/5 hover:shadow-xl transition-all group"
+                >
+                  <div className="w-full sm:w-32 aspect-square rounded-2xl overflow-hidden bg-[#F5F5F3]">
+                    <img src={item.image} alt={item.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  </div>
+                  
+                  <div className="flex-1 space-y-1 text-center sm:text-left">
+                    <span className="text-[10px] font-bold text-black/30 uppercase tracking-widest">{item.category}</span>
+                    <h4 className="text-xl font-serif">{item.name}</h4>
+                    <p className="text-sm text-black/40 line-clamp-1">{item.dimensions} • {item.material}</p>
+                  </div>
+
+                  <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-1 bg-black/5 p-1 rounded-xl">
+                      <button 
+                        onClick={() => onUpdateQty(item.id, -1)}
+                        className="p-2 hover:bg-white rounded-lg transition-colors disabled:opacity-30"
+                        disabled={item.qty <= 1}
+                      >
+                        <Minus size={14} />
+                      </button>
+                      <span className="w-8 text-center font-bold text-sm">{item.qty}</span>
+                      <button 
+                        onClick={() => onUpdateQty(item.id, 1)}
+                        className="p-2 hover:bg-white rounded-lg transition-colors"
+                      >
+                        <Plus size={14} />
+                      </button>
+                    </div>
+                    
+                    <div className="text-right min-w-[80px]">
+                      <p className="font-bold text-lg">${item.price * item.qty}</p>
+                      <p className="text-[10px] text-black/30 font-bold uppercase tracking-tighter">${item.price} / unit</p>
+                    </div>
+
+                    <button 
+                      onClick={() => onRemove(item.id)}
+                      className="p-3 text-black/20 hover:text-red-500 hover:bg-red-50 rounded-full transition-all"
+                    >
+                      <Trash2 size={18} />
+                    </button>
+                  </div>
+                </motion.div>
+              ))}
+            </AnimatePresence>
+          </div>
+
+          <button 
+            onClick={onContinueShopping}
+            className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-black/40 hover:text-black transition-colors group"
+          >
+            <ChevronRight size={16} className="rotate-180 group-hover:-translate-x-1 transition-transform" /> Continue Shopping
+          </button>
+        </div>
+
+        {/* Summary Sidebar */}
+        <div className="lg:col-span-4">
+          <div className="bg-white rounded-[40px] p-8 md:p-10 border border-black/5 shadow-2xl sticky top-32 space-y-8">
+            <h3 className="text-2xl font-bold tracking-tighter uppercase">Summary</h3>
+            
+            <div className="space-y-4">
+              <div className="flex justify-between text-sm">
+                <span className="text-black/40 font-bold uppercase tracking-widest">Subtotal</span>
+                <span className="font-bold">${subtotal}</span>
+              </div>
+              <div className="flex justify-between text-sm">
+                <span className="text-black/40 font-bold uppercase tracking-widest">Shipping</span>
+                <span className="font-bold">{shipping === 0 ? 'FREE' : `$${shipping}`}</span>
+              </div>
+              <div className="pt-4 border-t border-black/5 flex justify-between items-end">
+                <span className="text-xs font-bold uppercase tracking-[0.2em]">Total</span>
+                <span className="text-4xl font-bold tracking-tighter">${total}</span>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <button 
+                onClick={onCheckout}
+                className="w-full py-5 bg-black text-white rounded-2xl font-bold text-xs uppercase tracking-[0.2em] hover:scale-[1.02] active:scale-95 transition-all shadow-xl flex items-center justify-center gap-3 group"
+              >
+                Proceed to Checkout <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+              </button>
+              <p className="text-[9px] text-center text-black/30 font-bold uppercase tracking-widest">
+                Secure checkout powered by PlanPro Pay
+              </p>
+            </div>
+
+            <div className="bg-[#FDE7D1]/30 p-6 rounded-3xl space-y-3">
+              <h5 className="text-[10px] font-bold uppercase tracking-widest">PlanPro Membership</h5>
+              <p className="text-[11px] text-black/60 leading-relaxed">Members get free shipping on all orders and early access to new collections.</p>
+              <button className="text-[10px] font-bold uppercase tracking-widest underline underline-offset-4">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default CartView;
+
+
+
+
+wishlist
+
+
+import React from 'react';
+import { Heart, ArrowRight, ShoppingCart } from 'lucide-react';
+import { motion, AnimatePresence } from 'motion/react';
+import { Product } from '../types';
+import { PRODUCTS } from '../data/mockData';
+import ProductCard from './ProductCard';
+
+interface WishlistViewProps {
+  wishlist: string[];
+  onToggleWishlist: (id: string) => void;
+  onAddToCart: (id: string) => void;
+  onViewDetails: (p: Product) => void;
+  onAR: (p: Product) => void;
+  onAI: (p: Product) => void;
+  onCompare: (p: Product) => void;
+  onContinueShopping: () => void;
+}
+
+const WishlistView: React.FC<WishlistViewProps> = ({ 
+  wishlist, onToggleWishlist, onAddToCart, onViewDetails, onAR, onAI, onCompare, onContinueShopping 
+}) => {
+  const wishlistedProducts = PRODUCTS.filter(p => wishlist.includes(p.id));
+
+  if (wishlist.length === 0) {
+    return (
+      <div className="min-h-[70vh] flex flex-col items-center justify-center px-4 text-center space-y-8">
+        <div className="w-24 h-24 bg-black/5 rounded-full flex items-center justify-center animate-pulse">
+          <Heart size={40} className="text-black/20" />
+        </div>
+        <div className="space-y-2">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tighter uppercase">Your wishlist is empty</h2>
+          <p className="text-black/40 text-sm max-w-xs mx-auto">Save items you love to your wishlist to keep track of them.</p>
+        </div>
+        <button 
+          onClick={onContinueShopping}
+          className="px-8 py-4 bg-black text-white rounded-2xl font-bold text-xs uppercase tracking-widest hover:scale-105 transition-all shadow-xl flex items-center gap-2"
+        >
+          Explore Collection <ArrowRight size={16} />
+        </button>
+      </div>
+    );
+  }
+
+  return (
+    <div className="max-w-7xl mx-auto px-4 md:px-6 py-12 space-y-12">
+      <div className="flex items-center justify-between border-b border-black/5 pb-6">
+        <div className="space-y-1">
+          <h2 className="text-3xl font-bold tracking-tighter uppercase">Your Wishlist</h2>
+          <p className="text-xs font-bold text-black/40 uppercase tracking-widest">Saved Items for later</p>
+        </div>
+        <span className="text-xs font-bold text-black/40 uppercase tracking-widest">{wishlist.length} Items</span>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+        <AnimatePresence mode="popLayout">
+          {wishlistedProducts.map((product) => (
+            <motion.div
+              key={product.id}
+              layout
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.9 }}
+              transition={{ duration: 0.3 }}
+            >
+              <ProductCard 
+                product={product}
+                isWishlisted={true}
+                onToggleWishlist={onToggleWishlist}
+                onAddToCart={onAddToCart}
+                onViewDetails={onViewDetails}
+                onAR={onAR}
+                onAI={onAI}
+                onCompare={onCompare}
+              />
+            </motion.div>
+          ))}
+        </AnimatePresence>
+      </div>
+
+      <div className="flex justify-center pt-12">
+        <button 
+          onClick={onContinueShopping}
+          className="px-8 py-4 border border-black/5 rounded-2xl font-bold text-xs uppercase tracking-widest hover:border-black transition-all flex items-center gap-2"
+        >
+          Continue Shopping <ArrowRight size={16} />
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default WishlistView;
+
+
+
+
+Checkout
+
+
+import React, { useState } from 'react';
+import { 
+  Lock, CreditCard, ChevronRight, ArrowLeft, Plus, 
+  Check, Eye, EyeOff, ShoppingBag, Truck, ClipboardCheck,
+  ChevronDown, ChevronUp
+} from 'lucide-react';
+import { motion, AnimatePresence } from 'motion/react';
+import { Product } from '../types';
+import { PRODUCTS } from '../data/mockData';
+
+interface CheckoutPageProps {
+  cart: { id: string; qty: number }[];
+  onBack: () => void;
+  onConfirm: () => void;
+}
+
+const CheckoutPage: React.FC<CheckoutPageProps> = ({ cart, onBack, onConfirm }) => {
+  const [paymentMethod, setPaymentMethod] = useState<'card' | 'paypal' | 'other'>('card');
+  const [selectedCard, setSelectedCard] = useState(0);
+  const [showCVV, setShowCVV] = useState(false);
+  const [expandedItems, setExpandedItems] = useState<string[]>([]);
+
+  const cartItems = cart.map(item => {
+    const product = PRODUCTS.find(p => p.id === item.id);
+    return { ...product, qty: item.qty } as Product & { qty: number };
+  });
+
+  const subtotal = cartItems.reduce((acc, item) => acc + (item.price * item.qty), 0);
+  const shipping = subtotal > 1000 ? 0 : 50;
+  const total = subtotal + shipping;
+
+  const toggleItem = (id: string) => {
+    setExpandedItems(prev => 
+      prev.includes(id) ? prev.filter(i => i !== id) : [...prev, id]
+    );
+  };
+
+  const cards = [
+    { id: 0, type: 'Mastercard', last4: '4323', color: 'bg-[#E4E4F4]', textColor: 'text-[#4A4A8F]' },
+    { id: 1, type: 'Visa', last4: '5442', color: 'bg-[#FDE7D1]', textColor: 'text-[#A67C52]' },
+  ];
+
+  return (
+    <div className="min-h-screen bg-[#FBFBF9] pt-24 pb-20">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
+        <div className="flex flex-col lg:grid lg:grid-cols-12 gap-8 items-start">
+          
+          {/* Left Column: Payment Details */}
+          <div className="lg:col-span-7 bg-white rounded-[40px] p-8 md:p-12 border border-black/5 shadow-sm space-y-10">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-black rounded-xl flex items-center justify-center text-white">
+                  <CreditCard size={20} />
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter uppercase">Payment details</h2>
+              </div>
+              <div className="hidden sm:flex items-center gap-2 text-black/40">
+                <Lock size={14} />
+                <div className="text-right">
+                  <p className="text-[10px] font-bold uppercase tracking-widest">Card is secure</p>
+                  <p className="text-[8px] font-medium opacity-60">Your data is protected</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Tabs */}
+            <div className="flex gap-8 border-b border-black/5 pb-4">
+              {['Credit Card', 'Paypal', 'Other'].map((tab) => {
+                const id = tab.toLowerCase().split(' ')[0] as any;
+                const isActive = paymentMethod === id;
+                return (
+                  <button
+                    key={tab}
+                    onClick={() => setPaymentMethod(id)}
+                    className={`text-[10px] font-bold uppercase tracking-[0.2em] transition-all relative ${isActive ? 'text-black' : 'text-black/30 hover:text-black'}`}
+                  >
+                    {tab}
+                    {isActive && (
+                      <motion.div 
+                        layoutId="activeTab"
+                        className="absolute -bottom-[17px] left-0 right-0 h-0.5 bg-black"
+                      />
+                    )}
+                  </button>
+                );
+              })}
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
+              {/* Card Selection */}
+              <div className="md:col-span-5 space-y-4">
+                {cards.map((card, idx) => (
+                  <button
+                    key={card.id}
+                    onClick={() => setSelectedCard(idx)}
+                    className={`w-full aspect-[1.6/1] rounded-2xl p-6 text-left transition-all relative overflow-hidden group ${card.color} ${selectedCard === idx ? 'ring-2 ring-black ring-offset-4 scale-[1.02]' : 'opacity-60 hover:opacity-100'}`}
+                  >
+                    <div className="relative z-10 flex flex-col justify-between h-full">
+                      <div className="flex justify-between items-start">
+                        <div className={`text-[10px] font-bold uppercase tracking-widest ${card.textColor}`}>{card.type}</div>
+                        <div className={`text-[10px] font-bold ${card.textColor}`}>**** {card.last4}</div>
+                      </div>
+                      <div className="flex justify-between items-end">
+                        <div className="w-8 h-5 bg-black/10 rounded-sm" />
+                        {selectedCard === idx && (
+                          <div className="w-5 h-5 bg-black rounded-full flex items-center justify-center text-white">
+                            <Check size={10} />
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                    {/* Abstract patterns inspired by the image */}
+                    <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+                       <div className="absolute top-4 left-4 w-12 h-12 border-4 border-current rounded-full" />
+                       <div className="absolute bottom-4 right-4 w-16 h-16 border-4 border-current rounded-full" />
+                    </div>
+                  </button>
+                ))}
+                <button className="w-full aspect-[1.6/1] rounded-2xl border-2 border-dashed border-black/10 flex flex-col items-center justify-center gap-2 hover:border-black/20 transition-all group">
+                  <div className="w-8 h-8 bg-black/5 rounded-full flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all">
+                    <Plus size={16} />
+                  </div>
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-black/40">Add new</span>
+                </button>
+              </div>
+
+              {/* Form */}
+              <div className="md:col-span-7 space-y-6">
+                <div className="space-y-2">
+                  <label className="text-[10px] font-bold uppercase tracking-widest text-black/30">Credit card</label>
+                  <div className="relative">
+                    <input 
+                      type="text" 
+                      defaultValue="4441 2354 3266 5655"
+                      className="w-full px-6 py-4 bg-black/5 rounded-2xl text-sm font-medium focus:outline-none focus:ring-2 ring-black/5 transition-all"
+                    />
+                    <div className="absolute right-4 top-1/2 -translate-y-1/2 flex gap-1">
+                      <div className="w-4 h-4 rounded-full bg-[#EB001B] opacity-80" />
+                      <div className="w-4 h-4 rounded-full bg-[#F79E1B] opacity-80 -ml-2" />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-[10px] font-bold uppercase tracking-widest text-black/30">Name</label>
+                  <input 
+                    type="text" 
+                    defaultValue="Annette Murphy"
+                    className="w-full px-6 py-4 bg-black/5 rounded-2xl text-sm font-medium focus:outline-none focus:ring-2 ring-black/5 transition-all"
+                  />
+                </div>
+
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <label className="text-[10px] font-bold uppercase tracking-widest text-black/30">Expiration date</label>
+                    <input 
+                      type="text" 
+                      defaultValue="08 / 2024"
+                      className="w-full px-6 py-4 bg-black/5 rounded-2xl text-sm font-medium focus:outline-none focus:ring-2 ring-black/5 transition-all"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-[10px] font-bold uppercase tracking-widest text-black/30">CVV</label>
+                    <div className="relative">
+                      <input 
+                        type={showCVV ? "text" : "password"} 
+                        defaultValue="407"
+                        className="w-full px-6 py-4 bg-black/5 rounded-2xl text-sm font-medium focus:outline-none focus:ring-2 ring-black/5 transition-all"
+                      />
+                      <button 
+                        onClick={() => setShowCVV(!showCVV)}
+                        className="absolute right-4 top-1/2 -translate-y-1/2 text-black/20 hover:text-black transition-colors"
+                      >
+                        {showCVV ? <EyeOff size={16} /> : <Eye size={16} />}
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex flex-col sm:flex-row items-center gap-6 pt-6">
+                  <button 
+                    onClick={onConfirm}
+                    className="w-full sm:w-auto px-10 py-4 bg-black text-white rounded-2xl font-bold text-xs uppercase tracking-[0.2em] hover:scale-105 active:scale-95 transition-all shadow-xl"
+                  >
+                    Confirm order
+                  </button>
+                  <button 
+                    onClick={onBack}
+                    className="text-[10px] font-bold uppercase tracking-widest text-black/30 hover:text-black transition-colors"
+                  >
+                    Cancel and Return
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column: Order Summary */}
+          <div className="lg:col-span-5 space-y-8 w-full">
+            <div className="bg-[#F5F5F3] rounded-[40px] p-8 md:p-10 space-y-8">
+              <h3 className="text-3xl font-bold tracking-tighter uppercase">Order summary</h3>
+
+              {/* Stepper */}
+              <div className="flex items-center justify-between px-2">
+                {[
+                  { icon: Truck, label: 'Shipping', step: 1, color: 'bg-[#E4E4F4]' },
+                  { icon: CreditCard, label: 'Payment', step: 2, color: 'bg-[#FDE7D1]' },
+                  { icon: ClipboardCheck, label: 'Review', step: 3, color: 'bg-[#C1EED0]' },
+                ].map((s) => (
+                  <div key={s.step} className="flex flex-col items-center gap-2">
+                    <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${s.step === 2 ? s.color : 'bg-white'} shadow-sm`}>
+                      <s.icon size={18} className={s.step === 2 ? 'text-black' : 'text-black/20'} />
+                    </div>
+                    <div className="text-center">
+                      <p className="text-[8px] font-bold text-black/20 uppercase tracking-tighter">Step {s.step}</p>
+                      <p className={`text-[9px] font-bold uppercase tracking-widest ${s.step === 2 ? 'text-black' : 'text-black/30'}`}>{s.label}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Item List */}
+              <div className="space-y-4">
+                {cartItems.map((item) => (
+                  <div key={item.id} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-black/5">
+                    <button 
+                      onClick={() => toggleItem(item.id)}
+                      className="w-full p-5 flex items-center justify-between hover:bg-black/5 transition-colors"
+                    >
+                      <div className="flex items-center gap-4">
+                        <div className="w-10 h-10 rounded-lg overflow-hidden bg-black/5">
+                          <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
+                        </div>
+                        <span className="text-sm font-bold tracking-tight">{item.name}</span>
+                      </div>
+                      {expandedItems.includes(item.id) ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+                    </button>
+                    
+                    <AnimatePresence>
+                      {expandedItems.includes(item.id) && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: 'auto', opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          className="overflow-hidden"
+                        >
+                          <div className="p-5 pt-0 space-y-3 border-t border-black/5 mt-2">
+                            <div className="flex justify-between text-[11px]">
+                              <span className="text-black/40 font-medium">{item.name} (x{item.qty})</span>
+                              <span className="font-bold">${item.price * item.qty}</span>
+                            </div>
+                            <div className="flex justify-between text-[11px]">
+                              <span className="text-black/40 font-medium">Estimated shipping</span>
+                              <span className="font-bold">$0.00</span>
+                            </div>
+                            <div className="flex justify-between text-[11px]">
+                              <span className="text-black/40 font-medium">Discount</span>
+                              <span className="font-bold">$0.00</span>
+                            </div>
+                            <div className="pt-2 border-t border-black/5 flex justify-between text-sm">
+                              <span className="font-bold">Total</span>
+                              <span className="font-bold">${item.price * item.qty}</span>
+                            </div>
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                ))}
+              </div>
+
+              <div className="pt-8 border-t border-black/10 flex items-end justify-between">
+                <div>
+                  <p className="text-[10px] font-bold text-black/30 uppercase tracking-widest">Total Amount:</p>
+                  <h4 className="text-4xl font-bold tracking-tighter">${total}</h4>
+                </div>
+                <div className="text-right">
+                  <p className="text-[8px] font-bold text-black/20 uppercase tracking-widest">Including taxes</p>
+                </div>
+              </div>
+            </div>
+
+            <button 
+              onClick={onBack}
+              className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-black/40 hover:text-black transition-colors group"
+            >
+              <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" /> Back to Collection
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default CheckoutPage;
