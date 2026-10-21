@@ -3,8 +3,8 @@ import { useTexture } from "@react-three/drei";
 import * as THREE from "three";
 
 const TEXTURES = {
-    wood: "../assets/texture/wood.jpeg",
-    tiles: "../assets/texture/tiles.jpeg",
+    wood: "/assets/texture/wood.jpeg",
+    tiles: "/assets/texture/tiles.jpeg",
 };
 
 interface FloorProps {

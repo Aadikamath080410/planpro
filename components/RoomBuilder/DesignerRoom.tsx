@@ -10,9 +10,9 @@ import Floor from "./Floor";
 
 // Wall surfaces for textured walls - Using stable Three.js example textures
 const WALL_TEXTURES = {
-    brick: "../assets/texture/bricks.jpeg",
-    concrete: "../assets/texture/design.jpeg",
-    plaster: "../assets/texture/pattern.jpeg",
+    brick: "/assets/texture/bricks.jpeg",
+    concrete: "/assets/texture/design.jpeg",
+    plaster: "/assets/texture/pattern.jpeg",
 };
 
 /*
