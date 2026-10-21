@@ -1,7 +1,7 @@
 fastapi==0.115.0
 uvicorn[standard]==0.30.6
 python-multipart==0.0.9
-starlette==0.41.2
+# starlette is managed by fastapi — do not pin separately
 
 # Computer vision
 opencv-python-headless==4.10.0.84
